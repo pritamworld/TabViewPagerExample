@@ -9,7 +9,7 @@ import org.greenrobot.greendao.database.Database;
 public class AppConfig extends Application {
     public static final boolean ENCRYPTED = true;
 
-//Test
+    //Test change
 
     @Override
     public void onCreate() {
