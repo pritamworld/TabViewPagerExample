@@ -13,6 +13,8 @@ import java.util.Date;
 
 public class TimerTestActivity extends AppCompatActivity {
 
+
+    //TODO Change here for timer
     private  final static String TAG = TimerTestActivity.class.getSimpleName();
     private Handler handler;
     private Runnable runable;
