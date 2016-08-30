@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    signingConfigs {
+        testrelease {
+            keyAlias 'test'
+            keyPassword 'test@123'
+            storeFile file('/Users/Interview/Downloads/test.jks')
+            storePassword 'test@123'
+        }
+    }
+    compileSdkVersion 24
+    buildToolsVersion "24.0.0"
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.adesa.interview.tabviewpagerexample"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        signingConfig signingConfigs.testrelease
+        manifestPlaceholders = [HOCKEYAPP_APP_ID: "5592c679bc9a4fba9db9482688900b01"]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.support:support-v4:24.1.1'
+    compile 'com.android.support:design:24.1.1'
+    compile project(':vitamio')
+    compile project(':volley')
+    compile 'com.google.firebase:firebase-core:9.4.0'
+    compile 'net.hockeyapp.android:HockeySDK:4.0.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'org.greenrobot:greendao:3.1.0'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'com.jakewharton:butterknife:5.1.1'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'org.glassfish:javax.annotation:10.0-b28'
+    compile 'org.apache.commons:commons-lang3:3.4'
+    compile 'com.android.support:gridlayout-v7:24.1.1'
+}
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'org.greenrobot.greendao'

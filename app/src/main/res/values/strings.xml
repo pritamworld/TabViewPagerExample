@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TabViewPagerExample</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_run_time_permission">RunTimePermissionActivity</string>
+    <string name="title_activity_runtime_permissions">RuntimePermissionsActivity</string>
+    <string name="runtime_permissions_txt">lease enable ALL permissions from app settings.</string>
+    <string name="title_activity_video_live_stream">VideoLiveStreamActivity</string>
+</resources>

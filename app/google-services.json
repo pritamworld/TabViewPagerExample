@@ -1,0 +1,50 @@
+{
+  "project_info": {
+    "project_number": "265471386016",
+    "firebase_url": "https://test-7a367.firebaseio.com",
+    "project_id": "test-7a367",
+    "storage_bucket": "test-7a367.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265471386016:android:9a001bd2df7938a1",
+        "android_client_info": {
+          "package_name": "com.adesa.interview.tabviewpagerexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265471386016-5crj660964mrun7qih9sr8h2r4ep3qhe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.adesa.interview.tabviewpagerexample",
+            "certificate_hash": "64B3D6F95A41FF9EB59613B318BF143D4554364B"
+          }
+        },
+        {
+          "client_id": "265471386016-34nduq3u9s8b28siq0hrb55qu96u17ma.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvjDtiETe7EQHmugbxE8mncjqS01cThpk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

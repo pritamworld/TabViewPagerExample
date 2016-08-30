@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:grid="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/choice_grid"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:padding="4dp"
+
+    grid:alignmentMode="alignBounds"
+    grid:columnCount="2"
+    grid:rowOrderPreserved="false"
+    grid:useDefaultMargins="false">
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        grid:layout_columnWeight="1"
+        grid:layout_gravity="fill_horizontal"
+        android:text="Code :" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        grid:layout_columnWeight="1.5"
+        grid:layout_gravity="fill_horizontal"
+        android:text="My Code" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        grid:layout_columnSpan="2"
+        android:background="@color/grey_row"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        grid:layout_columnWeight="1"
+        grid:layout_gravity="fill_horizontal"
+        android:text="Description :" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        grid:layout_columnWeight="1"
+        grid:layout_gravity="fill_horizontal"
+        android:text="My Description" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        grid:layout_columnSpan="2"
+        android:background="@color/grey_row"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Details: "
+        grid:layout_columnWeight="1"
+        grid:layout_gravity="fill_horizontal"
+        android:textSize="@dimen/copyright_txt"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Details"
+        grid:layout_columnWeight="1"
+        grid:layout_gravity="fill_horizontal"
+        android:textColor="#808080"
+        android:textSize="@dimen/copyright_txt"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        grid:layout_columnSpan="2"
+        android:background="@color/grey_row"/>
+
+</android.support.v7.widget.GridLayout>

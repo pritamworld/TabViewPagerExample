@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.adesa.interview.tabviewpagerexample">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="net.hockeyapp.android.appIdentifier"
+            android:value="${HOCKEYAPP_APP_ID}" />
+
+        <activity android:name=".slidepageview.MainActivity" />
+        <activity android:name=".tabpageview.HomeActivity" />
+        <activity android:name=".TimerTestActivity" />
+        <activity
+            android:name=".runtimepermission.RunTimePermissionsTestActivity"
+            android:label="@string/title_activity_run_time_permission"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activitytofragment.MainFragmentActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".FloatingLableTestActivity" />
+        <activity
+            android:name=".VideoLiveStreamActivity"
+            android:label="@string/title_activity_video_live_stream"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".volleytest.ImageLoadingActivity" />
+        <activity android:name=".PhoneStateListenerActivity" />
+        <activity
+            android:name=".ScreenOrientationTestActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <service
+            android:name=".downloads.DataDownloadIntentService"
+            android:exported="false" />
+
+        <activity android:name=".downloads.DataDownloadActivity"></activity>
+        <activity android:name=".BaseActivity" />
+        <activity android:name=".databasegreendao.FetchLoaderActivity">
+
+        </activity>
+        <activity android:name=".exampleloopj.NetworkCallActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
