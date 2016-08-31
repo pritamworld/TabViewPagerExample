@@ -4,6 +4,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.text.ParseException;
@@ -31,6 +32,7 @@ public class TimerTestActivity extends AppCompatActivity {
 
         isTimerRunning = true;
         String currentDate;
+        
 
         format = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 
