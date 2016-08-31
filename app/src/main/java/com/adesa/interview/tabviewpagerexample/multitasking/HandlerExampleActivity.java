@@ -22,6 +22,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -34,6 +36,7 @@ public class HandlerExampleActivity extends Activity {
     private static Bitmap downloadBitmap;
     private static Handler handler;
     private Thread downloadThread;
+    private MyRunnableThread myRunnableThread;
     @InjectView(R.id.txtMessage)
     TextView txtMessage;
     @InjectView(R.id.progressBar)
@@ -51,12 +54,12 @@ public class HandlerExampleActivity extends Activity {
         handler = new Handler() {
             @Override
             public void handleMessage(Message msg) {
-                if(msg.what==0) {
+                if (msg.what == 0) {
                     imageViewBitmap.setImageBitmap(downloadBitmap);
-                    Log.d(TAG,"Image Found");
-                }else if(msg.what==1) {
+                    Log.d(TAG, "Image Found");
+                } else if (msg.what == 1) {
                     imageViewBitmap.setImageResource(R.mipmap.ic_launcher);
-                    Log.d(TAG,"No Image Found");
+                    Log.d(TAG, "No Image Found");
                 }
                 progressDialog.dismiss();
             }
@@ -145,8 +148,17 @@ public class HandlerExampleActivity extends Activity {
         switch (view.getId()) {
             case R.id.btnDownload:
                 progressDialog = ProgressDialog.show(this, "Download", "downloading");
-                downloadThread = new MyThread();
+
+                //Using Extend Thread Class
+                //downloadThread = new MyThread();
+                //downloadThread.start();
+
+                //Executors.newSingleThreadExecutor().submit(new Runnable());
+                //Using implementation of Runnable Interface
+                myRunnableThread = new MyRunnableThread();
+                downloadThread = new Thread(myRunnableThread) ;
                 downloadThread.start();
+
                 break;
             case R.id.btnReset:
                 if (downloadBitmap != null) {
@@ -167,7 +179,7 @@ public class HandlerExampleActivity extends Activity {
         httpURLConnection.connect();
 
         Bitmap bitmap;
-        Log.d(TAG,httpURLConnection.getResponseMessage());
+        Log.d(TAG, httpURLConnection.getResponseMessage());
         if (httpURLConnection.getResponseCode() == HttpURLConnection.HTTP_OK) {
             InputStream inputStream = httpURLConnection.getInputStream();
             byte[] bytes = IOUtils.toByteArray(inputStream);
@@ -184,6 +196,30 @@ public class HandlerExampleActivity extends Activity {
     static public class MyThread extends Thread {
         @Override
         public void run() {
+            try {
+                // Simulate a slow network
+                try {
+                    new Thread().sleep(5000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                downloadBitmap = downloadBitmap("http://api.androidhive.info/images/sample.jpg");
+                // Updates the user interface
+                handler.sendEmptyMessage(0);
+            } catch (IOException e) {
+                e.printStackTrace();
+                handler.sendEmptyMessage(1);
+            } finally {
+
+            }
+        }
+    }
+
+    static public class MyRunnableThread implements Runnable {
+        @Override
+        public void run() {
+            // Moves the current Thread into the background
+            android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_BACKGROUND);
             try {
                 // Simulate a slow network
                 try {
