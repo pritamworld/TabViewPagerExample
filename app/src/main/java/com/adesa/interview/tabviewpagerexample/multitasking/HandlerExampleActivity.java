@@ -18,11 +18,43 @@ import com.adesa.interview.tabviewpagerexample.R;
 import com.adesa.interview.tabviewpagerexample.Utils;
 
 import org.apache.commons.io.IOUtils;
+import org.apache.commons.lang3.text.StrBuilder;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.ByteArrayInputStream;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.URLConnection;
+import java.net.UnknownHostException;
+import java.security.KeyManagementException;
+import java.security.KeyStore;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
+import java.security.NoSuchProviderException;
+import java.security.UnrecoverableKeyException;
+import java.security.cert.Certificate;
+import java.security.cert.CertificateException;
+import java.security.cert.CertificateFactory;
+import java.security.cert.X509Certificate;
+
+import javax.net.ssl.HandshakeCompletedEvent;
+import javax.net.ssl.HandshakeCompletedListener;
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.KeyManager;
+import javax.net.ssl.KeyManagerFactory;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLSocket;
+import javax.net.ssl.SSLSocketFactory;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.TrustManagerFactory;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -49,19 +81,23 @@ public class HandlerExampleActivity extends Activity {
         setContentView(R.layout.activity_handler_example);
         ButterKnife.inject(this);
 
-        txtMessage.setText(Utils.getDeviceIPAddress(true));
+        //txtMessage.setText(Utils.getDeviceIPAddress(true));
+        //txtMessage.setText(Utils.getRandomKey());
+        //txtMessage.setText(Installation.id(this));
+        //txtMessage.setText(Utils.getAndroidDeviceId(this));
+        txtMessage.setText(Utils.getAndroidDeviceSerialnumber());
 
         // create a handler to update the UI
         handler = new Handler() {
             @Override
             public void handleMessage(Message msg) {
                 //Passing Data
-                if(msg.getData()!=null) {
+                if (msg.getData() != null) {
                     Bundle bundle = msg.getData();
                     String string = bundle.getString("myKey");
                     txtMessage.setText(string);
                     imageViewBitmap.setImageBitmap(downloadBitmap);
-                }else if (msg.what == 0) {
+                } else if (msg.what == 0) {
                     imageViewBitmap.setImageBitmap(downloadBitmap);
                     Log.d(TAG, "Image Found");
                 } else if (msg.what == 1) {
@@ -113,7 +149,7 @@ public class HandlerExampleActivity extends Activity {
             @Override
             public void run() {
 
-                for (int i = 0; i <= 10; i++) {
+                for (int i = 0; i <= 1; i++) {
                     final int value = i;
                     doFakeWork();
                     progressBar.post(new Runnable() {
@@ -128,7 +164,7 @@ public class HandlerExampleActivity extends Activity {
                     progressBar.post(new Runnable() {
                         @Override
                         public void run() {
-                            if (value == 10) {
+                            if (value == 1) {
                                 progressBar.setVisibility(View.GONE);
                                 txtMessage.setText("Done!!!");
                             } else Log.d(TAG, "2");
@@ -145,7 +181,15 @@ public class HandlerExampleActivity extends Activity {
     private void doFakeWork() {
         try {
             Thread.sleep(2000);
+            //String string = openWebSite(null);
+            String string = openCertifiedWebSite(null);
+            if (string != null)
+                Log.d(TAG, string);
+            else
+                Log.d(TAG, "SSLContext NULL");
         } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
@@ -163,7 +207,7 @@ public class HandlerExampleActivity extends Activity {
                 //Executors.newSingleThreadExecutor().submit(new Runnable());
                 //Using implementation of Runnable Interface
                 myRunnableThread = new MyRunnableThread();
-                downloadThread = new Thread(myRunnableThread) ;
+                downloadThread = new Thread(myRunnableThread);
                 downloadThread.start();
 
                 break;
@@ -199,6 +243,132 @@ public class HandlerExampleActivity extends Activity {
         }
         return bitmap;
     }
+
+    static private String openWebSite(String url) throws IOException {
+
+        URL urlWebLink = new URL("https://wikipedia.org");
+        URLConnection urlConnection = urlWebLink.openConnection();
+        InputStream inputStream = urlConnection.getInputStream();
+        byte[] bytes = IOUtils.toByteArray(inputStream);
+        StrBuilder strBuilder = new StrBuilder();
+        strBuilder.append(new String(bytes));
+        return strBuilder.build();
+
+    }
+
+    static private String openCertifiedWebSite(String url) throws IOException {
+
+        URL urlWebLink = new URL("https://certs.cac.washington.edu/CAtest/");
+        HttpsURLConnection urlConnection = (HttpsURLConnection) urlWebLink.openConnection();
+        SSLContext context = getTrustedCertificate();
+        if (context != null) {
+            urlConnection.setSSLSocketFactory(context.getSocketFactory());
+            InputStream inputStream = urlConnection.getInputStream();
+            byte[] bytes = IOUtils.toByteArray(inputStream);
+            StrBuilder strBuilder = new StrBuilder();
+            strBuilder.append(new String(bytes));
+            return strBuilder.build();
+        } else return null;
+    }
+
+
+    public static void getServerSSL(String url) {
+        SSLSocket sslsocket = null;
+        int port = 443;
+        SSLSocketFactory sslsocketfactory = (SSLSocketFactory) SSLSocketFactory.getDefault();
+
+        try {
+            sslsocket = (SSLSocket) sslsocketfactory.createSocket(url, port);
+        } catch (UnknownHostException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+        InputStream inputstream = null;
+        try {
+            inputstream = sslsocket.getInputStream();
+        } catch (IOException e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
+        }
+        InputStreamReader inputstreamreader = new InputStreamReader(inputstream);
+        BufferedReader bufferedreader = new BufferedReader(inputstreamreader);
+
+
+        OutputStream outputstream = null;
+        try {
+            outputstream = sslsocket.getOutputStream();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        OutputStreamWriter outputstreamwriter = new OutputStreamWriter(outputstream);
+        BufferedWriter bufferedwriter = new BufferedWriter(outputstreamwriter);
+
+        sslsocket.addHandshakeCompletedListener(new HandshakeCompletedListener() {
+
+            @Override
+            public void handshakeCompleted(HandshakeCompletedEvent event) {
+                // TODO Auto-generated method stub
+                Log.i("test", event.toString());
+            }
+        });
+
+        try {
+            sslsocket.startHandshake();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+
+    static private SSLContext getTrustedCertificate() throws IOException {
+        //Load CAs from an InputStream
+        // (could be from a resource or ByteArrayInputStream or ...)
+        InputStream caInput = null;
+        SSLContext context = null;
+        try {
+
+            CertificateFactory cf = CertificateFactory.getInstance("X.509");
+            // From https://www.washington.edu/itconnect/security/ca/load-der.crt
+            caInput = new BufferedInputStream(new FileInputStream("load-der.crt"));
+            Certificate ca;
+
+            ca = cf.generateCertificate(caInput);
+            System.out.println("ca=" + ((X509Certificate) ca).getSubjectDN());
+            // Create a KeyStore containing our trusted CAs
+            String keyStoreType = KeyStore.getDefaultType();
+            KeyStore keyStore = KeyStore.getInstance(keyStoreType);
+            keyStore.load(null, null);
+            keyStore.setCertificateEntry("ca", ca);
+
+            // Create a TrustManager that trusts the CAs in our KeyStore
+            String tmfAlgorithm = TrustManagerFactory.getDefaultAlgorithm();
+            TrustManagerFactory tmf = TrustManagerFactory.getInstance(tmfAlgorithm);
+            tmf.init(keyStore);
+
+            // Create an SSLContext that uses our TrustManager
+            context = SSLContext.getInstance("TLS");
+            context.init(null, tmf.getTrustManagers(), null);
+        } catch (CertificateException e) {
+            e.printStackTrace();
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        } catch (KeyStoreException e) {
+            e.printStackTrace();
+        } catch (KeyManagementException e) {
+            e.printStackTrace();
+        } finally {
+            caInput.close();
+        }
+
+
+        return context;
+    }
+
 
     static public class MyThread extends Thread {
         @Override
