@@ -43,12 +43,11 @@
             android:name=".downloads.DataDownloadIntentService"
             android:exported="false" />
 
-        <activity android:name=".downloads.DataDownloadActivity"></activity>
+        <activity android:name=".downloads.DataDownloadActivity" />
         <activity android:name=".BaseActivity" />
-        <activity android:name=".databasegreendao.FetchLoaderActivity">
-
-        </activity>
-        <activity android:name=".exampleloopj.NetworkCallActivity">
+        <activity android:name=".databasegreendao.FetchLoaderActivity"></activity>
+        <activity android:name=".exampleloopj.NetworkCallActivity"></activity>
+        <activity android:name=".multitasking.HandlerExampleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
