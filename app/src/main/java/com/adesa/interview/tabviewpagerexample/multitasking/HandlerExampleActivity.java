@@ -80,7 +80,7 @@ public class HandlerExampleActivity extends Activity {
         // check if the thread is already running
         downloadThread = (Thread) getLastNonConfigurationInstance();
         if (downloadThread != null && downloadThread.isAlive()) {
-            progressDialog = ProgressDialog.show(this, "Download", "downloading");
+            progressDialog = ProgressDialog.show(this, "Download", "Downloading...");
         }
     }
 
@@ -150,7 +150,7 @@ public class HandlerExampleActivity extends Activity {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btnDownload:
-                progressDialog = ProgressDialog.show(this, "Download", "downloading");
+                progressDialog = ProgressDialog.show(this, "Download", "Downloading...");
 
                 //Using Extend Thread Class
                 //downloadThread = new MyThread();
