@@ -15,6 +15,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.adesa.interview.tabviewpagerexample.R;
+import com.adesa.interview.tabviewpagerexample.Utils;
 
 import org.apache.commons.io.IOUtils;
 
@@ -48,6 +49,8 @@ public class HandlerExampleActivity extends Activity {
         setContentView(R.layout.activity_handler_example);
         ButterKnife.inject(this);
 
+        txtMessage.setText(Utils.getDeviceIPAddress(true));
+
         // create a handler to update the UI
         handler = new Handler() {
             @Override
@@ -57,6 +60,7 @@ public class HandlerExampleActivity extends Activity {
                     Bundle bundle = msg.getData();
                     String string = bundle.getString("myKey");
                     txtMessage.setText(string);
+                    imageViewBitmap.setImageBitmap(downloadBitmap);
                 }else if (msg.what == 0) {
                     imageViewBitmap.setImageBitmap(downloadBitmap);
                     Log.d(TAG, "Image Found");
