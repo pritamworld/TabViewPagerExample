@@ -22,8 +22,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.concurrent.Executor;
-import java.util.concurrent.Executors;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -54,7 +52,12 @@ public class HandlerExampleActivity extends Activity {
         handler = new Handler() {
             @Override
             public void handleMessage(Message msg) {
-                if (msg.what == 0) {
+                //Passing Data
+                if(msg.getData()!=null) {
+                    Bundle bundle = msg.getData();
+                    String string = bundle.getString("myKey");
+                    txtMessage.setText(string);
+                }else if (msg.what == 0) {
                     imageViewBitmap.setImageBitmap(downloadBitmap);
                     Log.d(TAG, "Image Found");
                 } else if (msg.what == 1) {
@@ -229,7 +232,12 @@ public class HandlerExampleActivity extends Activity {
                 }
                 downloadBitmap = downloadBitmap("http://api.androidhive.info/images/sample.jpg");
                 // Updates the user interface
-                handler.sendEmptyMessage(0);
+                //handler.sendEmptyMessage(0);
+                Message msg = handler.obtainMessage();
+                Bundle bundle = new Bundle();
+                bundle.putString("myKey", "SUCCESS");
+                msg.setData(bundle);
+                handler.sendMessage(msg);
             } catch (IOException e) {
                 e.printStackTrace();
                 handler.sendEmptyMessage(1);
