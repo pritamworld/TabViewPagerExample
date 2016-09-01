@@ -48,7 +48,6 @@ public class PeriodicHandlerActivity extends AppCompatActivity {
     @Override
     public void onPause() {
         super.onPause();
-        // Start the initial runnable task by posting through the handler
         handler.removeCallbacks(runnableCode);
         Log.d("STOP", "Called on main thread");
     }
