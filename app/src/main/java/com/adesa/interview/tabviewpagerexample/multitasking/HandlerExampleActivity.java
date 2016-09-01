@@ -19,6 +19,9 @@ import com.adesa.interview.tabviewpagerexample.Utils;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.text.StrBuilder;
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
@@ -68,6 +71,7 @@ public class HandlerExampleActivity extends Activity {
     ProgressBar progressBar;
     @InjectView(R.id.imageViewBitmap)
     ImageView imageViewBitmap;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -119,7 +123,31 @@ public class HandlerExampleActivity extends Activity {
         }
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        EventBus.getDefault().register(this);
+        MyBusEvent stickyEvent = EventBus.getDefault().getStickyEvent(MyBusEvent.class);
+        // Better check that an event was actually posted before
+        if(stickyEvent != null) {
+            // "Consume" the sticky event
+            txtMessage.setText("1 : " + stickyEvent.getEventDescription());
+            EventBus.getDefault().removeStickyEvent(stickyEvent);
+            // Now do something with it
+        }else txtMessage.setText("Null Sticky Event");
+    }
 
+    @Override
+    public void onPause() {
+        super.onPause();
+        EventBus.getDefault().unregister(this);
+    }
+
+    @Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
+    public void onEvent(MyBusEvent event) {
+        // UI updates must run on MainThread
+        txtMessage.setText(event.getEventDescription());
+    }
     // save the thread
     @Override
     public Object onRetainNonConfigurationInstance() {
