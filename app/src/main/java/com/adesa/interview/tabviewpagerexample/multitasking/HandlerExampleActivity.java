@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import com.adesa.interview.tabviewpagerexample.R;
 import com.adesa.interview.tabviewpagerexample.Utils;
+import com.priteshpatel.priteshtestlibrary.MyView;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.text.StrBuilder;
@@ -80,6 +81,7 @@ public class HandlerExampleActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_handler_example);
         ButterKnife.inject(this);
+
 
         //txtMessage.setText(Utils.getDeviceIPAddress(true));
         //txtMessage.setText(Utils.getRandomKey());
