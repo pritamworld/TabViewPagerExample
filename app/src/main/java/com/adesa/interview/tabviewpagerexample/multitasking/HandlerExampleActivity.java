@@ -16,7 +16,6 @@ import android.widget.TextView;
 
 import com.adesa.interview.tabviewpagerexample.R;
 import com.adesa.interview.tabviewpagerexample.Utils;
-import com.priteshpatel.priteshtestlibrary.MyView;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.text.StrBuilder;
@@ -24,7 +23,6 @@ import org.apache.commons.lang3.text.StrBuilder;
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.ByteArrayInputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -39,8 +37,6 @@ import java.security.KeyManagementException;
 import java.security.KeyStore;
 import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
-import java.security.NoSuchProviderException;
-import java.security.UnrecoverableKeyException;
 import java.security.cert.Certificate;
 import java.security.cert.CertificateException;
 import java.security.cert.CertificateFactory;
@@ -49,12 +45,9 @@ import java.security.cert.X509Certificate;
 import javax.net.ssl.HandshakeCompletedEvent;
 import javax.net.ssl.HandshakeCompletedListener;
 import javax.net.ssl.HttpsURLConnection;
-import javax.net.ssl.KeyManager;
-import javax.net.ssl.KeyManagerFactory;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocket;
 import javax.net.ssl.SSLSocketFactory;
-import javax.net.ssl.TrustManager;
 import javax.net.ssl.TrustManagerFactory;
 
 import butterknife.ButterKnife;

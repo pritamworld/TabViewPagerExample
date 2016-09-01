@@ -48,10 +48,11 @@
         <activity android:name=".BaseActivity" />
         <activity android:name=".databasegreendao.FetchLoaderActivity" />
         <activity android:name=".exampleloopj.NetworkCallActivity" />
-        <activity android:name=".multitasking.HandlerExampleActivity">
+        <activity android:name=".multitasking.HandlerExampleActivity"></activity>
+        <activity android:name=".CustomLibraryTestActivity">
 
         </activity>
-        <activity android:name=".CustomLibraryTestActivity">
+        <activity android:name=".multitasking.PeriodicHandlerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
