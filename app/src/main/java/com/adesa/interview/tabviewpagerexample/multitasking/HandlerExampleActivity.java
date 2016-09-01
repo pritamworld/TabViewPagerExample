@@ -126,6 +126,8 @@ public class HandlerExampleActivity extends Activity {
     @Override
     public void onResume() {
         super.onResume();
+
+        //Register EventBus here
         EventBus.getDefault().register(this);
         MyBusEvent stickyEvent = EventBus.getDefault().getStickyEvent(MyBusEvent.class);
         // Better check that an event was actually posted before
