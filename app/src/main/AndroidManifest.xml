@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
@@ -46,9 +46,12 @@
 
         <activity android:name=".downloads.DataDownloadActivity" />
         <activity android:name=".BaseActivity" />
-        <activity android:name=".databasegreendao.FetchLoaderActivity"></activity>
-        <activity android:name=".exampleloopj.NetworkCallActivity"></activity>
+        <activity android:name=".databasegreendao.FetchLoaderActivity" />
+        <activity android:name=".exampleloopj.NetworkCallActivity" />
         <activity android:name=".multitasking.HandlerExampleActivity">
+
+        </activity>
+        <activity android:name=".CustomLibraryTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
