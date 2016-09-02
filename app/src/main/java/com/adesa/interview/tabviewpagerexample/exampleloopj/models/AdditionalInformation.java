@@ -1,4 +1,8 @@
 
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.exampleloopj.models;
 
 import javax.annotation.Generated;
@@ -7,6 +11,9 @@ import com.google.gson.annotations.SerializedName;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+/**
+ * The type Additional information.
+ */
 @Generated("org.jsonschema2pojo")
 public class AdditionalInformation {
 
@@ -21,54 +28,54 @@ public class AdditionalInformation {
     private ADDMECINF aDDMECINF;
 
     /**
-     * 
-     * @return
-     *     The aDDINTINF
+     * Gets addintinf.
+     *
+     * @return The aDDINTINF
      */
     public ADDINTINF getADDINTINF() {
         return aDDINTINF;
     }
 
     /**
-     * 
-     * @param aDDINTINF
-     *     The ADD_INT_INF
+     * Sets addintinf.
+     *
+     * @param aDDINTINF The ADD_INT_INF
      */
     public void setADDINTINF(ADDINTINF aDDINTINF) {
         this.aDDINTINF = aDDINTINF;
     }
 
     /**
-     * 
-     * @return
-     *     The aDDEXTINF
+     * Gets addextinf.
+     *
+     * @return The aDDEXTINF
      */
     public ADDEXTINF getADDEXTINF() {
         return aDDEXTINF;
     }
 
     /**
-     * 
-     * @param aDDEXTINF
-     *     The ADD_EXT_INF
+     * Sets addextinf.
+     *
+     * @param aDDEXTINF The ADD_EXT_INF
      */
     public void setADDEXTINF(ADDEXTINF aDDEXTINF) {
         this.aDDEXTINF = aDDEXTINF;
     }
 
     /**
-     * 
-     * @return
-     *     The aDDMECINF
+     * Gets addmecinf.
+     *
+     * @return The aDDMECINF
      */
     public ADDMECINF getADDMECINF() {
         return aDDMECINF;
     }
 
     /**
-     * 
-     * @param aDDMECINF
-     *     The ADD_MEC_INF
+     * Sets addmecinf.
+     *
+     * @param aDDMECINF The ADD_MEC_INF
      */
     public void setADDMECINF(ADDMECINF aDDMECINF) {
         this.aDDMECINF = aDDMECINF;

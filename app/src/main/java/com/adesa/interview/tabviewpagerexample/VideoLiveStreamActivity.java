@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample;
 
 import android.os.Bundle;
@@ -12,6 +16,9 @@ import io.vov.vitamio.MediaPlayer;
 import io.vov.vitamio.widget.MediaController;
 import io.vov.vitamio.widget.VideoView;
 
+/**
+ * The type Video live stream activity.
+ */
 public class VideoLiveStreamActivity extends AppCompatActivity {
 
     private static final String TAG = VideoLiveStreamActivity.class.getSimpleName();

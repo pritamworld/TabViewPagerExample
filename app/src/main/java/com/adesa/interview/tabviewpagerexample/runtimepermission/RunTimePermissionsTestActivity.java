@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.runtimepermission;
 
 import android.Manifest;
@@ -9,6 +13,9 @@ import android.widget.Toast;
 
 import com.adesa.interview.tabviewpagerexample.R;
 
+/**
+ * The type Run time permissions test activity.
+ */
 public class RunTimePermissionsTestActivity extends RuntimePermissionsActivity {
 
     private static final int REQUEST_PERMISSIONS = 20;

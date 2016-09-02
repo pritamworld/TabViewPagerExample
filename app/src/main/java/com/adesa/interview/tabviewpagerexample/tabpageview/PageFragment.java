@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.tabpageview;
 
 import android.os.Bundle;
@@ -10,11 +14,23 @@ import android.widget.TextView;
 import com.adesa.interview.tabviewpagerexample.R;
 
 
+/**
+ * The type Page fragment.
+ */
 public class PageFragment extends Fragment {
+    /**
+     * The constant ARG_PAGE.
+     */
     public static final String ARG_PAGE = "ARG_PAGE";
 
     private int mPage;
 
+    /**
+     * New instance page fragment.
+     *
+     * @param page the page
+     * @return the page fragment
+     */
     public static PageFragment newInstance(int page) {
         Bundle args = new Bundle();
         args.putInt(ARG_PAGE, page);

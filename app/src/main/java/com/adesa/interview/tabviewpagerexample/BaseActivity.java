@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample;
 
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +11,9 @@ import net.hockeyapp.android.CrashManager;
 import net.hockeyapp.android.UpdateManager;
 import net.hockeyapp.android.metrics.MetricsManager;
 
+/**
+ * The type Base activity.
+ */
 public class BaseActivity extends AppCompatActivity {
 
     @Override

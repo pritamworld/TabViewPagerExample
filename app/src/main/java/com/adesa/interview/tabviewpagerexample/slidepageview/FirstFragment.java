@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.slidepageview;
 
 import android.os.Bundle;
@@ -10,12 +14,22 @@ import android.widget.TextView;
 import com.adesa.interview.tabviewpagerexample.R;
 
 
+/**
+ * The type First fragment.
+ */
 public class FirstFragment extends Fragment {
     // Store instance variables
     private String title;
     private int page;
 
-    // newInstance constructor for creating fragment with arguments
+    /**
+     * New instance first fragment.
+     *
+     * @param page  the page
+     * @param title the title
+     * @return the first fragment
+     */
+// newInstance constructor for creating fragment with arguments
     public static FirstFragment newInstance(int page, String title) {
         FirstFragment fragmentFirst = new FirstFragment();
         Bundle args = new Bundle();

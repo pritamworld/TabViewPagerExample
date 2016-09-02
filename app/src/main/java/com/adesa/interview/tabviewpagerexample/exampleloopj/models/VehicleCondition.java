@@ -1,4 +1,8 @@
 
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.exampleloopj.models;
 
 import java.util.ArrayList;
@@ -9,6 +13,9 @@ import com.google.gson.annotations.SerializedName;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+/**
+ * The type Vehicle condition.
+ */
 @Generated("org.jsonschema2pojo")
 public class VehicleCondition {
 
@@ -35,126 +42,126 @@ public class VehicleCondition {
     private boolean isDamageExists;
 
     /**
-     * 
-     * @return
-     *     The type
+     * Gets type.
+     *
+     * @return The type
      */
     public String getType() {
         return type;
     }
 
     /**
-     * 
-     * @param type
-     *     The type
+     * Sets type.
+     *
+     * @param type The type
      */
     public void setType(String type) {
         this.type = type;
     }
 
     /**
-     * 
-     * @return
-     *     The grade
+     * Gets grade.
+     *
+     * @return The grade
      */
     public String getGrade() {
         return grade;
     }
 
     /**
-     * 
-     * @param grade
-     *     The grade
+     * Sets grade.
+     *
+     * @param grade The grade
      */
     public void setGrade(String grade) {
         this.grade = grade;
     }
 
     /**
-     * 
-     * @return
-     *     The estimateSubTotal
+     * Gets estimate sub total.
+     *
+     * @return The estimateSubTotal
      */
     public Object getEstimateSubTotal() {
         return estimateSubTotal;
     }
 
     /**
-     * 
-     * @param estimateSubTotal
-     *     The estimateSubTotal
+     * Sets estimate sub total.
+     *
+     * @param estimateSubTotal The estimateSubTotal
      */
     public void setEstimateSubTotal(Object estimateSubTotal) {
         this.estimateSubTotal = estimateSubTotal;
     }
 
     /**
-     * 
-     * @return
-     *     The normalWearAndTearSubTotal
+     * Gets normal wear and tear sub total.
+     *
+     * @return The normalWearAndTearSubTotal
      */
     public Object getNormalWearAndTearSubTotal() {
         return normalWearAndTearSubTotal;
     }
 
     /**
-     * 
-     * @param normalWearAndTearSubTotal
-     *     The normalWearAndTearSubTotal
+     * Sets normal wear and tear sub total.
+     *
+     * @param normalWearAndTearSubTotal The normalWearAndTearSubTotal
      */
     public void setNormalWearAndTearSubTotal(Object normalWearAndTearSubTotal) {
         this.normalWearAndTearSubTotal = normalWearAndTearSubTotal;
     }
 
     /**
-     * 
-     * @return
-     *     The excessWearAndTearSubTotal
+     * Gets excess wear and tear sub total.
+     *
+     * @return The excessWearAndTearSubTotal
      */
     public Object getExcessWearAndTearSubTotal() {
         return excessWearAndTearSubTotal;
     }
 
     /**
-     * 
-     * @param excessWearAndTearSubTotal
-     *     The excessWearAndTearSubTotal
+     * Sets excess wear and tear sub total.
+     *
+     * @param excessWearAndTearSubTotal The excessWearAndTearSubTotal
      */
     public void setExcessWearAndTearSubTotal(Object excessWearAndTearSubTotal) {
         this.excessWearAndTearSubTotal = excessWearAndTearSubTotal;
     }
 
     /**
-     * 
-     * @return
-     *     The damages
+     * Gets damages.
+     *
+     * @return The damages
      */
     public List<Object> getDamages() {
         return damages;
     }
 
     /**
-     * 
-     * @param damages
-     *     The damages
+     * Sets damages.
+     *
+     * @param damages The damages
      */
     public void setDamages(List<Object> damages) {
         this.damages = damages;
     }
 
     /**
-     * 
-     * @return
-     *     The isDamageExists
+     * Is is damage exists boolean.
+     *
+     * @return The isDamageExists
      */
     public boolean isIsDamageExists() {
         return isDamageExists;
     }
 
     /**
-     * 
-     * @param isDamageExists
-     *     The isDamageExists
+     * Sets is damage exists.
+     *
+     * @param isDamageExists The isDamageExists
      */
     public void setIsDamageExists(boolean isDamageExists) {
         this.isDamageExists = isDamageExists;

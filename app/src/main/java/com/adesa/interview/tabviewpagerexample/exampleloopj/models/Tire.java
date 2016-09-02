@@ -1,4 +1,8 @@
 
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.exampleloopj.models;
 
 import javax.annotation.Generated;
@@ -7,6 +11,9 @@ import com.google.gson.annotations.SerializedName;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+/**
+ * The type Tire.
+ */
 @Generated("org.jsonschema2pojo")
 public class Tire {
 
@@ -27,90 +34,90 @@ public class Tire {
     private String location;
 
     /**
-     * 
-     * @return
-     *     The brand
+     * Gets brand.
+     *
+     * @return The brand
      */
     public String getBrand() {
         return brand;
     }
 
     /**
-     * 
-     * @param brand
-     *     The brand
+     * Sets brand.
+     *
+     * @param brand The brand
      */
     public void setBrand(String brand) {
         this.brand = brand;
     }
 
     /**
-     * 
-     * @return
-     *     The size
+     * Gets size.
+     *
+     * @return The size
      */
     public String getSize() {
         return size;
     }
 
     /**
-     * 
-     * @param size
-     *     The size
+     * Sets size.
+     *
+     * @param size The size
      */
     public void setSize(String size) {
         this.size = size;
     }
 
     /**
-     * 
-     * @return
-     *     The wheel
+     * Gets wheel.
+     *
+     * @return The wheel
      */
     public String getWheel() {
         return wheel;
     }
 
     /**
-     * 
-     * @param wheel
-     *     The wheel
+     * Sets wheel.
+     *
+     * @param wheel The wheel
      */
     public void setWheel(String wheel) {
         this.wheel = wheel;
     }
 
     /**
-     * 
-     * @return
-     *     The treadDepth
+     * Gets tread depth.
+     *
+     * @return The treadDepth
      */
     public String getTreadDepth() {
         return treadDepth;
     }
 
     /**
-     * 
-     * @param treadDepth
-     *     The treadDepth
+     * Sets tread depth.
+     *
+     * @param treadDepth The treadDepth
      */
     public void setTreadDepth(String treadDepth) {
         this.treadDepth = treadDepth;
     }
 
     /**
-     * 
-     * @return
-     *     The location
+     * Gets location.
+     *
+     * @return The location
      */
     public String getLocation() {
         return location;
     }
 
     /**
-     * 
-     * @param location
-     *     The location
+     * Sets location.
+     *
+     * @param location The location
      */
     public void setLocation(String location) {
         this.location = location;

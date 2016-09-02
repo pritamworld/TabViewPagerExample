@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.exampleloopj;
 
 import android.app.ProgressDialog;
@@ -25,15 +29,33 @@ import butterknife.InjectView;
 import butterknife.OnClick;
 import cz.msebera.android.httpclient.Header;
 
+/**
+ * The type Network call activity.
+ */
 public class NetworkCallActivity extends AppCompatActivity {
 
 
+    /**
+     * The Tag.
+     */
     final String TAG = NetworkCallActivity.class.getCanonicalName();
+    /**
+     * The Btn call.
+     */
     @InjectView(R.id.btnCall)
     Button btnCall;
+    /**
+     * The Progress dialog.
+     */
     ProgressDialog progressDialog;
+    /**
+     * The Web view.
+     */
     @InjectView(R.id.webView)
     WebView webView;
+    /**
+     * The Preferences manager.
+     */
     PreferencesManager preferencesManager;
 
     @Override
@@ -52,6 +74,9 @@ public class NetworkCallActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * On click.
+     */
     @OnClick(R.id.btnCall)
     public void onClick() {
         //setNetworkCall();

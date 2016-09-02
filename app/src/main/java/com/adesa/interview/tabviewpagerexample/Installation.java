@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample;
 
 import android.content.Context;
@@ -15,6 +19,12 @@ public class Installation {
     private static String sID = null;
     private static final String INSTALLATION = "INSTALLATION";
 
+    /**
+     * Id string.
+     *
+     * @param context the context
+     * @return the string
+     */
     public synchronized static String id(Context context) {
         if (sID == null) {
             File installation = new File(context.getFilesDir(), INSTALLATION);

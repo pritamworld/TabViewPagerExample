@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.slidepageview;
 
 import android.support.v4.app.FragmentPagerAdapter;
@@ -9,9 +13,18 @@ import android.widget.Toast;
 
 import com.adesa.interview.tabviewpagerexample.R;
 
+/**
+ * The type Main activity.
+ */
 public class MainActivity extends AppCompatActivity {
 
+    /**
+     * The Adapter view pager.
+     */
     FragmentPagerAdapter adapterViewPager;
+    /**
+     * The A.
+     */
     int a;
 
     @Override
