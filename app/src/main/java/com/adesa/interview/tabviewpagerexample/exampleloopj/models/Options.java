@@ -1,4 +1,8 @@
 
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.exampleloopj.models;
 
 import javax.annotation.Generated;
@@ -7,6 +11,9 @@ import com.google.gson.annotations.SerializedName;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+/**
+ * The type Options.
+ */
 @Generated("org.jsonschema2pojo")
 public class Options {
 
@@ -54,252 +61,252 @@ public class Options {
     private String pM;
 
     /**
-     * 
-     * @return
-     *     The cC
+     * Gets cc.
+     *
+     * @return The cC
      */
     public String getCC() {
         return cC;
     }
 
     /**
-     * 
-     * @param cC
-     *     The CC
+     * Sets cc.
+     *
+     * @param cC The CC
      */
     public void setCC(String cC) {
         this.cC = cC;
     }
 
     /**
-     * 
-     * @return
-     *     The pSD
+     * Gets psd.
+     *
+     * @return The pSD
      */
     public String getPSD() {
         return pSD;
     }
 
     /**
-     * 
-     * @param pSD
-     *     The PSD
+     * Sets psd.
+     *
+     * @param pSD The PSD
      */
     public void setPSD(String pSD) {
         this.pSD = pSD;
     }
 
     /**
-     * 
-     * @return
-     *     The aB
+     * Gets ab.
+     *
+     * @return The aB
      */
     public String getAB() {
         return aB;
     }
 
     /**
-     * 
-     * @param aB
-     *     The AB
+     * Sets ab.
+     *
+     * @param aB The AB
      */
     public void setAB(String aB) {
         this.aB = aB;
     }
 
     /**
-     * 
-     * @return
-     *     The cD
+     * Gets cd.
+     *
+     * @return The cD
      */
     public String getCD() {
         return cD;
     }
 
     /**
-     * 
-     * @param cD
-     *     The CD
+     * Sets cd.
+     *
+     * @param cD The CD
      */
     public void setCD(String cD) {
         this.cD = cD;
     }
 
     /**
-     * 
-     * @return
-     *     The aC
+     * Gets ac.
+     *
+     * @return The aC
      */
     public String getAC() {
         return aC;
     }
 
     /**
-     * 
-     * @param aC
-     *     The AC
+     * Sets ac.
+     *
+     * @param aC The AC
      */
     public void setAC(String aC) {
         this.aC = aC;
     }
 
     /**
-     * 
-     * @return
-     *     The tW
+     * Gets tw.
+     *
+     * @return The tW
      */
     public String getTW() {
         return tW;
     }
 
     /**
-     * 
-     * @param tW
-     *     The TW
+     * Sets tw.
+     *
+     * @param tW The TW
      */
     public void setTW(String tW) {
         this.tW = tW;
     }
 
     /**
-     * 
-     * @return
-     *     The dAB
+     * Gets dab.
+     *
+     * @return The dAB
      */
     public String getDAB() {
         return dAB;
     }
 
     /**
-     * 
-     * @param dAB
-     *     The DAB
+     * Sets dab.
+     *
+     * @param dAB The DAB
      */
     public void setDAB(String dAB) {
         this.dAB = dAB;
     }
 
     /**
-     * 
-     * @return
-     *     The aMFMCD
+     * Gets amfmcd.
+     *
+     * @return The aMFMCD
      */
     public String getAMFMCD() {
         return aMFMCD;
     }
 
     /**
-     * 
-     * @param aMFMCD
-     *     The AM/FM/CD
+     * Sets amfmcd.
+     *
+     * @param aMFMCD The AM/FM/CD
      */
     public void setAMFMCD(String aMFMCD) {
         this.aMFMCD = aMFMCD;
     }
 
     /**
-     * 
-     * @return
-     *     The lS
+     * Gets ls.
+     *
+     * @return The lS
      */
     public String getLS() {
         return lS;
     }
 
     /**
-     * 
-     * @param lS
-     *     The LS
+     * Sets ls.
+     *
+     * @param lS The LS
      */
     public void setLS(String lS) {
         this.lS = lS;
     }
 
     /**
-     * 
-     * @return
-     *     The l
+     * Gets l.
+     *
+     * @return The l
      */
     public String getL() {
         return l;
     }
 
     /**
-     * 
-     * @param l
-     *     The L
+     * Sets l.
+     *
+     * @param l The L
      */
     public void setL(String l) {
         this.l = l;
     }
 
     /**
-     * 
-     * @return
-     *     The s
+     * Gets s.
+     *
+     * @return The s
      */
     public String getS() {
         return s;
     }
 
     /**
-     * 
-     * @param s
-     *     The S
+     * Sets s.
+     *
+     * @param s The S
      */
     public void setS(String s) {
         this.s = s;
     }
 
     /**
-     * 
-     * @return
-     *     The sAB
+     * Gets sab.
+     *
+     * @return The sAB
      */
     public String getSAB() {
         return sAB;
     }
 
     /**
-     * 
-     * @param sAB
-     *     The SAB
+     * Sets sab.
+     *
+     * @param sAB The SAB
      */
     public void setSAB(String sAB) {
         this.sAB = sAB;
     }
 
     /**
-     * 
-     * @return
-     *     The w
+     * Gets w.
+     *
+     * @return The w
      */
     public String getW() {
         return w;
     }
 
     /**
-     * 
-     * @param w
-     *     The W
+     * Sets w.
+     *
+     * @param w The W
      */
     public void setW(String w) {
         this.w = w;
     }
 
     /**
-     * 
-     * @return
-     *     The pM
+     * Gets pm.
+     *
+     * @return The pM
      */
     public String getPM() {
         return pM;
     }
 
     /**
-     * 
-     * @param pM
-     *     The PM
+     * Sets pm.
+     *
+     * @param pM The PM
      */
     public void setPM(String pM) {
         this.pM = pM;

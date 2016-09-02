@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.volleytest;
 
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +11,9 @@ import com.adesa.interview.tabviewpagerexample.R;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
 
+/**
+ * The type Image loading activity.
+ */
 public class ImageLoadingActivity extends AppCompatActivity {
 
     private NetworkImageView mNetworkImageView;

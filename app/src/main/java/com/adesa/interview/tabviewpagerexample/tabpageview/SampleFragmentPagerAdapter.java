@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.tabpageview;
 
 import android.content.Context;
@@ -15,6 +19,9 @@ import com.adesa.interview.tabviewpagerexample.R;
  * Created by Interview on 2016-08-08.
  */
 public class SampleFragmentPagerAdapter extends FragmentPagerAdapter {
+    /**
+     * The Page count.
+     */
     final int PAGE_COUNT = 3;
     private String tabTitles[] = new String[] { "Tab1", "Tab2", "Tab3" };
     private Context context;
@@ -24,6 +31,12 @@ public class SampleFragmentPagerAdapter extends FragmentPagerAdapter {
             //R.drawable.ic_three
     };
 
+    /**
+     * Instantiates a new Sample fragment pager adapter.
+     *
+     * @param fm      the fm
+     * @param context the context
+     */
     public SampleFragmentPagerAdapter(FragmentManager fm, Context context) {
         super(fm);
         this.context = context;

@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.databasegreendao;
 
 import android.support.v4.content.AsyncTaskLoader;
@@ -13,6 +17,11 @@ import java.util.List;
  */
 public class CustomLoader extends AsyncTaskLoader<List<User>> {
 
+    /**
+     * Instantiates a new Custom loader.
+     *
+     * @param context the context
+     */
     public CustomLoader(Context context) {
         super(context);
     }

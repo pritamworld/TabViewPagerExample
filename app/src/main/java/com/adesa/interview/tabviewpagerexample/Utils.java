@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample;
 
 import android.content.Context;
@@ -21,6 +25,12 @@ import javax.crypto.SecretKey;
  * Created by pritesh.patel on 16-08-31.
  */
 public class Utils {
+    /**
+     * Gets device ip address.
+     *
+     * @param useIPv4 the use i pv 4
+     * @return the device ip address
+     */
     public static String getDeviceIPAddress(boolean useIPv4) {
         try {
             List<NetworkInterface> networkInterfaces = Collections.list(NetworkInterface.getNetworkInterfaces());
@@ -49,6 +59,11 @@ public class Utils {
         return "";
     }
 
+    /**
+     * Gets random key.
+     *
+     * @return the random key
+     */
     public static String getRandomKey() {
         SecureRandom random = new SecureRandom();
         byte bytes[] = new byte[20];
@@ -59,6 +74,11 @@ public class Utils {
 
     }
 
+    /**
+     * Gets secret key.
+     *
+     * @return the secret key
+     */
     public static SecretKey getSecretKey() {
 
         KeyGenerator keyGen = null;
@@ -74,10 +94,21 @@ public class Utils {
         return secretKey;
     }
 
+    /**
+     * Gets android device id.
+     *
+     * @param context the context
+     * @return the android device id
+     */
     public static String getAndroidDeviceId(Context context) {
         return Settings.Secure.getString(context.getContentResolver(), Settings.Secure.ANDROID_ID);
     }
 
+    /**
+     * Gets android device serialnumber.
+     *
+     * @return the android device serialnumber
+     */
     public static String getAndroidDeviceSerialnumber() {
         return Build.SERIAL;
     }

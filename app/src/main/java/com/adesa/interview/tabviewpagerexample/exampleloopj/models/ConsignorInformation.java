@@ -1,4 +1,8 @@
 
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.exampleloopj.models;
 
 import javax.annotation.Generated;
@@ -7,6 +11,9 @@ import com.google.gson.annotations.SerializedName;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+/**
+ * The type Consignor information.
+ */
 @Generated("org.jsonschema2pojo")
 public class ConsignorInformation {
 
@@ -72,360 +79,360 @@ public class ConsignorInformation {
     private String businessPhone;
 
     /**
-     * 
-     * @return
-     *     The sellerName
+     * Gets seller name.
+     *
+     * @return The sellerName
      */
     public String getSellerName() {
         return sellerName;
     }
 
     /**
-     * 
-     * @param sellerName
-     *     The sellerName
+     * Sets seller name.
+     *
+     * @param sellerName The sellerName
      */
     public void setSellerName(String sellerName) {
         this.sellerName = sellerName;
     }
 
     /**
-     * 
-     * @return
-     *     The vehicleLocationName
+     * Gets vehicle location name.
+     *
+     * @return The vehicleLocationName
      */
     public String getVehicleLocationName() {
         return vehicleLocationName;
     }
 
     /**
-     * 
-     * @param vehicleLocationName
-     *     The vehicleLocationName
+     * Sets vehicle location name.
+     *
+     * @param vehicleLocationName The vehicleLocationName
      */
     public void setVehicleLocationName(String vehicleLocationName) {
         this.vehicleLocationName = vehicleLocationName;
     }
 
     /**
-     * 
-     * @return
-     *     The vehicleLocationCity
+     * Gets vehicle location city.
+     *
+     * @return The vehicleLocationCity
      */
     public String getVehicleLocationCity() {
         return vehicleLocationCity;
     }
 
     /**
-     * 
-     * @param vehicleLocationCity
-     *     The vehicleLocationCity
+     * Sets vehicle location city.
+     *
+     * @param vehicleLocationCity The vehicleLocationCity
      */
     public void setVehicleLocationCity(String vehicleLocationCity) {
         this.vehicleLocationCity = vehicleLocationCity;
     }
 
     /**
-     * 
-     * @return
-     *     The vehicleLocationState
+     * Gets vehicle location state.
+     *
+     * @return The vehicleLocationState
      */
     public String getVehicleLocationState() {
         return vehicleLocationState;
     }
 
     /**
-     * 
-     * @param vehicleLocationState
-     *     The vehicleLocationState
+     * Sets vehicle location state.
+     *
+     * @param vehicleLocationState The vehicleLocationState
      */
     public void setVehicleLocationState(String vehicleLocationState) {
         this.vehicleLocationState = vehicleLocationState;
     }
 
     /**
-     * 
-     * @return
-     *     The vehicleLocationPostalCode
+     * Gets vehicle location postal code.
+     *
+     * @return The vehicleLocationPostalCode
      */
     public String getVehicleLocationPostalCode() {
         return vehicleLocationPostalCode;
     }
 
     /**
-     * 
-     * @param vehicleLocationPostalCode
-     *     The vehicleLocationPostalCode
+     * Sets vehicle location postal code.
+     *
+     * @param vehicleLocationPostalCode The vehicleLocationPostalCode
      */
     public void setVehicleLocationPostalCode(String vehicleLocationPostalCode) {
         this.vehicleLocationPostalCode = vehicleLocationPostalCode;
     }
 
     /**
-     * 
-     * @return
-     *     The vehicleLocationCountry
+     * Gets vehicle location country.
+     *
+     * @return The vehicleLocationCountry
      */
     public String getVehicleLocationCountry() {
         return vehicleLocationCountry;
     }
 
     /**
-     * 
-     * @param vehicleLocationCountry
-     *     The vehicleLocationCountry
+     * Sets vehicle location country.
+     *
+     * @param vehicleLocationCountry The vehicleLocationCountry
      */
     public void setVehicleLocationCountry(String vehicleLocationCountry) {
         this.vehicleLocationCountry = vehicleLocationCountry;
     }
 
     /**
-     * 
-     * @return
-     *     The vehicleLocationLatitude
+     * Gets vehicle location latitude.
+     *
+     * @return The vehicleLocationLatitude
      */
     public double getVehicleLocationLatitude() {
         return vehicleLocationLatitude;
     }
 
     /**
-     * 
-     * @param vehicleLocationLatitude
-     *     The vehicleLocationLatitude
+     * Sets vehicle location latitude.
+     *
+     * @param vehicleLocationLatitude The vehicleLocationLatitude
      */
     public void setVehicleLocationLatitude(double vehicleLocationLatitude) {
         this.vehicleLocationLatitude = vehicleLocationLatitude;
     }
 
     /**
-     * 
-     * @return
-     *     The vehicleLocationLongitude
+     * Gets vehicle location longitude.
+     *
+     * @return The vehicleLocationLongitude
      */
     public double getVehicleLocationLongitude() {
         return vehicleLocationLongitude;
     }
 
     /**
-     * 
-     * @param vehicleLocationLongitude
-     *     The vehicleLocationLongitude
+     * Sets vehicle location longitude.
+     *
+     * @param vehicleLocationLongitude The vehicleLocationLongitude
      */
     public void setVehicleLocationLongitude(double vehicleLocationLongitude) {
         this.vehicleLocationLongitude = vehicleLocationLongitude;
     }
 
     /**
-     * 
-     * @return
-     *     The distance
+     * Gets distance.
+     *
+     * @return The distance
      */
     public double getDistance() {
         return distance;
     }
 
     /**
-     * 
-     * @param distance
-     *     The distance
+     * Sets distance.
+     *
+     * @param distance The distance
      */
     public void setDistance(double distance) {
         this.distance = distance;
     }
 
     /**
-     * 
-     * @return
-     *     The marketGuideURL
+     * Gets market guide url.
+     *
+     * @return The marketGuideURL
      */
     public Object getMarketGuideURL() {
         return marketGuideURL;
     }
 
     /**
-     * 
-     * @param marketGuideURL
-     *     The marketGuideURL
+     * Sets market guide url.
+     *
+     * @param marketGuideURL The marketGuideURL
      */
     public void setMarketGuideURL(Object marketGuideURL) {
         this.marketGuideURL = marketGuideURL;
     }
 
     /**
-     * 
-     * @return
-     *     The marketGuidePrice
+     * Gets market guide price.
+     *
+     * @return The marketGuidePrice
      */
     public Object getMarketGuidePrice() {
         return marketGuidePrice;
     }
 
     /**
-     * 
-     * @param marketGuidePrice
-     *     The marketGuidePrice
+     * Sets market guide price.
+     *
+     * @param marketGuidePrice The marketGuidePrice
      */
     public void setMarketGuidePrice(Object marketGuidePrice) {
         this.marketGuidePrice = marketGuidePrice;
     }
 
     /**
-     * 
-     * @return
-     *     The information
+     * Gets information.
+     *
+     * @return The information
      */
     public Object getInformation() {
         return information;
     }
 
     /**
-     * 
-     * @param information
-     *     The information
+     * Sets information.
+     *
+     * @param information The information
      */
     public void setInformation(Object information) {
         this.information = information;
     }
 
     /**
-     * 
-     * @return
-     *     The promotion
+     * Gets promotion.
+     *
+     * @return The promotion
      */
     public Object getPromotion() {
         return promotion;
     }
 
     /**
-     * 
-     * @param promotion
-     *     The promotion
+     * Sets promotion.
+     *
+     * @param promotion The promotion
      */
     public void setPromotion(Object promotion) {
         this.promotion = promotion;
     }
 
     /**
-     * 
-     * @return
-     *     The certificationLogo
+     * Gets certification logo.
+     *
+     * @return The certificationLogo
      */
     public Object getCertificationLogo() {
         return certificationLogo;
     }
 
     /**
-     * 
-     * @param certificationLogo
-     *     The certificationLogo
+     * Sets certification logo.
+     *
+     * @param certificationLogo The certificationLogo
      */
     public void setCertificationLogo(Object certificationLogo) {
         this.certificationLogo = certificationLogo;
     }
 
     /**
-     * 
-     * @return
-     *     The certificationInfo
+     * Gets certification info.
+     *
+     * @return The certificationInfo
      */
     public Object getCertificationInfo() {
         return certificationInfo;
     }
 
     /**
-     * 
-     * @param certificationInfo
-     *     The certificationInfo
+     * Sets certification info.
+     *
+     * @param certificationInfo The certificationInfo
      */
     public void setCertificationInfo(Object certificationInfo) {
         this.certificationInfo = certificationInfo;
     }
 
     /**
-     * 
-     * @return
-     *     The msrp
+     * Gets msrp.
+     *
+     * @return The msrp
      */
     public Object getMsrp() {
         return msrp;
     }
 
     /**
-     * 
-     * @param msrp
-     *     The msrp
+     * Sets msrp.
+     *
+     * @param msrp The msrp
      */
     public void setMsrp(Object msrp) {
         this.msrp = msrp;
     }
 
     /**
-     * 
-     * @return
-     *     The countryId
+     * Gets country id.
+     *
+     * @return The countryId
      */
     public long getCountryId() {
         return countryId;
     }
 
     /**
-     * 
-     * @param countryId
-     *     The countryId
+     * Sets country id.
+     *
+     * @param countryId The countryId
      */
     public void setCountryId(long countryId) {
         this.countryId = countryId;
     }
 
     /**
-     * 
-     * @return
-     *     The addressLine1
+     * Gets address line 1.
+     *
+     * @return The addressLine1
      */
     public String getAddressLine1() {
         return addressLine1;
     }
 
     /**
-     * 
-     * @param addressLine1
-     *     The addressLine1
+     * Sets address line 1.
+     *
+     * @param addressLine1 The addressLine1
      */
     public void setAddressLine1(String addressLine1) {
         this.addressLine1 = addressLine1;
     }
 
     /**
-     * 
-     * @return
-     *     The addressLine2
+     * Gets address line 2.
+     *
+     * @return The addressLine2
      */
     public Object getAddressLine2() {
         return addressLine2;
     }
 
     /**
-     * 
-     * @param addressLine2
-     *     The addressLine2
+     * Sets address line 2.
+     *
+     * @param addressLine2 The addressLine2
      */
     public void setAddressLine2(Object addressLine2) {
         this.addressLine2 = addressLine2;
     }
 
     /**
-     * 
-     * @return
-     *     The businessPhone
+     * Gets business phone.
+     *
+     * @return The businessPhone
      */
     public String getBusinessPhone() {
         return businessPhone;
     }
 
     /**
-     * 
-     * @param businessPhone
-     *     The businessPhone
+     * Sets business phone.
+     *
+     * @param businessPhone The businessPhone
      */
     public void setBusinessPhone(String businessPhone) {
         this.businessPhone = businessPhone;

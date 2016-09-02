@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.slidepageview;
 
 import android.support.v4.app.Fragment;
@@ -11,6 +15,11 @@ import android.util.Log;
 public class MyPagerAdapter extends FragmentPagerAdapter {
     private static int NUM_ITEMS = 4;
 
+    /**
+     * Instantiates a new My pager adapter.
+     *
+     * @param fragmentManager the fragment manager
+     */
     public MyPagerAdapter(FragmentManager fragmentManager) {
         super(fragmentManager);
     }

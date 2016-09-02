@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.downloads;
 
 import android.app.IntentService;
@@ -42,7 +46,7 @@ import javax.net.ssl.HttpsURLConnection;
 /**
  * An {@link IntentService} subclass for handling asynchronous task requests in
  * a service on a separate handler thread.
- * <p>
+ * <p/>
  * TODO: Customize class - update intent actions, extra parameters and static
  * helper methods.
  */
@@ -60,11 +64,20 @@ public class DataDownloadIntentService extends IntentService {
     //Download Activity Call
     private static final String ACTION_DOWNLOAD = "com.adesa.interview.tabviewpagerexample.downloads.action.DOWNLOAD";
     private static final String EXTRA_PARAM_URL = "com.adesa.interview.tabviewpagerexample.downloads.extra.PARAM_URL";
+    /**
+     * The constant RESPONSE_STRING.
+     */
     public static final String RESPONSE_STRING = "myResponse";
+    /**
+     * The constant RESPONSE_MESSAGE.
+     */
     public static final String RESPONSE_MESSAGE = "myResponseMessage";
     private static final int REGISTRATION_TIMEOUT = 3 * 1000;
     private static final int WAIT_TIMEOUT = 30 * 1000;
 
+    /**
+     * Instantiates a new Data download intent service.
+     */
     public DataDownloadIntentService() {
         super("DataDownloadIntentService");
     }
@@ -73,9 +86,12 @@ public class DataDownloadIntentService extends IntentService {
      * Starts this service to perform action Foo with the given parameters. If
      * the service is already performing a task this action will be queued.
      *
+     * @param context the context
+     * @param param1  the param 1
+     * @param param2  the param 2
      * @see IntentService
      */
-    // TODO: Customize helper method
+// TODO: Customize helper method
     public static void startActionFoo(Context context, String param1, String param2) {
         Intent intent = new Intent(context, DataDownloadIntentService.class);
         intent.setAction(ACTION_FOO);
@@ -88,9 +104,12 @@ public class DataDownloadIntentService extends IntentService {
      * Starts this service to perform action Baz with the given parameters. If
      * the service is already performing a task this action will be queued.
      *
+     * @param context the context
+     * @param param1  the param 1
+     * @param param2  the param 2
      * @see IntentService
      */
-    // TODO: Customize helper method
+// TODO: Customize helper method
     public static void startActionBaz(Context context, String param1, String param2) {
         Intent intent = new Intent(context, DataDownloadIntentService.class);
         intent.setAction(ACTION_BAZ);
@@ -99,6 +118,12 @@ public class DataDownloadIntentService extends IntentService {
         context.startService(intent);
     }
 
+    /**
+     * Start data download.
+     *
+     * @param context  the context
+     * @param paramUrl the param url
+     */
     public static void startDataDownload(Context context, String paramUrl) {
         Intent intent = new Intent(context, DataDownloadIntentService.class);
         intent.setAction(ACTION_DOWNLOAD);
@@ -227,7 +252,16 @@ public class DataDownloadIntentService extends IntentService {
 
     }
 
-    // Reads an InputStream and converts it to a String.
+    /**
+     * Read it string.
+     *
+     * @param stream the stream
+     * @param len    the len
+     * @return the string
+     * @throws IOException                  the io exception
+     * @throws UnsupportedEncodingException the unsupported encoding exception
+     */
+// Reads an InputStream and converts it to a String.
     public String readIt(InputStream stream, int len) throws IOException, UnsupportedEncodingException {
         Reader reader = null;
         reader = new InputStreamReader(stream, "UTF-8");

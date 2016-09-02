@@ -1,4 +1,8 @@
 
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.exampleloopj.models;
 
 import java.util.ArrayList;
@@ -9,6 +13,9 @@ import com.google.gson.annotations.SerializedName;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+/**
+ * The type Transportation quote dto.
+ */
 @Generated("org.jsonschema2pojo")
 public class TransportationQuoteDTO {
 
@@ -56,252 +63,252 @@ public class TransportationQuoteDTO {
     private Object quoteWithPromo;
 
     /**
-     * 
-     * @return
-     *     The inventoryId
+     * Gets inventory id.
+     *
+     * @return The inventoryId
      */
     public long getInventoryId() {
         return inventoryId;
     }
 
     /**
-     * 
-     * @param inventoryId
-     *     The inventoryId
+     * Sets inventory id.
+     *
+     * @param inventoryId The inventoryId
      */
     public void setInventoryId(long inventoryId) {
         this.inventoryId = inventoryId;
     }
 
     /**
-     * 
-     * @return
-     *     The userId
+     * Gets user id.
+     *
+     * @return The userId
      */
     public long getUserId() {
         return userId;
     }
 
     /**
-     * 
-     * @param userId
-     *     The userId
+     * Sets user id.
+     *
+     * @param userId The userId
      */
     public void setUserId(long userId) {
         this.userId = userId;
     }
 
     /**
-     * 
-     * @return
-     *     The saleEventItemId
+     * Gets sale event item id.
+     *
+     * @return The saleEventItemId
      */
     public long getSaleEventItemId() {
         return saleEventItemId;
     }
 
     /**
-     * 
-     * @param saleEventItemId
-     *     The saleEventItemId
+     * Sets sale event item id.
+     *
+     * @param saleEventItemId The saleEventItemId
      */
     public void setSaleEventItemId(long saleEventItemId) {
         this.saleEventItemId = saleEventItemId;
     }
 
     /**
-     * 
-     * @return
-     *     The storeId
+     * Gets store id.
+     *
+     * @return The storeId
      */
     public long getStoreId() {
         return storeId;
     }
 
     /**
-     * 
-     * @param storeId
-     *     The storeId
+     * Sets store id.
+     *
+     * @param storeId The storeId
      */
     public void setStoreId(long storeId) {
         this.storeId = storeId;
     }
 
     /**
-     * 
-     * @return
-     *     The transportCode
+     * Gets transport code.
+     *
+     * @return The transportCode
      */
     public Object getTransportCode() {
         return transportCode;
     }
 
     /**
-     * 
-     * @param transportCode
-     *     The transportCode
+     * Sets transport code.
+     *
+     * @param transportCode The transportCode
      */
     public void setTransportCode(Object transportCode) {
         this.transportCode = transportCode;
     }
 
     /**
-     * 
-     * @return
-     *     The quote
+     * Gets quote.
+     *
+     * @return The quote
      */
     public long getQuote() {
         return quote;
     }
 
     /**
-     * 
-     * @param quote
-     *     The quote
+     * Sets quote.
+     *
+     * @param quote The quote
      */
     public void setQuote(long quote) {
         this.quote = quote;
     }
 
     /**
-     * 
-     * @return
-     *     The subject
+     * Gets subject.
+     *
+     * @return The subject
      */
     public Object getSubject() {
         return subject;
     }
 
     /**
-     * 
-     * @param subject
-     *     The subject
+     * Sets subject.
+     *
+     * @param subject The subject
      */
     public void setSubject(Object subject) {
         this.subject = subject;
     }
 
     /**
-     * 
-     * @return
-     *     The price
+     * Gets price.
+     *
+     * @return The price
      */
     public String getPrice() {
         return price;
     }
 
     /**
-     * 
-     * @param price
-     *     The price
+     * Sets price.
+     *
+     * @param price The price
      */
     public void setPrice(String price) {
         this.price = price;
     }
 
     /**
-     * 
-     * @return
-     *     The trasnportCompanyName
+     * Gets trasnport company name.
+     *
+     * @return The trasnportCompanyName
      */
     public Object getTrasnportCompanyName() {
         return trasnportCompanyName;
     }
 
     /**
-     * 
-     * @param trasnportCompanyName
-     *     The trasnportCompanyName
+     * Sets trasnport company name.
+     *
+     * @param trasnportCompanyName The trasnportCompanyName
      */
     public void setTrasnportCompanyName(Object trasnportCompanyName) {
         this.trasnportCompanyName = trasnportCompanyName;
     }
 
     /**
-     * 
-     * @return
-     *     The businessPhone
+     * Gets business phone.
+     *
+     * @return The businessPhone
      */
     public Object getBusinessPhone() {
         return businessPhone;
     }
 
     /**
-     * 
-     * @param businessPhone
-     *     The businessPhone
+     * Sets business phone.
+     *
+     * @param businessPhone The businessPhone
      */
     public void setBusinessPhone(Object businessPhone) {
         this.businessPhone = businessPhone;
     }
 
     /**
-     * 
-     * @return
-     *     The trasnportCompanyNames
+     * Gets trasnport company names.
+     *
+     * @return The trasnportCompanyNames
      */
     public List<Object> getTrasnportCompanyNames() {
         return trasnportCompanyNames;
     }
 
     /**
-     * 
-     * @param trasnportCompanyNames
-     *     The trasnportCompanyNames
+     * Sets trasnport company names.
+     *
+     * @param trasnportCompanyNames The trasnportCompanyNames
      */
     public void setTrasnportCompanyNames(List<Object> trasnportCompanyNames) {
         this.trasnportCompanyNames = trasnportCompanyNames;
     }
 
     /**
-     * 
-     * @return
-     *     The dropOffAddress
+     * Gets drop off address.
+     *
+     * @return The dropOffAddress
      */
     public Object getDropOffAddress() {
         return dropOffAddress;
     }
 
     /**
-     * 
-     * @param dropOffAddress
-     *     The dropOffAddress
+     * Sets drop off address.
+     *
+     * @param dropOffAddress The dropOffAddress
      */
     public void setDropOffAddress(Object dropOffAddress) {
         this.dropOffAddress = dropOffAddress;
     }
 
     /**
-     * 
-     * @return
-     *     The daysRequired
+     * Gets days required.
+     *
+     * @return The daysRequired
      */
     public long getDaysRequired() {
         return daysRequired;
     }
 
     /**
-     * 
-     * @param daysRequired
-     *     The daysRequired
+     * Sets days required.
+     *
+     * @param daysRequired The daysRequired
      */
     public void setDaysRequired(long daysRequired) {
         this.daysRequired = daysRequired;
     }
 
     /**
-     * 
-     * @return
-     *     The quoteWithPromo
+     * Gets quote with promo.
+     *
+     * @return The quoteWithPromo
      */
     public Object getQuoteWithPromo() {
         return quoteWithPromo;
     }
 
     /**
-     * 
-     * @param quoteWithPromo
-     *     The quoteWithPromo
+     * Sets quote with promo.
+     *
+     * @param quoteWithPromo The quoteWithPromo
      */
     public void setQuoteWithPromo(Object quoteWithPromo) {
         this.quoteWithPromo = quoteWithPromo;

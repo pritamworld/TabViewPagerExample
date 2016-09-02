@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.activitytofragment;
 
 import android.content.Context;
@@ -12,6 +16,9 @@ import android.widget.Toast;
 
 import com.adesa.interview.tabviewpagerexample.R;
 
+/**
+ * The type Tab fragment 2.
+ */
 public class TabFragment2 extends Fragment implements View.OnClickListener {
     private IFragmentToActivity mCallback;
     private TextView mTextView1;
@@ -43,11 +50,17 @@ public class TabFragment2 extends Fragment implements View.OnClickListener {
         super.onDetach();
     }
 
+    /**
+     * On refresh.
+     */
     public void onRefresh() {
         Toast.makeText(getActivity(), "Fragment 2: Refresh called.",
                 Toast.LENGTH_SHORT).show();
     }
 
+    /**
+     * Fragment communication.
+     */
     public void fragmentCommunication() {
         mTextView1.setText("Hello from Tab Fragment 1");
     }

@@ -1,4 +1,8 @@
 
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.exampleloopj.models;
 
 import javax.annotation.Generated;
@@ -7,6 +11,9 @@ import com.google.gson.annotations.SerializedName;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+/**
+ * The type Addextinf.
+ */
 @Generated("org.jsonschema2pojo")
 public class ADDEXTINF {
 
@@ -18,36 +25,36 @@ public class ADDEXTINF {
     private Object text;
 
     /**
-     * 
-     * @return
-     *     The type
+     * Gets type.
+     *
+     * @return The type
      */
     public Object getType() {
         return type;
     }
 
     /**
-     * 
-     * @param type
-     *     The type
+     * Sets type.
+     *
+     * @param type The type
      */
     public void setType(Object type) {
         this.type = type;
     }
 
     /**
-     * 
-     * @return
-     *     The text
+     * Gets text.
+     *
+     * @return The text
      */
     public Object getText() {
         return text;
     }
 
     /**
-     * 
-     * @param text
-     *     The text
+     * Sets text.
+     *
+     * @param text The text
      */
     public void setText(Object text) {
         this.text = text;

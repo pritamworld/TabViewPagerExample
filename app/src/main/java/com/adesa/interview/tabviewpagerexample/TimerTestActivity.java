@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample;
 
 import android.os.Handler;
@@ -12,6 +16,9 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+/**
+ * The type Timer test activity.
+ */
 public class TimerTestActivity extends AppCompatActivity {
 
 
@@ -20,7 +27,13 @@ public class TimerTestActivity extends AppCompatActivity {
     private Handler handler;
     private Runnable runable;
     private TextView txtTimer;
+    /**
+     * The Is timer running.
+     */
     boolean isTimerRunning;
+    /**
+     * The Format.
+     */
     SimpleDateFormat format;
 
     @Override
