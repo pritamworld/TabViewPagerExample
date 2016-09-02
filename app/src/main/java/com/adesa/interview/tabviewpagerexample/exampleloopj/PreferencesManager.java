@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.exampleloopj;
 
 import android.content.Context;
@@ -17,12 +21,22 @@ public class PreferencesManager {
         mPref = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
     }
 
+    /**
+     * Initialize instance.
+     *
+     * @param context the context
+     */
     public static synchronized void initializeInstance(Context context) {
         if (sInstance == null) {
             sInstance = new PreferencesManager(context);
         }
     }
 
+    /**
+     * Gets instance.
+     *
+     * @return the instance
+     */
     public static synchronized PreferencesManager getInstance() {
         if (sInstance == null) {
             throw new IllegalStateException(PreferencesManager.class.getSimpleName() +
@@ -31,22 +45,42 @@ public class PreferencesManager {
         return sInstance;
     }
 
+    /**
+     * Sets value.
+     *
+     * @param value the value
+     */
     public void setValue(long value) {
         mPref.edit()
                 .putLong(KEY_VALUE, value)
                 .commit();
     }
 
+    /**
+     * Gets value.
+     *
+     * @return the value
+     */
     public long getValue() {
         return mPref.getLong(KEY_VALUE, 0);
     }
 
+    /**
+     * Remove.
+     *
+     * @param key the key
+     */
     public void remove(String key) {
         mPref.edit()
                 .remove(key)
                 .commit();
     }
 
+    /**
+     * Clear boolean.
+     *
+     * @return the boolean
+     */
     public boolean clear() {
         return mPref.edit()
                 .clear()

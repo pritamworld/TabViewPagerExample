@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.multitasking;
 
 import android.content.Intent;
@@ -17,14 +21,29 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 import butterknife.OnClick;
 
+/**
+ * The type Periodic handler activity.
+ */
 public class PeriodicHandlerActivity extends AppCompatActivity {
     private final static String TAG = PeriodicHandlerActivity.class.getSimpleName();
-    // Create the Handler object (on the main thread by default)
+    /**
+     * The Handler.
+     */
+// Create the Handler object (on the main thread by default)
     Handler handler = new Handler();
 
+    /**
+     * The Event bus.
+     */
     EventBus eventBus;
+    /**
+     * The Btn start.
+     */
     @InjectView(R.id.btnStart)
     Button btnStart;
+    /**
+     * The Btn send event.
+     */
     @InjectView(R.id.btnSendEvent)
     Button btnSendEvent;
 
@@ -67,12 +86,22 @@ public class PeriodicHandlerActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * On message.
+     *
+     * @param event the event
+     */
     @Subscribe()
     public void onMessage(MyBusEvent event) {
         Log.d(TAG + " - EVENT-BUS", event.getEventDescription());
     }
 
 
+    /**
+     * On click.
+     *
+     * @param view the view
+     */
     @OnClick({R.id.btnStart, R.id.btnSendEvent, R.id.btnSendStickyEvent})
     public void onClick(View view) {
         switch (view.getId()) {

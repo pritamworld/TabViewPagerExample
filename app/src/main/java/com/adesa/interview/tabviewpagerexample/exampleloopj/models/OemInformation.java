@@ -1,4 +1,8 @@
 
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.exampleloopj.models;
 
 import javax.annotation.Generated;
@@ -7,6 +11,9 @@ import com.google.gson.annotations.SerializedName;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+/**
+ * The type Oem information.
+ */
 @Generated("org.jsonschema2pojo")
 public class OemInformation {
 
@@ -21,54 +28,54 @@ public class OemInformation {
     private String packageDetails;
 
     /**
-     * 
-     * @return
-     *     The code
+     * Gets code.
+     *
+     * @return The code
      */
     public String getCode() {
         return code;
     }
 
     /**
-     * 
-     * @param code
-     *     The code
+     * Sets code.
+     *
+     * @param code The code
      */
     public void setCode(String code) {
         this.code = code;
     }
 
     /**
-     * 
-     * @return
-     *     The description
+     * Gets description.
+     *
+     * @return The description
      */
     public String getDescription() {
         return description;
     }
 
     /**
-     * 
-     * @param description
-     *     The description
+     * Sets description.
+     *
+     * @param description The description
      */
     public void setDescription(String description) {
         this.description = description;
     }
 
     /**
-     * 
-     * @return
-     *     The packageDetails
+     * Gets package details.
+     *
+     * @return The packageDetails
      */
     public String getPackageDetails() {
         return packageDetails;
     }
 
     /**
-     * 
-     * @param packageDetails
-     *     The packageDetails
+     * Sets package details.
+     *
+     * @param packageDetails The packageDetails
      */
     public void setPackageDetails(String packageDetails) {
         this.packageDetails = packageDetails;

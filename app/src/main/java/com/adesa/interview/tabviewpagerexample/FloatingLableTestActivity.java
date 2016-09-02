@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample;
 
 import android.app.Activity;
@@ -6,6 +10,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
 
+/**
+ * The type Floating lable test activity.
+ */
 public class FloatingLableTestActivity extends Activity {
 
     @Override

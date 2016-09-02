@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.downloads;
 
 import android.app.ProgressDialog;
@@ -19,13 +23,31 @@ import com.google.firebase.analytics.FirebaseAnalytics;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
+/**
+ * The type Data download activity.
+ */
 public class DataDownloadActivity extends BaseActivity {
 
     private final String TAG = DataDownloadActivity.class.getSimpleName();
+    /**
+     * The Filter.
+     */
     IntentFilter filter;
+    /**
+     * The My web view.
+     */
     WebView myWebView;
+    /**
+     * The Add button.
+     */
     Button addButton;
+    /**
+     * The My text view.
+     */
     TextView myTextView;
+    /**
+     * The Progress dialog.
+     */
     ProgressDialog progressDialog;
     private WebRequestReceiver receiver;
     private FirebaseAnalytics mFirebaseAnalytics;
@@ -106,9 +128,18 @@ public class DataDownloadActivity extends BaseActivity {
     }
 
 
+    /**
+     * The type Web request receiver.
+     */
     public class WebRequestReceiver extends BroadcastReceiver {
+        /**
+         * The constant PROCESS_RESPONSE.
+         */
         public static final String PROCESS_RESPONSE = "com.adesa.interview.tabviewpagerexample.intent.action.PROCESS_RESPONSE";
 
+        /**
+         * Instantiates a new Web request receiver.
+         */
         public WebRequestReceiver() {
         }
 

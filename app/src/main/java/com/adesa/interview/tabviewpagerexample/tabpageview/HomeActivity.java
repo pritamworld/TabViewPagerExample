@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.tabpageview;
 
 import android.support.design.widget.TabLayout;
@@ -8,6 +12,9 @@ import android.os.Bundle;
 import com.adesa.interview.tabviewpagerexample.R;
 
 
+/**
+ * The type Home activity.
+ */
 public class HomeActivity extends AppCompatActivity {
 
     @Override

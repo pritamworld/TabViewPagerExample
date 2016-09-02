@@ -1,4 +1,8 @@
 
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.exampleloopj.models;
 
 import javax.annotation.Generated;
@@ -7,6 +11,9 @@ import com.google.gson.annotations.SerializedName;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+/**
+ * The type Options entry set.
+ */
 @Generated("org.jsonschema2pojo")
 public class OptionsEntrySet {
 
@@ -18,36 +25,36 @@ public class OptionsEntrySet {
     private String value;
 
     /**
-     * 
-     * @return
-     *     The key
+     * Gets key.
+     *
+     * @return The key
      */
     public String getKey() {
         return key;
     }
 
     /**
-     * 
-     * @param key
-     *     The key
+     * Sets key.
+     *
+     * @param key The key
      */
     public void setKey(String key) {
         this.key = key;
     }
 
     /**
-     * 
-     * @return
-     *     The value
+     * Gets value.
+     *
+     * @return The value
      */
     public String getValue() {
         return value;
     }
 
     /**
-     * 
-     * @param value
-     *     The value
+     * Sets value.
+     *
+     * @param value The value
      */
     public void setValue(String value) {
         this.value = value;

@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.runtimepermission;
 
 import android.content.Intent;
@@ -13,6 +17,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.SparseIntArray;
 import android.view.View;
 
+/**
+ * The type Runtime permissions activity.
+ */
 public abstract class RuntimePermissionsActivity extends AppCompatActivity {
 
     private SparseIntArray mErrorString;
@@ -51,6 +58,13 @@ public abstract class RuntimePermissionsActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Request app permissions.
+     *
+     * @param requestedPermissions the requested permissions
+     * @param stringId             the string id
+     * @param requestCode          the request code
+     */
     public void requestAppPermissions(final String[] requestedPermissions,
                                       final int stringId, final int requestCode) {
         mErrorString.put(requestCode, stringId);
@@ -78,5 +92,10 @@ public abstract class RuntimePermissionsActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * On permissions granted.
+     *
+     * @param requestCode the request code
+     */
     public abstract void onPermissionsGranted(int requestCode);
 }

@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample;
 
 import android.content.res.Configuration;
@@ -6,8 +10,14 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
+/**
+ * The type Screen orientation test activity.
+ */
 public class ScreenOrientationTestActivity extends AppCompatActivity {
-final static String TAG = ScreenOrientationTestActivity.class.getCanonicalName();
+    /**
+     * The constant TAG.
+     */
+    final static String TAG = ScreenOrientationTestActivity.class.getCanonicalName();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

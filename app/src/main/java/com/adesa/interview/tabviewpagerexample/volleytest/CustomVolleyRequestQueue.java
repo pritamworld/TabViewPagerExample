@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.volleytest;
 
 
@@ -45,6 +49,12 @@ public class CustomVolleyRequestQueue {
                 });
     }
 
+    /**
+     * Gets instance.
+     *
+     * @param context the context
+     * @return the instance
+     */
     public static synchronized CustomVolleyRequestQueue getInstance(Context context) {
         if (mInstance == null) {
             mInstance = new CustomVolleyRequestQueue(context);
@@ -52,6 +62,11 @@ public class CustomVolleyRequestQueue {
         return mInstance;
     }
 
+    /**
+     * Gets request queue.
+     *
+     * @return the request queue
+     */
     public RequestQueue getRequestQueue() {
         if (mRequestQueue == null) {
             Cache cache = new DiskBasedCache(mCtx.getCacheDir(), 10 * 1024 * 1024);
@@ -63,6 +78,11 @@ public class CustomVolleyRequestQueue {
         return mRequestQueue;
     }
 
+    /**
+     * Gets image loader.
+     *
+     * @return the image loader
+     */
     public ImageLoader getImageLoader() {
         return mImageLoader;
     }
