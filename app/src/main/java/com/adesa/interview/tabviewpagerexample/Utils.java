@@ -31,6 +31,7 @@ public class Utils {
      * @param useIPv4 the use i pv 4
      * @return the device ip address
      */
+
     public static String getDeviceIPAddress(boolean useIPv4) {
         try {
             List<NetworkInterface> networkInterfaces = Collections.list(NetworkInterface.getNetworkInterfaces());
