@@ -1,3 +1,7 @@
 <component name="CopyrightManager">
-  <settings default="" />
+  <settings default="Pritesh">
+    <module2copyright>
+      <element module="Project Files" copyright="Pritesh" />
+    </module2copyright>
+  </settings>
 </component>

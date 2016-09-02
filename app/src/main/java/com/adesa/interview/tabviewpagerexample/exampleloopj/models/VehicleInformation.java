@@ -1,4 +1,8 @@
 
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.exampleloopj.models;
 
 import javax.annotation.Generated;
@@ -7,6 +11,9 @@ import com.google.gson.annotations.SerializedName;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+/**
+ * The type Vehicle information.
+ */
 @Generated("org.jsonschema2pojo")
 public class VehicleInformation {
 
@@ -78,396 +85,396 @@ public class VehicleInformation {
     private Object stockNumber;
 
     /**
-     * 
-     * @return
-     *     The engine
+     * Gets engine.
+     *
+     * @return The engine
      */
     public String getEngine() {
         return engine;
     }
 
     /**
-     * 
-     * @param engine
-     *     The Engine
+     * Sets engine.
+     *
+     * @param engine The Engine
      */
     public void setEngine(String engine) {
         this.engine = engine;
     }
 
     /**
-     * 
-     * @return
-     *     The extColor
+     * Gets ext color.
+     *
+     * @return The extColor
      */
     public String getExtColor() {
         return extColor;
     }
 
     /**
-     * 
-     * @param extColor
-     *     The ExtColor
+     * Sets ext color.
+     *
+     * @param extColor The ExtColor
      */
     public void setExtColor(String extColor) {
         this.extColor = extColor;
     }
 
     /**
-     * 
-     * @return
-     *     The oDOMETERUOM
+     * Gets odometeruom.
+     *
+     * @return The oDOMETERUOM
      */
     public String getODOMETERUOM() {
         return oDOMETERUOM;
     }
 
     /**
-     * 
-     * @param oDOMETERUOM
-     *     The ODOMETER_UOM
+     * Sets odometeruom.
+     *
+     * @param oDOMETERUOM The ODOMETER_UOM
      */
     public void setODOMETERUOM(String oDOMETERUOM) {
         this.oDOMETERUOM = oDOMETERUOM;
     }
 
     /**
-     * 
-     * @return
-     *     The transmission
+     * Gets transmission.
+     *
+     * @return The transmission
      */
     public String getTransmission() {
         return transmission;
     }
 
     /**
-     * 
-     * @param transmission
-     *     The Transmission
+     * Sets transmission.
+     *
+     * @param transmission The Transmission
      */
     public void setTransmission(String transmission) {
         this.transmission = transmission;
     }
 
     /**
-     * 
-     * @return
-     *     The driveable
+     * Gets driveable.
+     *
+     * @return The driveable
      */
     public String getDriveable() {
         return driveable;
     }
 
     /**
-     * 
-     * @param driveable
-     *     The Driveable
+     * Sets driveable.
+     *
+     * @param driveable The Driveable
      */
     public void setDriveable(String driveable) {
         this.driveable = driveable;
     }
 
     /**
-     * 
-     * @return
-     *     The doors
+     * Gets doors.
+     *
+     * @return The doors
      */
     public String getDoors() {
         return doors;
     }
 
     /**
-     * 
-     * @param doors
-     *     The Doors
+     * Sets doors.
+     *
+     * @param doors The Doors
      */
     public void setDoors(String doors) {
         this.doors = doors;
     }
 
     /**
-     * 
-     * @return
-     *     The groundingMileage
+     * Gets grounding mileage.
+     *
+     * @return The groundingMileage
      */
     public String getGroundingMileage() {
         return groundingMileage;
     }
 
     /**
-     * 
-     * @param groundingMileage
-     *     The Grounding Mileage
+     * Sets grounding mileage.
+     *
+     * @param groundingMileage The Grounding Mileage
      */
     public void setGroundingMileage(String groundingMileage) {
         this.groundingMileage = groundingMileage;
     }
 
     /**
-     * 
-     * @return
-     *     The intType
+     * Gets int type.
+     *
+     * @return The intType
      */
     public String getIntType() {
         return intType;
     }
 
     /**
-     * 
-     * @param intType
-     *     The intType
+     * Sets int type.
+     *
+     * @param intType The intType
      */
     public void setIntType(String intType) {
         this.intType = intType;
     }
 
     /**
-     * 
-     * @return
-     *     The model
+     * Gets model.
+     *
+     * @return The model
      */
     public String getModel() {
         return model;
     }
 
     /**
-     * 
-     * @param model
-     *     The Model
+     * Sets model.
+     *
+     * @param model The Model
      */
     public void setModel(String model) {
         this.model = model;
     }
 
     /**
-     * 
-     * @return
-     *     The make
+     * Gets make.
+     *
+     * @return The make
      */
     public String getMake() {
         return make;
     }
 
     /**
-     * 
-     * @param make
-     *     The Make
+     * Sets make.
+     *
+     * @param make The Make
      */
     public void setMake(String make) {
         this.make = make;
     }
 
     /**
-     * 
-     * @return
-     *     The bodyStyle
+     * Gets body style.
+     *
+     * @return The bodyStyle
      */
     public String getBodyStyle() {
         return bodyStyle;
     }
 
     /**
-     * 
-     * @param bodyStyle
-     *     The bodyStyle
+     * Sets body style.
+     *
+     * @param bodyStyle The bodyStyle
      */
     public void setBodyStyle(String bodyStyle) {
         this.bodyStyle = bodyStyle;
     }
 
     /**
-     * 
-     * @return
-     *     The odometer
+     * Gets odometer.
+     *
+     * @return The odometer
      */
     public String getOdometer() {
         return odometer;
     }
 
     /**
-     * 
-     * @param odometer
-     *     The Odometer
+     * Sets odometer.
+     *
+     * @param odometer The Odometer
      */
     public void setOdometer(String odometer) {
         this.odometer = odometer;
     }
 
     /**
-     * 
-     * @return
-     *     The keys
+     * Gets keys.
+     *
+     * @return The keys
      */
     public String getKeys() {
         return keys;
     }
 
     /**
-     * 
-     * @param keys
-     *     The Keys
+     * Sets keys.
+     *
+     * @param keys The Keys
      */
     public void setKeys(String keys) {
         this.keys = keys;
     }
 
     /**
-     * 
-     * @return
-     *     The intColor
+     * Gets int color.
+     *
+     * @return The intColor
      */
     public String getIntColor() {
         return intColor;
     }
 
     /**
-     * 
-     * @param intColor
-     *     The IntColor
+     * Sets int color.
+     *
+     * @param intColor The IntColor
      */
     public void setIntColor(String intColor) {
         this.intColor = intColor;
     }
 
     /**
-     * 
-     * @return
-     *     The odor
+     * Gets odor.
+     *
+     * @return The odor
      */
     public String getOdor() {
         return odor;
     }
 
     /**
-     * 
-     * @param odor
-     *     The Odor
+     * Sets odor.
+     *
+     * @param odor The Odor
      */
     public void setOdor(String odor) {
         this.odor = odor;
     }
 
     /**
-     * 
-     * @return
-     *     The seriesTrim
+     * Gets series trim.
+     *
+     * @return The seriesTrim
      */
     public String getSeriesTrim() {
         return seriesTrim;
     }
 
     /**
-     * 
-     * @param seriesTrim
-     *     The seriesTrim
+     * Sets series trim.
+     *
+     * @param seriesTrim The seriesTrim
      */
     public void setSeriesTrim(String seriesTrim) {
         this.seriesTrim = seriesTrim;
     }
 
     /**
-     * 
-     * @return
-     *     The modelNo
+     * Gets model no.
+     *
+     * @return The modelNo
      */
     public String getModelNo() {
         return modelNo;
     }
 
     /**
-     * 
-     * @param modelNo
-     *     The ModelNo
+     * Sets model no.
+     *
+     * @param modelNo The ModelNo
      */
     public void setModelNo(String modelNo) {
         this.modelNo = modelNo;
     }
 
     /**
-     * 
-     * @return
-     *     The vIN
+     * Gets vin.
+     *
+     * @return The vIN
      */
     public String getVIN() {
         return vIN;
     }
 
     /**
-     * 
-     * @param vIN
-     *     The VIN
+     * Sets vin.
+     *
+     * @param vIN The VIN
      */
     public void setVIN(String vIN) {
         this.vIN = vIN;
     }
 
     /**
-     * 
-     * @return
-     *     The cURRENCYCODE
+     * Gets currencycode.
+     *
+     * @return The cURRENCYCODE
      */
     public String getCURRENCYCODE() {
         return cURRENCYCODE;
     }
 
     /**
-     * 
-     * @param cURRENCYCODE
-     *     The CURRENCY_CODE
+     * Sets currencycode.
+     *
+     * @param cURRENCYCODE The CURRENCY_CODE
      */
     public void setCURRENCYCODE(String cURRENCYCODE) {
         this.cURRENCYCODE = cURRENCYCODE;
     }
 
     /**
-     * 
-     * @return
-     *     The year
+     * Gets year.
+     *
+     * @return The year
      */
     public String getYear() {
         return year;
     }
 
     /**
-     * 
-     * @param year
-     *     The Year
+     * Sets year.
+     *
+     * @param year The Year
      */
     public void setYear(String year) {
         this.year = year;
     }
 
     /**
-     * 
-     * @return
-     *     The driveTrain
+     * Gets drive train.
+     *
+     * @return The driveTrain
      */
     public String getDriveTrain() {
         return driveTrain;
     }
 
     /**
-     * 
-     * @param driveTrain
-     *     The DriveTrain
+     * Sets drive train.
+     *
+     * @param driveTrain The DriveTrain
      */
     public void setDriveTrain(String driveTrain) {
         this.driveTrain = driveTrain;
     }
 
     /**
-     * 
-     * @return
-     *     The stockNumber
+     * Gets stock number.
+     *
+     * @return The stockNumber
      */
     public Object getStockNumber() {
         return stockNumber;
     }
 
     /**
-     * 
-     * @param stockNumber
-     *     The StockNumber
+     * Sets stock number.
+     *
+     * @param stockNumber The StockNumber
      */
     public void setStockNumber(Object stockNumber) {
         this.stockNumber = stockNumber;

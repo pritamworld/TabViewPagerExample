@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample;
 
 
@@ -9,10 +13,24 @@ import android.telephony.PhoneStateListener;
 import android.telephony.SignalStrength;
 import android.util.Log;
 
+/**
+ * The type Custom phone state listener.
+ */
 public class CustomPhoneStateListener extends PhoneStateListener {
+    /**
+     * The M context.
+     */
     Context mContext;
+    /**
+     * The constant LOG_TAG.
+     */
     public static String LOG_TAG = CustomPhoneStateListener.class.getSimpleName();
 
+    /**
+     * Instantiates a new Custom phone state listener.
+     *
+     * @param context the context
+     */
     public CustomPhoneStateListener(Context context) {
         mContext = context;
     }

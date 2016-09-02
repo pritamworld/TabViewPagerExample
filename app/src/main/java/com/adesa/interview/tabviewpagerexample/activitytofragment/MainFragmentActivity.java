@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.activitytofragment;
 
 import android.os.Bundle;
@@ -15,6 +19,9 @@ import com.adesa.interview.tabviewpagerexample.R;
 
 import java.util.ArrayList;
 
+/**
+ * The type Main fragment activity.
+ */
 public class MainFragmentActivity extends AppCompatActivity implements IFragmentToActivity {
     private final String LOG_TAG = "MainFragmentActivity";
     private PagerAdapter adapter;
@@ -82,6 +89,9 @@ public class MainFragmentActivity extends AppCompatActivity implements IFragment
         }
     }
 
+    /**
+     * Show dialog fragment.
+     */
     public void showDialogFragment(){
         Bundle args = new Bundle();
         args.putString("title", "Dialog with Action Bar");

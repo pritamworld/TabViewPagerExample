@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.databasegreendao;
 
 import android.content.Context;
@@ -18,6 +22,12 @@ public class UserAdapter extends BaseAdapter {
     private LayoutInflater inflater;
     private List<User> users;
 
+    /**
+     * Instantiates a new User adapter.
+     *
+     * @param context the context
+     * @param users   the users
+     */
     public UserAdapter(Context context, List<User> users) {
         this.users = users;
         inflater = LayoutInflater.from(context);
@@ -51,6 +61,11 @@ public class UserAdapter extends BaseAdapter {
         return users.size();
     }
 
+    /**
+     * Sets users.
+     *
+     * @param data the data
+     */
     public void setUsers(List<User> data) {
         users.addAll(data);
         notifyDataSetChanged();

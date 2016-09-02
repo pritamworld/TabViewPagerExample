@@ -1,4 +1,8 @@
 
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.exampleloopj.models;
 
 import java.util.ArrayList;
@@ -9,6 +13,9 @@ import com.google.gson.annotations.SerializedName;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+/**
+ * The type Condition report.
+ */
 @Generated("org.jsonschema2pojo")
 public class ConditionReport {
 
@@ -140,756 +147,756 @@ public class ConditionReport {
     private String inspectionDate;
 
     /**
-     * 
-     * @return
-     *     The conditionReportId
+     * Gets condition report id.
+     *
+     * @return The conditionReportId
      */
     public long getConditionReportId() {
         return conditionReportId;
     }
 
     /**
-     * 
-     * @param conditionReportId
-     *     The conditionReportId
+     * Sets condition report id.
+     *
+     * @param conditionReportId The conditionReportId
      */
     public void setConditionReportId(long conditionReportId) {
         this.conditionReportId = conditionReportId;
     }
 
     /**
-     * 
-     * @return
-     *     The autoCheckURL
+     * Gets auto check url.
+     *
+     * @return The autoCheckURL
      */
     public String getAutoCheckURL() {
         return autoCheckURL;
     }
 
     /**
-     * 
-     * @param autoCheckURL
-     *     The autoCheckURL
+     * Sets auto check url.
+     *
+     * @param autoCheckURL The autoCheckURL
      */
     public void setAutoCheckURL(String autoCheckURL) {
         this.autoCheckURL = autoCheckURL;
     }
 
     /**
-     * 
-     * @return
-     *     The vin
+     * Gets vin.
+     *
+     * @return The vin
      */
     public String getVin() {
         return vin;
     }
 
     /**
-     * 
-     * @param vin
-     *     The vin
+     * Sets vin.
+     *
+     * @param vin The vin
      */
     public void setVin(String vin) {
         this.vin = vin;
     }
 
     /**
-     * 
-     * @return
-     *     The make
+     * Gets make.
+     *
+     * @return The make
      */
     public String getMake() {
         return make;
     }
 
     /**
-     * 
-     * @param make
-     *     The make
+     * Sets make.
+     *
+     * @param make The make
      */
     public void setMake(String make) {
         this.make = make;
     }
 
     /**
-     * 
-     * @return
-     *     The model
+     * Gets model.
+     *
+     * @return The model
      */
     public String getModel() {
         return model;
     }
 
     /**
-     * 
-     * @param model
-     *     The model
+     * Sets model.
+     *
+     * @param model The model
      */
     public void setModel(String model) {
         this.model = model;
     }
 
     /**
-     * 
-     * @return
-     *     The year
+     * Gets year.
+     *
+     * @return The year
      */
     public long getYear() {
         return year;
     }
 
     /**
-     * 
-     * @param year
-     *     The year
+     * Sets year.
+     *
+     * @param year The year
      */
     public void setYear(long year) {
         this.year = year;
     }
 
     /**
-     * 
-     * @return
-     *     The vehicleType
+     * Gets vehicle type.
+     *
+     * @return The vehicleType
      */
     public String getVehicleType() {
         return vehicleType;
     }
 
     /**
-     * 
-     * @param vehicleType
-     *     The vehicleType
+     * Sets vehicle type.
+     *
+     * @param vehicleType The vehicleType
      */
     public void setVehicleType(String vehicleType) {
         this.vehicleType = vehicleType;
     }
 
     /**
-     * 
-     * @return
-     *     The isSaleLightGreen
+     * Is is sale light green boolean.
+     *
+     * @return The isSaleLightGreen
      */
     public boolean isIsSaleLightGreen() {
         return isSaleLightGreen;
     }
 
     /**
-     * 
-     * @param isSaleLightGreen
-     *     The isSaleLightGreen
+     * Sets is sale light green.
+     *
+     * @param isSaleLightGreen The isSaleLightGreen
      */
     public void setIsSaleLightGreen(boolean isSaleLightGreen) {
         this.isSaleLightGreen = isSaleLightGreen;
     }
 
     /**
-     * 
-     * @return
-     *     The isSaleLightBlue
+     * Is is sale light blue boolean.
+     *
+     * @return The isSaleLightBlue
      */
     public boolean isIsSaleLightBlue() {
         return isSaleLightBlue;
     }
 
     /**
-     * 
-     * @param isSaleLightBlue
-     *     The isSaleLightBlue
+     * Sets is sale light blue.
+     *
+     * @param isSaleLightBlue The isSaleLightBlue
      */
     public void setIsSaleLightBlue(boolean isSaleLightBlue) {
         this.isSaleLightBlue = isSaleLightBlue;
     }
 
     /**
-     * 
-     * @return
-     *     The isSaleLightRed
+     * Is is sale light red boolean.
+     *
+     * @return The isSaleLightRed
      */
     public boolean isIsSaleLightRed() {
         return isSaleLightRed;
     }
 
     /**
-     * 
-     * @param isSaleLightRed
-     *     The isSaleLightRed
+     * Sets is sale light red.
+     *
+     * @param isSaleLightRed The isSaleLightRed
      */
     public void setIsSaleLightRed(boolean isSaleLightRed) {
         this.isSaleLightRed = isSaleLightRed;
     }
 
     /**
-     * 
-     * @return
-     *     The isSaleLightWhite
+     * Is is sale light white boolean.
+     *
+     * @return The isSaleLightWhite
      */
     public boolean isIsSaleLightWhite() {
         return isSaleLightWhite;
     }
 
     /**
-     * 
-     * @param isSaleLightWhite
-     *     The isSaleLightWhite
+     * Sets is sale light white.
+     *
+     * @param isSaleLightWhite The isSaleLightWhite
      */
     public void setIsSaleLightWhite(boolean isSaleLightWhite) {
         this.isSaleLightWhite = isSaleLightWhite;
     }
 
     /**
-     * 
-     * @return
-     *     The isSaleLightYellow
+     * Is is sale light yellow boolean.
+     *
+     * @return The isSaleLightYellow
      */
     public boolean isIsSaleLightYellow() {
         return isSaleLightYellow;
     }
 
     /**
-     * 
-     * @param isSaleLightYellow
-     *     The isSaleLightYellow
+     * Sets is sale light yellow.
+     *
+     * @param isSaleLightYellow The isSaleLightYellow
      */
     public void setIsSaleLightYellow(boolean isSaleLightYellow) {
         this.isSaleLightYellow = isSaleLightYellow;
     }
 
     /**
-     * 
-     * @return
-     *     The inventorySource
+     * Gets inventory source.
+     *
+     * @return The inventorySource
      */
     public String getInventorySource() {
         return inventorySource;
     }
 
     /**
-     * 
-     * @param inventorySource
-     *     The inventorySource
+     * Sets inventory source.
+     *
+     * @param inventorySource The inventorySource
      */
     public void setInventorySource(String inventorySource) {
         this.inventorySource = inventorySource;
     }
 
     /**
-     * 
-     * @return
-     *     The vehicleTypeGroup
+     * Gets vehicle type group.
+     *
+     * @return The vehicleTypeGroup
      */
     public String getVehicleTypeGroup() {
         return vehicleTypeGroup;
     }
 
     /**
-     * 
-     * @param vehicleTypeGroup
-     *     The vehicleTypeGroup
+     * Sets vehicle type group.
+     *
+     * @param vehicleTypeGroup The vehicleTypeGroup
      */
     public void setVehicleTypeGroup(String vehicleTypeGroup) {
         this.vehicleTypeGroup = vehicleTypeGroup;
     }
 
     /**
-     * 
-     * @return
-     *     The inspectionImageDTO
+     * Gets inspection image dto.
+     *
+     * @return The inspectionImageDTO
      */
     public List<InspectionImageDTO> getInspectionImageDTO() {
         return inspectionImageDTO;
     }
 
     /**
-     * 
-     * @param inspectionImageDTO
-     *     The inspectionImageDTO
+     * Sets inspection image dto.
+     *
+     * @param inspectionImageDTO The inspectionImageDTO
      */
     public void setInspectionImageDTO(List<InspectionImageDTO> inspectionImageDTO) {
         this.inspectionImageDTO = inspectionImageDTO;
     }
 
     /**
-     * 
-     * @return
-     *     The vehicleInformation
+     * Gets vehicle information.
+     *
+     * @return The vehicleInformation
      */
     public VehicleInformation getVehicleInformation() {
         return vehicleInformation;
     }
 
     /**
-     * 
-     * @param vehicleInformation
-     *     The vehicleInformation
+     * Sets vehicle information.
+     *
+     * @param vehicleInformation The vehicleInformation
      */
     public void setVehicleInformation(VehicleInformation vehicleInformation) {
         this.vehicleInformation = vehicleInformation;
     }
 
     /**
-     * 
-     * @return
-     *     The options
+     * Gets options.
+     *
+     * @return The options
      */
     public Options getOptions() {
         return options;
     }
 
     /**
-     * 
-     * @param options
-     *     The options
+     * Sets options.
+     *
+     * @param options The options
      */
     public void setOptions(Options options) {
         this.options = options;
     }
 
     /**
-     * 
-     * @return
-     *     The accessoriesList
+     * Gets accessories list.
+     *
+     * @return The accessoriesList
      */
     public List<String> getAccessoriesList() {
         return accessoriesList;
     }
 
     /**
-     * 
-     * @param accessoriesList
-     *     The accessoriesList
+     * Sets accessories list.
+     *
+     * @param accessoriesList The accessoriesList
      */
     public void setAccessoriesList(List<String> accessoriesList) {
         this.accessoriesList = accessoriesList;
     }
 
     /**
-     * 
-     * @return
-     *     The tires
+     * Gets tires.
+     *
+     * @return The tires
      */
     public List<Tire> getTires() {
         return tires;
     }
 
     /**
-     * 
-     * @param tires
-     *     The tires
+     * Sets tires.
+     *
+     * @param tires The tires
      */
     public void setTires(List<Tire> tires) {
         this.tires = tires;
     }
 
     /**
-     * 
-     * @return
-     *     The additionalInformation
+     * Gets additional information.
+     *
+     * @return The additionalInformation
      */
     public AdditionalInformation getAdditionalInformation() {
         return additionalInformation;
     }
 
     /**
-     * 
-     * @param additionalInformation
-     *     The additionalInformation
+     * Sets additional information.
+     *
+     * @param additionalInformation The additionalInformation
      */
     public void setAdditionalInformation(AdditionalInformation additionalInformation) {
         this.additionalInformation = additionalInformation;
     }
 
     /**
-     * 
-     * @return
-     *     The vehicleConditions
+     * Gets vehicle conditions.
+     *
+     * @return The vehicleConditions
      */
     public List<VehicleCondition> getVehicleConditions() {
         return vehicleConditions;
     }
 
     /**
-     * 
-     * @param vehicleConditions
-     *     The vehicleConditions
+     * Sets vehicle conditions.
+     *
+     * @param vehicleConditions The vehicleConditions
      */
     public void setVehicleConditions(List<VehicleCondition> vehicleConditions) {
         this.vehicleConditions = vehicleConditions;
     }
 
     /**
-     * 
-     * @return
-     *     The oemInformation
+     * Gets oem information.
+     *
+     * @return The oemInformation
      */
     public List<OemInformation> getOemInformation() {
         return oemInformation;
     }
 
     /**
-     * 
-     * @param oemInformation
-     *     The oemInformation
+     * Sets oem information.
+     *
+     * @param oemInformation The oemInformation
      */
     public void setOemInformation(List<OemInformation> oemInformation) {
         this.oemInformation = oemInformation;
     }
 
     /**
-     * 
-     * @return
-     *     The gradeScale
+     * Gets grade scale.
+     *
+     * @return The gradeScale
      */
     public String getGradeScale() {
         return gradeScale;
     }
 
     /**
-     * 
-     * @param gradeScale
-     *     The gradeScale
+     * Sets grade scale.
+     *
+     * @param gradeScale The gradeScale
      */
     public void setGradeScale(String gradeScale) {
         this.gradeScale = gradeScale;
     }
 
     /**
-     * 
-     * @return
-     *     The estimatedGrandTotal
+     * Gets estimated grand total.
+     *
+     * @return The estimatedGrandTotal
      */
     public long getEstimatedGrandTotal() {
         return estimatedGrandTotal;
     }
 
     /**
-     * 
-     * @param estimatedGrandTotal
-     *     The estimatedGrandTotal
+     * Sets estimated grand total.
+     *
+     * @param estimatedGrandTotal The estimatedGrandTotal
      */
     public void setEstimatedGrandTotal(long estimatedGrandTotal) {
         this.estimatedGrandTotal = estimatedGrandTotal;
     }
 
     /**
-     * 
-     * @return
-     *     The normalWearAndTearGrandTotal
+     * Gets normal wear and tear grand total.
+     *
+     * @return The normalWearAndTearGrandTotal
      */
     public double getNormalWearAndTearGrandTotal() {
         return normalWearAndTearGrandTotal;
     }
 
     /**
-     * 
-     * @param normalWearAndTearGrandTotal
-     *     The normalWearAndTearGrandTotal
+     * Sets normal wear and tear grand total.
+     *
+     * @param normalWearAndTearGrandTotal The normalWearAndTearGrandTotal
      */
     public void setNormalWearAndTearGrandTotal(double normalWearAndTearGrandTotal) {
         this.normalWearAndTearGrandTotal = normalWearAndTearGrandTotal;
     }
 
     /**
-     * 
-     * @return
-     *     The excessWearAndTearGrandTotal
+     * Gets excess wear and tear grand total.
+     *
+     * @return The excessWearAndTearGrandTotal
      */
     public double getExcessWearAndTearGrandTotal() {
         return excessWearAndTearGrandTotal;
     }
 
     /**
-     * 
-     * @param excessWearAndTearGrandTotal
-     *     The excessWearAndTearGrandTotal
+     * Sets excess wear and tear grand total.
+     *
+     * @param excessWearAndTearGrandTotal The excessWearAndTearGrandTotal
      */
     public void setExcessWearAndTearGrandTotal(double excessWearAndTearGrandTotal) {
         this.excessWearAndTearGrandTotal = excessWearAndTearGrandTotal;
     }
 
     /**
-     * 
-     * @return
-     *     The internetReady
+     * Is internet ready boolean.
+     *
+     * @return The internetReady
      */
     public boolean isInternetReady() {
         return internetReady;
     }
 
     /**
-     * 
-     * @param internetReady
-     *     The internetReady
+     * Sets internet ready.
+     *
+     * @param internetReady The internetReady
      */
     public void setInternetReady(boolean internetReady) {
         this.internetReady = internetReady;
     }
 
     /**
-     * 
-     * @return
-     *     The transportationQuoteDTOs
+     * Gets transportation quote dt os.
+     *
+     * @return The transportationQuoteDTOs
      */
     public List<TransportationQuoteDTO> getTransportationQuoteDTOs() {
         return transportationQuoteDTOs;
     }
 
     /**
-     * 
-     * @param transportationQuoteDTOs
-     *     The transportationQuoteDTOs
+     * Sets transportation quote dt os.
+     *
+     * @param transportationQuoteDTOs The transportationQuoteDTOs
      */
     public void setTransportationQuoteDTOs(List<TransportationQuoteDTO> transportationQuoteDTOs) {
         this.transportationQuoteDTOs = transportationQuoteDTOs;
     }
 
     /**
-     * 
-     * @return
-     *     The consignorInformation
+     * Gets consignor information.
+     *
+     * @return The consignorInformation
      */
     public ConsignorInformation getConsignorInformation() {
         return consignorInformation;
     }
 
     /**
-     * 
-     * @param consignorInformation
-     *     The consignorInformation
+     * Sets consignor information.
+     *
+     * @param consignorInformation The consignorInformation
      */
     public void setConsignorInformation(ConsignorInformation consignorInformation) {
         this.consignorInformation = consignorInformation;
     }
 
     /**
-     * 
-     * @return
-     *     The inspectedDate
+     * Gets inspected date.
+     *
+     * @return The inspectedDate
      */
     public long getInspectedDate() {
         return inspectedDate;
     }
 
     /**
-     * 
-     * @param inspectedDate
-     *     The inspectedDate
+     * Sets inspected date.
+     *
+     * @param inspectedDate The inspectedDate
      */
     public void setInspectedDate(long inspectedDate) {
         this.inspectedDate = inspectedDate;
     }
 
     /**
-     * 
-     * @return
-     *     The dealerId
+     * Gets dealer id.
+     *
+     * @return The dealerId
      */
     public long getDealerId() {
         return dealerId;
     }
 
     /**
-     * 
-     * @param dealerId
-     *     The dealerId
+     * Sets dealer id.
+     *
+     * @param dealerId The dealerId
      */
     public void setDealerId(long dealerId) {
         this.dealerId = dealerId;
     }
 
     /**
-     * 
-     * @return
-     *     The partRate
+     * Gets part rate.
+     *
+     * @return The partRate
      */
     public String getPartRate() {
         return partRate;
     }
 
     /**
-     * 
-     * @param partRate
-     *     The partRate
+     * Sets part rate.
+     *
+     * @param partRate The partRate
      */
     public void setPartRate(String partRate) {
         this.partRate = partRate;
     }
 
     /**
-     * 
-     * @return
-     *     The paintRate
+     * Gets paint rate.
+     *
+     * @return The paintRate
      */
     public String getPaintRate() {
         return paintRate;
     }
 
     /**
-     * 
-     * @param paintRate
-     *     The paintRate
+     * Sets paint rate.
+     *
+     * @param paintRate The paintRate
      */
     public void setPaintRate(String paintRate) {
         this.paintRate = paintRate;
     }
 
     /**
-     * 
-     * @return
-     *     The isNoteAvailable
+     * Is is note available boolean.
+     *
+     * @return The isNoteAvailable
      */
     public boolean isIsNoteAvailable() {
         return isNoteAvailable;
     }
 
     /**
-     * 
-     * @param isNoteAvailable
-     *     The isNoteAvailable
+     * Sets is note available.
+     *
+     * @param isNoteAvailable The isNoteAvailable
      */
     public void setIsNoteAvailable(boolean isNoteAvailable) {
         this.isNoteAvailable = isNoteAvailable;
     }
 
     /**
-     * 
-     * @return
-     *     The region
+     * Gets region.
+     *
+     * @return The region
      */
     public String getRegion() {
         return region;
     }
 
     /**
-     * 
-     * @param region
-     *     The region
+     * Sets region.
+     *
+     * @param region The region
      */
     public void setRegion(String region) {
         this.region = region;
     }
 
     /**
-     * 
-     * @return
-     *     The branch
+     * Gets branch.
+     *
+     * @return The branch
      */
     public String getBranch() {
         return branch;
     }
 
     /**
-     * 
-     * @param branch
-     *     The branch
+     * Sets branch.
+     *
+     * @param branch The branch
      */
     public void setBranch(String branch) {
         this.branch = branch;
     }
 
     /**
-     * 
-     * @return
-     *     The isPreTermInspection
+     * Is is pre term inspection boolean.
+     *
+     * @return The isPreTermInspection
      */
     public boolean isIsPreTermInspection() {
         return isPreTermInspection;
     }
 
     /**
-     * 
-     * @param isPreTermInspection
-     *     The isPreTermInspection
+     * Sets is pre term inspection.
+     *
+     * @param isPreTermInspection The isPreTermInspection
      */
     public void setIsPreTermInspection(boolean isPreTermInspection) {
         this.isPreTermInspection = isPreTermInspection;
     }
 
     /**
-     * 
-     * @return
-     *     The adminFee
+     * Gets admin fee.
+     *
+     * @return The adminFee
      */
     public long getAdminFee() {
         return adminFee;
     }
 
     /**
-     * 
-     * @param adminFee
-     *     The adminFee
+     * Sets admin fee.
+     *
+     * @param adminFee The adminFee
      */
     public void setAdminFee(long adminFee) {
         this.adminFee = adminFee;
     }
 
     /**
-     * 
-     * @return
-     *     The autoGradeAvailable
+     * Is auto grade available boolean.
+     *
+     * @return The autoGradeAvailable
      */
     public boolean isAutoGradeAvailable() {
         return autoGradeAvailable;
     }
 
     /**
-     * 
-     * @param autoGradeAvailable
-     *     The autoGradeAvailable
+     * Sets auto grade available.
+     *
+     * @param autoGradeAvailable The autoGradeAvailable
      */
     public void setAutoGradeAvailable(boolean autoGradeAvailable) {
         this.autoGradeAvailable = autoGradeAvailable;
     }
 
     /**
-     * 
-     * @return
-     *     The arbRequest
+     * Is arb request boolean.
+     *
+     * @return The arbRequest
      */
     public boolean isArbRequest() {
         return arbRequest;
     }
 
     /**
-     * 
-     * @param arbRequest
-     *     The arbRequest
+     * Sets arb request.
+     *
+     * @param arbRequest The arbRequest
      */
     public void setArbRequest(boolean arbRequest) {
         this.arbRequest = arbRequest;
     }
 
     /**
-     * 
-     * @return
-     *     The optionsEntrySet
+     * Gets options entry set.
+     *
+     * @return The optionsEntrySet
      */
     public List<OptionsEntrySet> getOptionsEntrySet() {
         return optionsEntrySet;
     }
 
     /**
-     * 
-     * @param optionsEntrySet
-     *     The optionsEntrySet
+     * Sets options entry set.
+     *
+     * @param optionsEntrySet The optionsEntrySet
      */
     public void setOptionsEntrySet(List<OptionsEntrySet> optionsEntrySet) {
         this.optionsEntrySet = optionsEntrySet;
     }
 
     /**
-     * 
-     * @return
-     *     The inspectionDate
+     * Gets inspection date.
+     *
+     * @return The inspectionDate
      */
     public String getInspectionDate() {
         return inspectionDate;
     }
 
     /**
-     * 
-     * @param inspectionDate
-     *     The inspectionDate
+     * Sets inspection date.
+     *
+     * @param inspectionDate The inspectionDate
      */
     public void setInspectionDate(String inspectionDate) {
         this.inspectionDate = inspectionDate;

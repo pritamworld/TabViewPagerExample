@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.activitytofragment;
 
 import android.support.annotation.Nullable;
@@ -10,10 +14,19 @@ import android.view.ViewGroup;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 
+/**
+ * The type Pager adapter.
+ */
 public class PagerAdapter extends FragmentStatePagerAdapter {
     private final SparseArray<WeakReference<Fragment>> instantiatedFragments = new SparseArray<>();
     private ArrayList<String> mTabHeader;
 
+    /**
+     * Instantiates a new Pager adapter.
+     *
+     * @param fm        the fm
+     * @param tabHeader the tab header
+     */
     public PagerAdapter(FragmentManager fm, ArrayList<String> tabHeader) {
         super(fm);
         this.mTabHeader = tabHeader;
@@ -52,6 +65,12 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
         super.destroyItem(container, position, object);
     }
 
+    /**
+     * Gets fragment.
+     *
+     * @param position the position
+     * @return the fragment
+     */
     @Nullable
     public Fragment getFragment(final int position) {
         final WeakReference<Fragment> wr = instantiatedFragments.get(position);

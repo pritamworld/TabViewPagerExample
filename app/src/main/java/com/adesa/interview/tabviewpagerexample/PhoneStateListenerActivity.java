@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample;
 
 import android.support.v7.app.AppCompatActivity;
@@ -5,8 +9,14 @@ import android.os.Bundle;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
 
+/**
+ * The type Phone state listener activity.
+ */
 public class PhoneStateListenerActivity extends AppCompatActivity {
 
+    /**
+     * The T manager.
+     */
     TelephonyManager tManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

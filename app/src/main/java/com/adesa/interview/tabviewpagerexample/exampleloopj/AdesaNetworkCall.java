@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.exampleloopj;
 
 import com.loopj.android.http.AsyncHttpClient;
@@ -33,7 +37,12 @@ public class AdesaNetworkCall {
     */
     private AdesaNetworkCall(){ }
 
-    /* Static 'instance' method */
+    /**
+     * Gets instance.
+     *
+     * @return the instance
+     */
+/* Static 'instance' method */
     public static AdesaNetworkCall getInstance( ) {
         if(adesaNetworkCall == null) {
             adesaNetworkCall = new AdesaNetworkCall();
@@ -43,32 +52,81 @@ public class AdesaNetworkCall {
         return adesaNetworkCall;
     }
 
+    /**
+     * Get.
+     *
+     * @param url             the url
+     * @param params          the params
+     * @param responseHandler the response handler
+     */
     public static void get(String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
 
         client.get(getAbsoluteUrl(url), params, responseHandler);
     }
 
+    /**
+     * Get.
+     *
+     * @param url             the url
+     * @param params          the params
+     * @param responseHandler the response handler
+     */
     public static void get(String url, RequestParams params, JsonHttpResponseHandler responseHandler) {
 
         client.get(getAbsoluteUrl(url), params, responseHandler);
     }
 
+    /**
+     * Get.
+     *
+     * @param url             the url
+     * @param params          the params
+     * @param responseHandler the response handler
+     */
     public static void get(String url, RequestParams params, BinaryHttpResponseHandler responseHandler) {
         client.get(getAbsoluteUrl(url), params, responseHandler);
     }
 
+    /**
+     * Get.
+     *
+     * @param url             the url
+     * @param params          the params
+     * @param responseHandler the response handler
+     */
     public static void get(String url, RequestParams params, FileAsyncHttpResponseHandler responseHandler) {
         client.get(getAbsoluteUrl(url), params, responseHandler);
     }
 
+    /**
+     * Get.
+     *
+     * @param url             the url
+     * @param params          the params
+     * @param responseHandler the response handler
+     */
     public static void get(String url, RequestParams params, SaxAsyncHttpResponseHandler responseHandler) {
         client.get(getAbsoluteUrl(url), params, responseHandler);
     }
 
+    /**
+     * Post.
+     *
+     * @param url             the url
+     * @param params          the params
+     * @param responseHandler the response handler
+     */
     public static void post(String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
         client.post(getAbsoluteUrl(url), params, responseHandler);
     }
 
+    /**
+     * Post.
+     *
+     * @param url             the url
+     * @param params          the params
+     * @param responseHandler the response handler
+     */
     public static void post(String url, RequestParams params, JsonHttpResponseHandler responseHandler) {
 
         client.post(getAbsoluteUrl(url), params, responseHandler);

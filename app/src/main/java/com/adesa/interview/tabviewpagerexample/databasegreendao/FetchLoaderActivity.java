@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.databasegreendao;
 
 import android.support.v4.app.LoaderManager;
@@ -12,9 +16,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+/**
+ * The type Fetch loader activity.
+ */
 public class FetchLoaderActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<List<User>> {
 
+    /**
+     * The Employee list view.
+     */
     ListView employeeListView;
+    /**
+     * The User adapter.
+     */
     UserAdapter userAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

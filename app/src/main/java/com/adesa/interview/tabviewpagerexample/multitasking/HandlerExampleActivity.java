@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.multitasking;
 
 import android.app.Activity;
@@ -57,6 +61,9 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 import butterknife.OnClick;
 
+/**
+ * The type Handler example activity.
+ */
 public class HandlerExampleActivity extends Activity {
 
     private final static String TAG = HandlerExampleActivity.class.getSimpleName();
@@ -65,10 +72,19 @@ public class HandlerExampleActivity extends Activity {
     private static Handler handler;
     private Thread downloadThread;
     private MyRunnableThread myRunnableThread;
+    /**
+     * The Txt message.
+     */
     @InjectView(R.id.txtMessage)
     TextView txtMessage;
+    /**
+     * The Progress bar.
+     */
     @InjectView(R.id.progressBar)
     ProgressBar progressBar;
+    /**
+     * The Image view bitmap.
+     */
     @InjectView(R.id.imageViewBitmap)
     ImageView imageViewBitmap;
 
@@ -145,6 +161,11 @@ public class HandlerExampleActivity extends Activity {
         EventBus.getDefault().unregister(this);
     }
 
+    /**
+     * On event.
+     *
+     * @param event the event
+     */
     @Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
     public void onEvent(MyBusEvent event) {
         // UI updates must run on MainThread
@@ -166,6 +187,11 @@ public class HandlerExampleActivity extends Activity {
         super.onDestroy();
     }
 
+    /**
+     * Start progress.
+     *
+     * @param view the view
+     */
     public void startProgress(View view) {
         // do something long
         progressBar.setVisibility(View.VISIBLE);
@@ -219,6 +245,11 @@ public class HandlerExampleActivity extends Activity {
         }
     }
 
+    /**
+     * On click.
+     *
+     * @param view the view
+     */
     @OnClick({R.id.btnDownload, R.id.btnReset})
     public void onClick(View view) {
         switch (view.getId()) {
@@ -297,6 +328,11 @@ public class HandlerExampleActivity extends Activity {
     }
 
 
+    /**
+     * Gets server ssl.
+     *
+     * @param url the url
+     */
     public static void getServerSSL(String url) {
         SSLSocket sslsocket = null;
         int port = 443;
@@ -395,6 +431,9 @@ public class HandlerExampleActivity extends Activity {
     }
 
 
+    /**
+     * The type My thread.
+     */
     static public class MyThread extends Thread {
         @Override
         public void run() {
@@ -417,6 +456,9 @@ public class HandlerExampleActivity extends Activity {
         }
     }
 
+    /**
+     * The type My runnable thread.
+     */
     static public class MyRunnableThread implements Runnable {
         @Override
         public void run() {

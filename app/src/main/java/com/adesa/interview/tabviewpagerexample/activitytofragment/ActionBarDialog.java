@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 package com.adesa.interview.tabviewpagerexample.activitytofragment;
 
 
@@ -14,8 +18,14 @@ import android.widget.TextView;
 
 import com.adesa.interview.tabviewpagerexample.R;
 
+/**
+ * The type Action bar dialog.
+ */
 public class ActionBarDialog extends DialogFragment {
 
+    /**
+     * The Dialog.
+     */
     Dialog dialog;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
