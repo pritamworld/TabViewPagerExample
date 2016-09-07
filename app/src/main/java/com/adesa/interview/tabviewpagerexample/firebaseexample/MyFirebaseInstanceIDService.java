@@ -6,6 +6,7 @@ package com.adesa.interview.tabviewpagerexample.firebaseexample;
 
 import android.util.Log;
 
+import com.firebase.client.Firebase;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.FirebaseInstanceIdService;
 
@@ -30,5 +31,16 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
 
     private void sendRegistrationToServer(String token) {
         // TODO: Implement this method to send token to your app server.
+        Firebase ref = new Firebase(Config.FIREBASE_URL);
+
+        //Creating Person object
+        Person person = new Person();
+
+        //Adding values
+        person.setName(token);
+        person.setAddress("Pritesh - Toronto");
+
+        //Storing values to firebase
+        ref.child("Persons").child("person").setValue(person);
     }
 }

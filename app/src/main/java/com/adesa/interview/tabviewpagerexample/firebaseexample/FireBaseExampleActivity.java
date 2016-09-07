@@ -43,7 +43,6 @@ public class FireBaseExampleActivity extends AppCompatActivity {
         setContentView(R.layout.activity_fire_base_example);
         ButterKnife.inject(this);
 
-        Firebase.setAndroidContext(this);
 
         if (getIntent().getExtras() != null) {
             for (String key : getIntent().getExtras().keySet()) {
