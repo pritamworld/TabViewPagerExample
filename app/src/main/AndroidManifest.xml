@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016. Pritesh Patel
+  -->
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.adesa.interview.tabviewpagerexample">
 
@@ -48,11 +52,12 @@
         <activity android:name=".BaseActivity" />
         <activity android:name=".databasegreendao.FetchLoaderActivity" />
         <activity android:name=".exampleloopj.NetworkCallActivity" />
-        <activity android:name=".multitasking.HandlerExampleActivity"></activity>
-        <activity android:name=".CustomLibraryTestActivity">
+        <activity android:name=".multitasking.HandlerExampleActivity" />
+        <activity android:name=".CustomLibraryTestActivity"></activity>
+        <activity android:name=".multitasking.PeriodicHandlerActivity">
 
         </activity>
-        <activity android:name=".multitasking.PeriodicHandlerActivity">
+        <activity android:name=".CustomProgressBarActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
