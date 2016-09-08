@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright (c) 2016. Pritesh Patel
   -->
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.adesa.interview.tabviewpagerexample">
 
@@ -57,11 +56,7 @@
         <activity android:name=".multitasking.PeriodicHandlerActivity" />
         <activity android:name=".CustomProgressBarActivity" />
         <activity android:name=".firebaseexample.FireBaseExampleActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <service
@@ -80,6 +75,14 @@
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
+
+        <activity android:name=".InputLayoutActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
