@@ -1,0 +1,48 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
+apply plugin: 'com.android.library'
+
+ext {
+
+    publishedGroupId = 'com.roughike'
+    libraryName = 'bottom-bar'
+    artifact = 'bottom-bar'
+
+    //Original Creator - Refer Original Guide to implement it
+    //Thank you
+    libraryDescription = 'A custom view component that mimics the Material Design "Bottom navigation" pattern.'
+
+    siteUrl = 'https://github.com/roughike/BottomBar'
+    gitUrl = 'https://github.com/roughike/BottomBar.git'
+
+    libraryVersion = '1.4.0.1'
+
+    developerId = 'roughike'
+    developerName = 'Iiro Krankka'
+    developerEmail = 'iiro.krankka@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.0"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.support:design:24.1.1'
+}
