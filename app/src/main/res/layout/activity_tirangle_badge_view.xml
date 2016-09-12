@@ -15,14 +15,19 @@
 
     <RelativeLayout
         android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:orientation="horizontal">
+        android:layout_height="300dp">
+
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
             android:scaleType="fitXY"
-            android:src="@drawable/lions" />
+            android:src="@drawable/lions"
+            tools:ignore="ContentDescription" />
+
         <!-- https://github.com/shts/TriangleLabelView -->
         <com.adesa.interview.tabviewpagerexample.views.TriangleLabelView
             android:layout_width="match_parent"
@@ -56,5 +61,5 @@
         android:maxLines="1"
         android:scrollHorizontally="true"
         android:selectAllOnFocus="true"
-        android:text="Welcome to Android Programming, Welcome to iOS Programming, Welcome to BlackBerry Programming,Welcome to .NET Programming,Welcome to JAVA Programming" />
+        android:text="@string/welcome_to_android_programming_welcome_to_ios_programming_welcome_to_blackberry_programming_welcome_to_net_programming_welcome_to_java_programming" />
 </RelativeLayout>
