@@ -55,7 +55,7 @@
         <activity android:name=".CustomLibraryTestActivity" />
         <activity android:name=".multitasking.PeriodicHandlerActivity" />
         <activity android:name=".CustomProgressBarActivity" />
-        <activity android:name=".firebaseexample.FireBaseExampleActivity"></activity>
+        <activity android:name=".firebaseexample.FireBaseExampleActivity" />
 
         <service
             android:name=".firebaseexample.MyFirebaseMessagingService"
@@ -74,10 +74,11 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".InputLayoutActivity">
+        <activity android:name=".InputLayoutActivity"></activity>
+        <activity android:name=".BottomTabNavigationActivity">
 
         </activity>
-        <activity android:name=".BottomTabNavigationActivity">
+        <activity android:name=".TirangleBadgeViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
