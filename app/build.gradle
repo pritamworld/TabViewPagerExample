@@ -69,6 +69,7 @@ dependencies {
     compile 'com.google.firebase:firebase-messaging:9.4.0'
     //compile 'com.roughike:bottom-bar:2.0.2'
     compile project(':bottom-bar')
+    //compile 'com.github.shts:TriangleLabelView:1.1.0'
 }
 apply plugin: 'com.google.gms.google-services'
 apply plugin: 'org.greenrobot.greendao'
