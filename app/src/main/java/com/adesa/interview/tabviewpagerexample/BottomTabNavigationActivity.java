@@ -8,18 +8,30 @@ import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
+import com.adesa.interview.tabviewpagerexample.customevent.CustomView;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnMenuTabClickListener;
 
 public class BottomTabNavigationActivity extends AppCompatActivity {
 
     BottomBar mBottomBar;
+    CustomView customView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bottom_tab_navigation);
+
+        customView = new CustomView(this);
+        customView.setCustomEventListener(new CustomView.OnCustomEventListener() {
+            @Override
+            public void onEvent() {
+                Toast.makeText(getApplicationContext(), "Hello", Toast.LENGTH_SHORT).show();
+            }
+        });
+
 
         mBottomBar = BottomBar.attach(this, savedInstanceState);
         mBottomBar.setItems(R.menu.bottombar_menu);
