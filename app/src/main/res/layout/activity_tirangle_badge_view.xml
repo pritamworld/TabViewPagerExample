@@ -41,4 +41,20 @@
             app:secondaryTextColor="@color/yellow_100"
             app:secondaryTextSize="11sp" />
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtScrollingText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:freezesText="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:selectAllOnFocus="true"
+        android:text="Welcome to Android Programming, Welcome to iOS Programming, Welcome to BlackBerry Programming,Welcome to .NET Programming,Welcome to JAVA Programming" />
 </RelativeLayout>
