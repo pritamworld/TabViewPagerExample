@@ -22,7 +22,13 @@ public class TirangleBadgeViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tirangle_badge_view);
         ButterKnife.inject(this);
 
-        txtScrollingText.setSelected(true);
+        //txtScrollingText.setSelected(true);
         //txtScrollingText.requestFocus();
+
+        /*txtScrollingText.setText("welcome_to_android_programming_welcome_to_ios_programming_welcome_to_blackberry_programming_welcome_to_net_programming_welcome_to_java_programming");
+        txtScrollingText.setEllipsize(TextUtils.TruncateAt.MARQUEE);
+        txtScrollingText.setSingleLine(true);
+        txtScrollingText.setMarqueeRepeatLimit(5);
+        txtScrollingText.setSelected(true);*/
     }
 }

@@ -47,19 +47,17 @@
             app:secondaryTextSize="11sp" />
     </RelativeLayout>
 
-    <TextView
+    <com.adesa.interview.tabviewpagerexample.views.CustomTextView
         android:id="@+id/txtScrollingText"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:clickable="true"
         android:ellipsize="marquee"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:freezesText="true"
         android:marqueeRepeatLimit="marquee_forever"
-        android:maxLines="1"
+        android:padding="5dp"
         android:scrollHorizontally="true"
-        android:selectAllOnFocus="true"
-        android:text="@string/welcome_to_android_programming_welcome_to_ios_programming_welcome_to_blackberry_programming_welcome_to_net_programming_welcome_to_java_programming" />
+        android:singleLine="true"
+        android:text="@string/welcome_to_android_programming_welcome_to_ios_programming_welcome_to_blackberry_programming_welcome_to_net_programming_welcome_to_java_programming"
+        android:textSize="@dimen/copyright_txt"
+        android:textStyle="bold" />
 </RelativeLayout>
