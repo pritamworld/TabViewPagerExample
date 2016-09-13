@@ -75,4 +75,21 @@
 
     </android.support.constraint.ConstraintLayout>
 
+    <TextView
+        android:id="@+id/txtTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txtTop"
+        android:hint="Enter Name"
+        android:inputType="textCapCharacters"
+        tools:ignore="HardcodedText"
+        tools:text="John Doe" />
+
 </RelativeLayout>
