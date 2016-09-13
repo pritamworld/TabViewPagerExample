@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel
+ */
+
 apply plugin: 'com.android.library'
 
 dependencies {
@@ -5,7 +9,7 @@ dependencies {
 
 android {
     compileSdkVersion 21
-    buildToolsVersion "21.1"
+    buildToolsVersion '24.0.2'
 
     defaultConfig {
         minSdkVersion 15
