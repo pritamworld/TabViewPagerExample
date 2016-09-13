@@ -15,7 +15,7 @@ android {
         }
     }
     compileSdkVersion 24
-    buildToolsVersion "24.0.0"
+    buildToolsVersion '24.0.2'
     useLibrary 'org.apache.http.legacy'
     defaultConfig {
         applicationId "com.adesa.interview.tabviewpagerexample"
@@ -73,6 +73,8 @@ dependencies {
     compile 'com.facebook.stetho:stetho:1.4.0'
     compile 'com.facebook.stetho:stetho-urlconnection:1.4.0'
     //compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
+    compile 'com.google.android.gms:play-services-maps:9.4.0'
 }
 apply plugin: 'com.google.gms.google-services'
 apply plugin: 'org.greenrobot.greendao'
