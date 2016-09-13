@@ -6,6 +6,7 @@ package com.adesa.interview.tabviewpagerexample;
 
 import android.app.Application;
 
+import com.facebook.stetho.Stetho;
 import com.firebase.client.Firebase;
 
 /**
@@ -23,5 +24,6 @@ public class AppConfig extends Application {
     public void onCreate() {
         super.onCreate();
         Firebase.setAndroidContext(this);
+        Stetho.initializeWithDefaults(this);
     }
 }
