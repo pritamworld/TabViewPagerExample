@@ -74,11 +74,12 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".InputLayoutActivity"></activity>
-        <activity android:name=".BottomTabNavigationActivity">
+        <activity android:name=".InputLayoutActivity" />
+        <activity android:name=".BottomTabNavigationActivity"></activity>
+        <activity android:name=".TirangleBadgeViewActivity">
 
         </activity>
-        <activity android:name=".TirangleBadgeViewActivity">
+        <activity android:name=".fragmentexample.TabOrMobileActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

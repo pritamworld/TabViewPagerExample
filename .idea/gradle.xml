@@ -16,16 +16,7 @@
             <option value="$PROJECT_DIR$/volley" />
           </set>
         </option>
-        <option name="myModules">
-          <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/bottom-bar" />
-            <option value="$PROJECT_DIR$/priteshtestlibrary" />
-            <option value="$PROJECT_DIR$/vitamio" />
-            <option value="$PROJECT_DIR$/volley" />
-          </set>
-        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>
