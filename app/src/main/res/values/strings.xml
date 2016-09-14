@@ -29,4 +29,8 @@
     <string name="err_msg_email">Enter valid email address</string>
     <string name="err_msg_password">Enter the password</string>
     <string name="welcome_text">Welcome to Android Programming, Welcome to iOS Programming, Welcome to BlackBerry Programming,Welcome to .NET Programming,Welcome to JAVA Programming</string>
+    <string name="text_friend">Friend</string>
+    <string name="myself">MySelf</string>
+    <string name="send_msg">Send MSG</string>
+    <string name="type_message">type message</string>
 </resources>
