@@ -2,10 +2,9 @@
  * Copyright (c) 2016. Pritesh Patel
  */
 
-package com.adesa.interview.tabviewpagerexample;
+package com.adesa.interview.tabviewpagerexample.utils;
 
 import android.content.Context;
-import android.content.pm.PackageInstaller;
 import android.os.Build;
 import android.provider.Settings;
 
