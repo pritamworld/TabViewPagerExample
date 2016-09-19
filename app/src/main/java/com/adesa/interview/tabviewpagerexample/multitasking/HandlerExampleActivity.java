@@ -19,7 +19,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.adesa.interview.tabviewpagerexample.R;
-import com.adesa.interview.tabviewpagerexample.Utils;
+import com.adesa.interview.tabviewpagerexample.utils.Utils;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.text.StrBuilder;
@@ -70,8 +70,6 @@ public class HandlerExampleActivity extends Activity {
     private static ProgressDialog progressDialog;
     private static Bitmap downloadBitmap;
     private static Handler handler;
-    private Thread downloadThread;
-    private MyRunnableThread myRunnableThread;
     /**
      * The Txt message.
      */
@@ -87,7 +85,160 @@ public class HandlerExampleActivity extends Activity {
      */
     @InjectView(R.id.imageViewBitmap)
     ImageView imageViewBitmap;
+    private Thread downloadThread;
+    private MyRunnableThread myRunnableThread;
 
+    // Utility method to download image from the internet
+    static private Bitmap downloadBitmap(String url) throws IOException {
+
+        HttpURLConnection httpURLConnection;
+        URL urlImage = new URL(url);
+        httpURLConnection = (HttpURLConnection) urlImage.openConnection();
+        httpURLConnection.setRequestMethod("GET");
+        httpURLConnection.connect();
+
+        Bitmap bitmap;
+        Log.d(TAG, httpURLConnection.getResponseMessage());
+        if (httpURLConnection.getResponseCode() == HttpURLConnection.HTTP_OK) {
+            InputStream inputStream = httpURLConnection.getInputStream();
+            byte[] bytes = IOUtils.toByteArray(inputStream);
+            bitmap = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+        } else {
+            throw new IOException("Download failed, HTTP response code "
+                    + httpURLConnection.getResponseCode()
+                    + " - "
+                    + httpURLConnection.getResponseMessage());
+        }
+        return bitmap;
+    }
+
+    static private String openWebSite(String url) throws IOException {
+
+        URL urlWebLink = new URL("https://wikipedia.org");
+        URLConnection urlConnection = urlWebLink.openConnection();
+        InputStream inputStream = urlConnection.getInputStream();
+        byte[] bytes = IOUtils.toByteArray(inputStream);
+        StrBuilder strBuilder = new StrBuilder();
+        strBuilder.append(new String(bytes));
+        return strBuilder.build();
+
+    }
+
+    static private String openCertifiedWebSite(String url) throws IOException {
+
+        URL urlWebLink = new URL("https://certs.cac.washington.edu/CAtest/");
+        HttpsURLConnection urlConnection = (HttpsURLConnection) urlWebLink.openConnection();
+        SSLContext context = getTrustedCertificate();
+        if (context != null) {
+            urlConnection.setSSLSocketFactory(context.getSocketFactory());
+            InputStream inputStream = urlConnection.getInputStream();
+            byte[] bytes = IOUtils.toByteArray(inputStream);
+            StrBuilder strBuilder = new StrBuilder();
+            strBuilder.append(new String(bytes));
+            return strBuilder.build();
+        } else return null;
+    }
+
+    /**
+     * Gets server ssl.
+     *
+     * @param url the url
+     */
+    public static void getServerSSL(String url) {
+        SSLSocket sslsocket = null;
+        int port = 443;
+        SSLSocketFactory sslsocketfactory = (SSLSocketFactory) SSLSocketFactory.getDefault();
+
+        try {
+            sslsocket = (SSLSocket) sslsocketfactory.createSocket(url, port);
+        } catch (UnknownHostException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+        InputStream inputstream = null;
+        try {
+            inputstream = sslsocket.getInputStream();
+        } catch (IOException e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
+        }
+        InputStreamReader inputstreamreader = new InputStreamReader(inputstream);
+        BufferedReader bufferedreader = new BufferedReader(inputstreamreader);
+
+
+        OutputStream outputstream = null;
+        try {
+            outputstream = sslsocket.getOutputStream();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        OutputStreamWriter outputstreamwriter = new OutputStreamWriter(outputstream);
+        BufferedWriter bufferedwriter = new BufferedWriter(outputstreamwriter);
+
+        sslsocket.addHandshakeCompletedListener(new HandshakeCompletedListener() {
+
+            @Override
+            public void handshakeCompleted(HandshakeCompletedEvent event) {
+                // TODO Auto-generated method stub
+                Log.i("test", event.toString());
+            }
+        });
+
+        try {
+            sslsocket.startHandshake();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    static private SSLContext getTrustedCertificate() throws IOException {
+        //Load CAs from an InputStream
+        // (could be from a resource or ByteArrayInputStream or ...)
+        InputStream caInput = null;
+        SSLContext context = null;
+        try {
+
+            CertificateFactory cf = CertificateFactory.getInstance("X.509");
+            // From https://www.washington.edu/itconnect/security/ca/load-der.crt
+            caInput = new BufferedInputStream(new FileInputStream("load-der.crt"));
+            Certificate ca;
+
+            ca = cf.generateCertificate(caInput);
+            System.out.println("ca=" + ((X509Certificate) ca).getSubjectDN());
+            // Create a KeyStore containing our trusted CAs
+            String keyStoreType = KeyStore.getDefaultType();
+            KeyStore keyStore = KeyStore.getInstance(keyStoreType);
+            keyStore.load(null, null);
+            keyStore.setCertificateEntry("ca", ca);
+
+            // Create a TrustManager that trusts the CAs in our KeyStore
+            String tmfAlgorithm = TrustManagerFactory.getDefaultAlgorithm();
+            TrustManagerFactory tmf = TrustManagerFactory.getInstance(tmfAlgorithm);
+            tmf.init(keyStore);
+
+            // Create an SSLContext that uses our TrustManager
+            context = SSLContext.getInstance("TLS");
+            context.init(null, tmf.getTrustManagers(), null);
+        } catch (CertificateException e) {
+            e.printStackTrace();
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        } catch (KeyStoreException e) {
+            e.printStackTrace();
+        } catch (KeyManagementException e) {
+            e.printStackTrace();
+        } finally {
+            caInput.close();
+        }
+
+
+        return context;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -171,6 +322,7 @@ public class HandlerExampleActivity extends Activity {
         // UI updates must run on MainThread
         txtMessage.setText(event.getEventDescription());
     }
+
     // save the thread
     @Override
     public Object onRetainNonConfigurationInstance() {
@@ -275,161 +427,6 @@ public class HandlerExampleActivity extends Activity {
                 break;
         }
     }
-
-    // Utility method to download image from the internet
-    static private Bitmap downloadBitmap(String url) throws IOException {
-
-        HttpURLConnection httpURLConnection;
-        URL urlImage = new URL(url);
-        httpURLConnection = (HttpURLConnection) urlImage.openConnection();
-        httpURLConnection.setRequestMethod("GET");
-        httpURLConnection.connect();
-
-        Bitmap bitmap;
-        Log.d(TAG, httpURLConnection.getResponseMessage());
-        if (httpURLConnection.getResponseCode() == HttpURLConnection.HTTP_OK) {
-            InputStream inputStream = httpURLConnection.getInputStream();
-            byte[] bytes = IOUtils.toByteArray(inputStream);
-            bitmap = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
-        } else {
-            throw new IOException("Download failed, HTTP response code "
-                    + httpURLConnection.getResponseCode()
-                    + " - "
-                    + httpURLConnection.getResponseMessage());
-        }
-        return bitmap;
-    }
-
-    static private String openWebSite(String url) throws IOException {
-
-        URL urlWebLink = new URL("https://wikipedia.org");
-        URLConnection urlConnection = urlWebLink.openConnection();
-        InputStream inputStream = urlConnection.getInputStream();
-        byte[] bytes = IOUtils.toByteArray(inputStream);
-        StrBuilder strBuilder = new StrBuilder();
-        strBuilder.append(new String(bytes));
-        return strBuilder.build();
-
-    }
-
-    static private String openCertifiedWebSite(String url) throws IOException {
-
-        URL urlWebLink = new URL("https://certs.cac.washington.edu/CAtest/");
-        HttpsURLConnection urlConnection = (HttpsURLConnection) urlWebLink.openConnection();
-        SSLContext context = getTrustedCertificate();
-        if (context != null) {
-            urlConnection.setSSLSocketFactory(context.getSocketFactory());
-            InputStream inputStream = urlConnection.getInputStream();
-            byte[] bytes = IOUtils.toByteArray(inputStream);
-            StrBuilder strBuilder = new StrBuilder();
-            strBuilder.append(new String(bytes));
-            return strBuilder.build();
-        } else return null;
-    }
-
-
-    /**
-     * Gets server ssl.
-     *
-     * @param url the url
-     */
-    public static void getServerSSL(String url) {
-        SSLSocket sslsocket = null;
-        int port = 443;
-        SSLSocketFactory sslsocketfactory = (SSLSocketFactory) SSLSocketFactory.getDefault();
-
-        try {
-            sslsocket = (SSLSocket) sslsocketfactory.createSocket(url, port);
-        } catch (UnknownHostException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-
-        InputStream inputstream = null;
-        try {
-            inputstream = sslsocket.getInputStream();
-        } catch (IOException e1) {
-            // TODO Auto-generated catch block
-            e1.printStackTrace();
-        }
-        InputStreamReader inputstreamreader = new InputStreamReader(inputstream);
-        BufferedReader bufferedreader = new BufferedReader(inputstreamreader);
-
-
-        OutputStream outputstream = null;
-        try {
-            outputstream = sslsocket.getOutputStream();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        OutputStreamWriter outputstreamwriter = new OutputStreamWriter(outputstream);
-        BufferedWriter bufferedwriter = new BufferedWriter(outputstreamwriter);
-
-        sslsocket.addHandshakeCompletedListener(new HandshakeCompletedListener() {
-
-            @Override
-            public void handshakeCompleted(HandshakeCompletedEvent event) {
-                // TODO Auto-generated method stub
-                Log.i("test", event.toString());
-            }
-        });
-
-        try {
-            sslsocket.startHandshake();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-    }
-
-
-    static private SSLContext getTrustedCertificate() throws IOException {
-        //Load CAs from an InputStream
-        // (could be from a resource or ByteArrayInputStream or ...)
-        InputStream caInput = null;
-        SSLContext context = null;
-        try {
-
-            CertificateFactory cf = CertificateFactory.getInstance("X.509");
-            // From https://www.washington.edu/itconnect/security/ca/load-der.crt
-            caInput = new BufferedInputStream(new FileInputStream("load-der.crt"));
-            Certificate ca;
-
-            ca = cf.generateCertificate(caInput);
-            System.out.println("ca=" + ((X509Certificate) ca).getSubjectDN());
-            // Create a KeyStore containing our trusted CAs
-            String keyStoreType = KeyStore.getDefaultType();
-            KeyStore keyStore = KeyStore.getInstance(keyStoreType);
-            keyStore.load(null, null);
-            keyStore.setCertificateEntry("ca", ca);
-
-            // Create a TrustManager that trusts the CAs in our KeyStore
-            String tmfAlgorithm = TrustManagerFactory.getDefaultAlgorithm();
-            TrustManagerFactory tmf = TrustManagerFactory.getInstance(tmfAlgorithm);
-            tmf.init(keyStore);
-
-            // Create an SSLContext that uses our TrustManager
-            context = SSLContext.getInstance("TLS");
-            context.init(null, tmf.getTrustManagers(), null);
-        } catch (CertificateException e) {
-            e.printStackTrace();
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        } catch (KeyStoreException e) {
-            e.printStackTrace();
-        } catch (KeyManagementException e) {
-            e.printStackTrace();
-        } finally {
-            caInput.close();
-        }
-
-
-        return context;
-    }
-
 
     /**
      * The type My thread.

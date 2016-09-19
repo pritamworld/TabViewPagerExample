@@ -2,12 +2,12 @@
  * Copyright (c) 2016. Pritesh Patel
  */
 
-package com.adesa.interview.tabviewpagerexample;
+package com.adesa.interview.tabviewpagerexample.utils;
 
 import android.content.Context;
-import android.content.pm.PackageInstaller;
 import android.os.Build;
 import android.provider.Settings;
+import android.util.Log;
 
 import org.apache.http.conn.util.InetAddressUtils;
 
@@ -15,6 +15,8 @@ import java.net.InetAddress;
 import java.net.NetworkInterface;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.Collections;
 import java.util.List;
 
@@ -114,4 +116,68 @@ public class Utils {
         return Build.SERIAL;
     }
 
+    public static void numberFormattor() {
+        NumberFormat formatter;
+        String number;
+
+        // 0 --> a digit or 0 if no digit present
+        formatter = new DecimalFormat("00000");
+        number = formatter.format(-1234.567);
+        Log.d("Number 1: ", number); //-01235
+
+        formatter = new DecimalFormat("0000.000");
+        number = formatter.format(-1234.567);
+        Log.d("Number 2: ", number); //-1234.567
+
+        // # --> a digit or nothing if no digit present
+        formatter = new DecimalFormat("##");
+        number = formatter.format(-1234.567);
+        Log.d("Number 3: ", number); //-1235
+
+        formatter = new DecimalFormat("##00");
+        number = formatter.format(0);
+        Log.d("Number 4: ", number); //00
+
+        // . --> the decimal point
+        formatter = new DecimalFormat(".00");
+        number = formatter.format(-0.123);
+        Log.d("Number 5: ", number); //-.12
+
+        formatter = new DecimalFormat("0.00");
+        number = formatter.format(-0.123);
+        Log.d("Number 6: ", number); //-0.12
+
+        formatter = new DecimalFormat("#.#");
+        number = formatter.format(-1234.567);
+        Log.d("Number 7: ", number); //-1234.6
+
+        formatter = new DecimalFormat("#.######");
+        number = formatter.format(-1234.567);
+        Log.d("Number 8: ", number); //-1234.567
+
+        formatter = new DecimalFormat(".######");
+        number = formatter.format(-1234.567);
+        Log.d("Number 9: ", number); //-1234.567
+
+        formatter = new DecimalFormat("#.000000");
+        number = formatter.format(-1234.567);
+        Log.d("Number 10: ", number); //-1234.567000
+
+        // , --> used to group numbers
+        formatter = new DecimalFormat("#,###,###");
+        number = formatter.format(-1234.567);
+        Log.d("Number 11: ", number); //-1,235
+
+        number = formatter.format(-1234567.890);
+        Log.d("Number 12: ", number); //-1,234,568
+
+        // '--> used to quote literal symbols
+        formatter = new DecimalFormat("'#'#");
+        number = formatter.format(-1234.567);
+        Log.d("Number 13: ", number); //-#1235
+
+        formatter = new DecimalFormat("'text'#");
+        number = formatter.format(-1234.567);
+        Log.d("Number 14: ", number); //-text1235
+    }
 }
