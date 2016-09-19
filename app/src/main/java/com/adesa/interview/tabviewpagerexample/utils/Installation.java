@@ -2,7 +2,7 @@
  * Copyright (c) 2016. Pritesh Patel
  */
 
-package com.adesa.interview.tabviewpagerexample;
+package com.adesa.interview.tabviewpagerexample.utils;
 
 import android.content.Context;
 
@@ -16,8 +16,8 @@ import java.util.UUID;
  * Created by pritesh.patel on 16-08-31.
  */
 public class Installation {
-    private static String sID = null;
     private static final String INSTALLATION = "INSTALLATION";
+    private static String sID = null;
 
     /**
      * Id string.
