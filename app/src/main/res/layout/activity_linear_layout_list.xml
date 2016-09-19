@@ -7,7 +7,7 @@
     android:id="@+id/activity_linear_layout_list"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.adesa.interview.tabviewpagerexample.LinearLayoutListActivity">
+    tools:context="com.adesa.interview.tabviewpagerexample.com.moxdroid.interview.tabviewpagerexample.LinearLayoutListActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

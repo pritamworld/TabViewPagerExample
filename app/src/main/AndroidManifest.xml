@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright (c) 2016. Pritesh Patel
   -->
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.adesa.interview.tabviewpagerexample">
 
@@ -11,7 +12,7 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
-        android:name=".AppConfig"
+        android:name="com.moxdroid.interview.tabviewpagerexample.AppConfig"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -21,44 +22,44 @@
             android:name="net.hockeyapp.android.appIdentifier"
             android:value="${HOCKEYAPP_APP_ID}" />
 
-        <activity android:name=".slidepageview.MainActivity" />
-        <activity android:name=".tabpageview.HomeActivity" />
-        <activity android:name=".TimerTestActivity" />
+        <activity android:name="com.moxdroid.interview.tabviewpagerexample.slidepageview.MainActivity" />
+        <activity android:name="com.moxdroid.interview.tabviewpagerexample.tabpageview.HomeActivity" />
+        <activity android:name="com.moxdroid.interview.tabviewpagerexample.TimerTestActivity" />
         <activity
-            android:name=".runtimepermission.RunTimePermissionsTestActivity"
+            android:name="com.moxdroid.interview.tabviewpagerexample.runtimepermission.RunTimePermissionsTestActivity"
             android:label="@string/title_activity_run_time_permission"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activitytofragment.MainFragmentActivity"
+            android:name="com.moxdroid.interview.tabviewpagerexample.activitytofragment.MainFragmentActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".FloatingLableTestActivity" />
+        <activity android:name="com.moxdroid.interview.tabviewpagerexample.FloatingLableTestActivity" />
         <activity
-            android:name=".VideoLiveStreamActivity"
+            android:name="com.moxdroid.interview.tabviewpagerexample.VideoLiveStreamActivity"
             android:label="@string/title_activity_video_live_stream"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".volleytest.ImageLoadingActivity" />
-        <activity android:name=".PhoneStateListenerActivity" />
+        <activity android:name="com.moxdroid.interview.tabviewpagerexample.volleytest.ImageLoadingActivity" />
+        <activity android:name="com.moxdroid.interview.tabviewpagerexample.PhoneStateListenerActivity" />
         <activity
-            android:name=".ScreenOrientationTestActivity"
+            android:name="com.moxdroid.interview.tabviewpagerexample.ScreenOrientationTestActivity"
             android:configChanges="orientation|keyboardHidden|screenSize" />
 
         <service
-            android:name=".downloads.DataDownloadIntentService"
+            android:name="com.moxdroid.interview.tabviewpagerexample.downloads.DataDownloadIntentService"
             android:exported="false" />
 
-        <activity android:name=".downloads.DataDownloadActivity" />
-        <activity android:name=".BaseActivity" />
-        <activity android:name=".databasegreendao.FetchLoaderActivity" />
-        <activity android:name=".exampleloopj.NetworkCallActivity" />
-        <activity android:name=".multitasking.HandlerExampleActivity" />
-        <activity android:name=".CustomLibraryTestActivity" />
-        <activity android:name=".multitasking.PeriodicHandlerActivity" />
-        <activity android:name=".CustomProgressBarActivity" />
-        <activity android:name=".firebaseexample.FireBaseExampleActivity" />
+        <activity android:name="com.moxdroid.interview.tabviewpagerexample.downloads.DataDownloadActivity" />
+        <activity android:name="com.moxdroid.interview.tabviewpagerexample.BaseActivity" />
+        <activity android:name="com.moxdroid.interview.tabviewpagerexample.databasegreendao.FetchLoaderActivity" />
+        <activity android:name="com.moxdroid.interview.tabviewpagerexample.exampleloopj.NetworkCallActivity" />
+        <activity android:name="com.moxdroid.interview.tabviewpagerexample.multitasking.HandlerExampleActivity" />
+        <activity android:name="com.moxdroid.interview.tabviewpagerexample.CustomLibraryTestActivity" />
+        <activity android:name="com.moxdroid.interview.tabviewpagerexample.multitasking.PeriodicHandlerActivity" />
+        <activity android:name="com.moxdroid.interview.tabviewpagerexample.CustomProgressBarActivity" />
+        <activity android:name="com.moxdroid.interview.tabviewpagerexample.firebaseexample.FireBaseExampleActivity" />
 
         <service
-            android:name=".firebaseexample.MyFirebaseMessagingService"
+            android:name="com.moxdroid.interview.tabviewpagerexample.firebaseexample.MyFirebaseMessagingService"
             android:enabled="true"
             android:exported="false">
             <intent-filter>
@@ -66,7 +67,7 @@
             </intent-filter>
         </service>
         <service
-            android:name=".firebaseexample.MyFirebaseInstanceIDService"
+            android:name="com.moxdroid.interview.tabviewpagerexample.firebaseexample.MyFirebaseInstanceIDService"
             android:enabled="true"
             android:exported="false">
             <intent-filter>
@@ -74,14 +75,16 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".InputLayoutActivity">
+        <activity android:name="com.moxdroid.interview.tabviewpagerexample.InputLayoutActivity">
 
         </activity>
-        <activity android:name=".BottomTabNavigationActivity" />
-        <activity android:name=".TirangleBadgeViewActivity" />
-        <activity android:name=".fragmentexample.TabOrMobileActivity"></activity>
-        <activity android:name=".chat.ChatActivity"></activity>
-        <activity android:name=".LinearLayoutListActivity">
+        <activity android:name="com.moxdroid.interview.tabviewpagerexample.BottomTabNavigationActivity" />
+        <activity android:name="com.moxdroid.interview.tabviewpagerexample.TirangleBadgeViewActivity" />
+        <activity android:name="com.moxdroid.interview.tabviewpagerexample.fragmentexample.TabOrMobileActivity"></activity>
+        <activity android:name="com.moxdroid.interview.tabviewpagerexample.chat.ChatActivity"></activity>
+        <activity android:name="com.moxdroid.interview.tabviewpagerexample.LinearLayoutListActivity"></activity>
+
+        <activity android:name="com.moxdroid.interview.tabviewpagerexample.HelloAndroid">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

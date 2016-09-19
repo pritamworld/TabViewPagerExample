@@ -8,18 +8,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context="com.adesa.interview.tabviewpagerexample.fragmentexample.TabOrMobileActivity">
+    tools:context="com.adesa.interview.tabviewpagerexample.com.moxdroid.interview.tabviewpagerexample.fragmentexample.TabOrMobileActivity">
 
     <fragment
         android:id="@+id/headlines"
-        android:name="com.adesa.interview.tabviewpagerexample.fragmentexample.ItemFragment"
+        android:name="com.moxdroid.interview.tabviewpagerexample.fragmentexample.ItemFragment"
         android:layout_width="200dp"
         android:layout_height="fill_parent"
         android:layout_marginRight="10dp" />
 
     <fragment
         android:id="@+id/article"
-        android:name="com.adesa.interview.tabviewpagerexample.fragmentexample.DetailsFragment"
+        android:name="com.moxdroid.interview.tabviewpagerexample.fragmentexample.DetailsFragment"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" />
 </RelativeLayout>

@@ -33,4 +33,6 @@
     <string name="myself">MySelf</string>
     <string name="send_msg">Send MSG</string>
     <string name="type_message">type message</string>
+    <string name="hello_world">Hello World</string>
+    <string name="start">Start</string>
 </resources>
