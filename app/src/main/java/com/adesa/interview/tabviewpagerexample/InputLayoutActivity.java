@@ -17,6 +17,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.adesa.interview.tabviewpagerexample.utils.Utils;
+
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import butterknife.OnClick;
@@ -54,6 +56,7 @@ public class InputLayoutActivity extends AppCompatActivity {
         inputEmail.addTextChangedListener(new MyTextWatcher(inputEmail));
         inputPassword.addTextChangedListener(new MyTextWatcher(inputPassword));
 
+        Utils.numberFormattor();
     }
 
     @OnClick(R.id.btn_signup)
