@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel, Toronto, Canada
+ */
+
 package com.adesa.interview.tabviewpagerexample;
 
 import android.app.Application;

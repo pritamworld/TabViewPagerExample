@@ -1,8 +1,12 @@
+/*
+ * Copyright (c) 2016. Pritesh Patel, Toronto, Canada
+ */
+
 package com.adesa.interview.tabviewpagerexample;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * To work on unit tests, switch the Test Artifact in the Build Variants view.
