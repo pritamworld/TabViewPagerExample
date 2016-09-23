@@ -8,7 +8,23 @@
       tools:context=".MainActivity">
     <item
         android:id="@+id/action_refresh"
-        android:orderInCategory="100"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:orderInCategory="1"
         android:title="Refresh"
-        app:showAsAction="never"/>
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:orderInCategory="2"
+        android:title="Search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <item
+        android:id="@+id/action_share"
+        android:orderInCategory="3"
+        android:title="Share"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+        app:showAsAction="ifRoom" />
 </menu>
