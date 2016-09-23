@@ -13,13 +13,36 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.moxdroid.interview.tabviewpagerexample.daggerexample.DaggerActivity">
 
+    <TextView
+        android:id="@+id/direction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:textColor="@color/amber_900"
+        android:textSize="64dip"
+        android:textStyle="bold"
+        tools:text="Direction" />
+
+    <TextView
+        android:id="@+id/values"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:text="Direction Value"
+        android:textColor="@color/blue_900"
+        android:textStyle="normal|bold" />
+
+
     <ImageView
         android:id="@+id/pointer"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:contentDescription="Gravity Pointer Image"
-        android:scaleType="fitXY"
-        android:src="@drawable/compassistock" />
+        android:contentDescription="Gravity Pointer Image Static"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_direction_static" />
+
 </RelativeLayout>

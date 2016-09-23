@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright (c) 2016. Pritesh Patel, Toronto, Canada
   -->
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.adesa.interview.tabviewpagerexample">
 
@@ -81,14 +80,15 @@
         <activity android:name="com.moxdroid.interview.tabviewpagerexample.fragmentexample.TabOrMobileActivity" />
         <activity android:name="com.moxdroid.interview.tabviewpagerexample.chat.ChatActivity" />
         <activity android:name="com.moxdroid.interview.tabviewpagerexample.LinearLayoutListActivity" />
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.HelloAndroid"></activity>
+        <activity android:name="com.moxdroid.interview.tabviewpagerexample.HelloAndroid" />
         <activity
             android:name="com.moxdroid.interview.tabviewpagerexample.SampleConstraintViewExampleActivity"
             android:label="@string/title_activity_sample_constraint_view_example"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="com.moxdroid.interview.tabviewpagerexample.daggerexample.DaggerActivity">
 
         </activity>
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.daggerexample.DaggerActivity">
+        <activity android:name="com.moxdroid.interview.tabviewpagerexample.webapp.WebAppTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
