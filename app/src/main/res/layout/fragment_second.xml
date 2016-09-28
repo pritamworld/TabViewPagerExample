@@ -1,8 +1,12 @@
+<!--
+  ~ Copyright (c) 2016. Pritesh Patel, Toronto, Canada
+  -->
+
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".slidepageview.SecondFragment">
+    tools:context="com.moxdroid.interview.tabviewpagerexample.slidepageview.SecondFragment">
 
     <TextView
         android:id="@+id/tvLabel"

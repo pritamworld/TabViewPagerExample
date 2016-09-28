@@ -1,31 +1,25 @@
 /*
- * Copyright (c) 2016. Pritesh Patel
+ * Copyright (c) 2016. Pritesh Patel, Toronto, Canada
  */
 
 apply plugin: 'com.android.application'
-
+apply plugin: 'com.neenbedankt.android-apt'
 def computeVersionName() {
     return "1.0"
 }
 android {
     signingConfigs {
-        testrelease {
-            keyAlias 'test'
-            keyPassword 'test@123'
-            storeFile file('/Users/Interview/Downloads/test.jks')
-            storePassword 'test@123'
-        }
     }
     compileSdkVersion 24
     buildToolsVersion '24.0.2'
     useLibrary 'org.apache.http.legacy'
     defaultConfig {
-        applicationId "com.adesa.interview.tabviewpagerexample"
+        applicationId "com.moxdroid.interview.tabviewpagerexample"
         minSdkVersion 15
         targetSdkVersion 24
         versionCode 1
         versionName computeVersionName()
-        signingConfig signingConfigs.testrelease
+//        signingConfig signingConfigs.testrelease
         manifestPlaceholders = [HOCKEYAPP_APP_ID: "5592c679bc9a4fba9db9482688900b01"]
     }
     buildTypes {
@@ -58,6 +52,7 @@ dependencies {
     //compile 'com.roughike:bottom-bar:2.0.2'
     compile project(':bottom-bar')
     //compile 'com.github.shts:TriangleLabelView:1.1.0'
+
     //compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha1'
     compile 'org.greenrobot:eventbus:3.0.0'
     compile 'org.greenrobot:eventbus:3.0.0'
@@ -78,10 +73,14 @@ dependencies {
     compile 'com.google.firebase:firebase-messaging:9.4.0'
     compile 'com.facebook.stetho:stetho:1.4.0'
     compile 'com.facebook.stetho:stetho-urlconnection:1.4.0'
-    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
     compile 'com.google.android.gms:play-services-maps:9.4.0'
     compile 'com.android.support:recyclerview-v7:24.2.0'
     testCompile 'junit:junit:4.12'
+    compile files('libs/robotium-solo-5.6.1.jar')
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha8'
+    //Dagger
+    compile 'com.google.dagger:dagger:2.0'
+    apt 'com.google.dagger:dagger-compiler:2.0'
 }
 apply plugin: 'com.google.gms.google-services'
 apply plugin: 'org.greenrobot.greendao'

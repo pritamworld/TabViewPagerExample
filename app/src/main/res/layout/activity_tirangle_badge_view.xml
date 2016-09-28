@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><!--
-  ~ Copyright (c) 2016. Pritesh Patel
+  ~ Copyright (c) 2016. Pritesh Patel, Toronto, Canada
   -->
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -11,9 +11,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.adesa.interview.tabviewpagerexample.TirangleBadgeViewActivity">
+    tools:context="com.moxdroid.interview.tabviewpagerexample.com.moxdroid.interview.tabviewpagerexample.TirangleBadgeViewActivity">
 
-    <com.adesa.interview.tabviewpagerexample.views.CustomTextView
+    <com.moxdroid.interview.tabviewpagerexample.views.CustomTextView
         android:id="@+id/txtScrollingText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,7 +54,7 @@
             tools:layout_constraintTop_creator="1" />
 
         <!-- https://github.com/shts/TriangleLabelView -->
-        <com.adesa.interview.tabviewpagerexample.views.TriangleLabelView
+        <com.moxdroid.interview.tabviewpagerexample.views.TriangleLabelView
             android:layout_width="95dp"
             android:layout_height="67dp"
             app:backgroundColor="@color/yellow_900"

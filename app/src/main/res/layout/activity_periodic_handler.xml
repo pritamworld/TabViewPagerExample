@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016. Pritesh Patel, Toronto, Canada
+  -->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,31 +11,31 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.adesa.interview.tabviewpagerexample.multitasking.PeriodicHandlerActivity">
+    tools:context="com.moxdroid.interview.tabviewpagerexample.com.moxdroid.interview.tabviewpagerexample.multitasking.PeriodicHandlerActivity">
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Start New Activity"
         android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:text="Start New Activity" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Send Event"
         android:id="@+id/btnSendEvent"
-        android:layout_alignParentTop="false"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/btnStart" />
-
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Send Sticky Event"
-        android:id="@+id/btnSendStickyEvent"
         android:layout_alignParentTop="false"
+        android:layout_below="@+id/btnStart"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/btnSendEvent" />
+        android:text="Send Event" />
+
+    <Button
+        android:id="@+id/btnSendStickyEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_below="@+id/btnSendEvent"
+        android:layout_centerHorizontal="true"
+        android:text="Send Sticky Event" />
 </RelativeLayout>

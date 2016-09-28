@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016. Pritesh Patel, Toronto, Canada
+  -->
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
 
     android:orientation="vertical"
-    tools:context="com.adesa.interview.tabviewpagerexample.tabpageview.HomeActivity">
+    tools:context="com.moxdroid.interview.tabviewpagerexample.com.moxdroid.interview.tabviewpagerexample.tabpageview.HomeActivity">
 
     <android.support.design.widget.TabLayout
         android:id="@+id/sliding_tabs"
+        style="@style/MyCustomTabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:tabMaxWidth="0dp"
         app:tabGravity="fill"
-        app:tabMode="fixed"
-        style="@style/MyCustomTabLayout"/>
+        app:tabMaxWidth="0dp"
+        app:tabMode="fixed" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"

@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016. Pritesh Patel, Toronto, Canada
+  -->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,7 +13,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.adesa.interview.tabviewpagerexample.VideoLiveStreamActivity"
+    tools:context="com.moxdroid.interview.tabviewpagerexample.com.moxdroid.interview.tabviewpagerexample.VideoLiveStreamActivity"
     tools:showIn="@layout/activity_video_live_stream">
     <io.vov.vitamio.widget.VideoView
         android:id="@+id/vitamio_videoView"

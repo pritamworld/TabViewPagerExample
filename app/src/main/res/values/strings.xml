@@ -1,5 +1,5 @@
 <!--
-  ~ Copyright (c) 2016. Pritesh Patel
+  ~ Copyright (c) 2016. Pritesh Patel, Toronto, Canada
   -->
 
 <resources>
@@ -33,4 +33,9 @@
     <string name="myself">MySelf</string>
     <string name="send_msg">Send MSG</string>
     <string name="type_message">type message</string>
+    <string name="hello_world">Hello World</string>
+    <string name="start">Start</string>
+    <string name="title_activity_sample_constraint_view_example">
+        SampleConstraintViewExampleActivity
+    </string>
 </resources>

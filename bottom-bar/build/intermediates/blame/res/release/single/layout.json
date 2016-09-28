@@ -96,12 +96,12 @@
         "source": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/exploded-aar/com.android.support/design/24.1.1/res/layout/design_navigation_item_header.xml"
     },
     {
-        "merged": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/res/merged/release/layout/design_navigation_item.xml",
-        "source": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/exploded-aar/com.android.support/design/24.1.1/res/layout/design_navigation_item.xml"
-    },
-    {
         "merged": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/res/merged/release/layout/bb_bottom_bar_item_fixed.xml",
         "source": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/src/main/res/layout/bb_bottom_bar_item_fixed.xml"
+    },
+    {
+        "merged": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/res/merged/release/layout/design_navigation_item.xml",
+        "source": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/exploded-aar/com.android.support/design/24.1.1/res/layout/design_navigation_item.xml"
     },
     {
         "merged": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/res/merged/release/layout/abc_action_menu_item_layout.xml",

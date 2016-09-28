@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016. Pritesh Patel, Toronto, Canada
+  -->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,13 +11,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.adesa.interview.tabviewpagerexample.TimerTestActivity">
+    tools:context="com.moxdroid.interview.tabviewpagerexample.com.moxdroid.interview.tabviewpagerexample.TimerTestActivity">
 
     <TextView
-        android:layout_centerInParent="true"
         android:id="@+id/txtTimer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:text="Time"
         android:textSize="22dp"
         android:textStyle="bold" />
