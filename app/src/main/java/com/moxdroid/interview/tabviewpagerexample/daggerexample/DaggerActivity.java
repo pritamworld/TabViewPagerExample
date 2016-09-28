@@ -22,7 +22,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.adesa.interview.tabviewpagerexample.R;
+import com.moxdroid.interview.tabviewpagerexample.R;
 import com.moxdroid.interview.tabviewpagerexample.daggerexample.component.DaggerVehicleComponent;
 import com.moxdroid.interview.tabviewpagerexample.daggerexample.component.VehicleComponent;
 import com.moxdroid.interview.tabviewpagerexample.daggerexample.model.Vehicle;

@@ -2,13 +2,17 @@
   ~ Copyright (c) 2016. Pritesh Patel, Toronto, Canada
   -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.adesa.interview.tabviewpagerexample">
+    package="com.moxdroid.interview.tabviewpagerexample">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
 
     <application
         android:name="com.moxdroid.interview.tabviewpagerexample.AppConfig"
@@ -20,6 +24,16 @@
         <meta-data
             android:name="net.hockeyapp.android.appIdentifier"
             android:value="${HOCKEYAPP_APP_ID}" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.moxdroid.interview.tabviewpagerexample.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
 
         <activity android:name="com.moxdroid.interview.tabviewpagerexample.slidepageview.MainActivity" />
         <activity android:name="com.moxdroid.interview.tabviewpagerexample.tabpageview.HomeActivity" />
@@ -84,16 +98,20 @@
         <activity
             android:name="com.moxdroid.interview.tabviewpagerexample.SampleConstraintViewExampleActivity"
             android:label="@string/title_activity_sample_constraint_view_example"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.moxdroid.interview.tabviewpagerexample.daggerexample.DaggerActivity">
 
         </activity>
         <activity android:name="com.moxdroid.interview.tabviewpagerexample.webapp.WebAppTestActivity">
+
+        </activity>
+        <activity android:name="com.moxdroid.interview.tabviewpagerexample.CameraActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 

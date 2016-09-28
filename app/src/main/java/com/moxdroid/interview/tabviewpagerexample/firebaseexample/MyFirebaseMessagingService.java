@@ -13,9 +13,9 @@ import android.net.Uri;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
-import com.adesa.interview.tabviewpagerexample.R;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
+import com.moxdroid.interview.tabviewpagerexample.R;
 
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
 

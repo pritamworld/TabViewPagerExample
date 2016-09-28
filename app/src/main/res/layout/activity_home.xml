@@ -10,7 +10,7 @@
     android:layout_height="match_parent"
 
     android:orientation="vertical"
-    tools:context="com.adesa.interview.tabviewpagerexample.com.moxdroid.interview.tabviewpagerexample.tabpageview.HomeActivity">
+    tools:context="com.moxdroid.interview.tabviewpagerexample.com.moxdroid.interview.tabviewpagerexample.tabpageview.HomeActivity">
 
     <android.support.design.widget.TabLayout
         android:id="@+id/sliding_tabs"

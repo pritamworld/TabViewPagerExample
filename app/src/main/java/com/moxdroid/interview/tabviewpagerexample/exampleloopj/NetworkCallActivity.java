@@ -11,12 +11,12 @@ import android.util.Log;
 import android.webkit.WebView;
 import android.widget.Button;
 
-import com.adesa.interview.tabviewpagerexample.R;
 import com.google.gson.Gson;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.JsonHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
+import com.moxdroid.interview.tabviewpagerexample.R;
 import com.moxdroid.interview.tabviewpagerexample.exampleloopj.models.ConditionReport;
 
 import org.json.JSONArray;

@@ -11,5 +11,5 @@
     android:layout_height="match_parent"
     android:background="@color/blue_800"
     app:layoutManager="LinearLayoutManager"
-    tools:context="com.adesa.interview.tabviewpagerexample.com.moxdroid.interview.tabviewpagerexample.fragmentexample.ItemFragment"
+    tools:context="com.moxdroid.interview.tabviewpagerexample.com.moxdroid.interview.tabviewpagerexample.fragmentexample.ItemFragment"
     tools:listitem="@layout/fragment_item" />

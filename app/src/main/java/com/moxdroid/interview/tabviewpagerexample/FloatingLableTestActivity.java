@@ -9,8 +9,6 @@ import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.widget.EditText;
 
-import com.adesa.interview.tabviewpagerexample.R;
-
 /**
  * The type Floating lable test activity.
  */

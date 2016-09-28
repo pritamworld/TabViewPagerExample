@@ -15,8 +15,6 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.adesa.interview.tabviewpagerexample.R;
-
 public class HelloAndroid extends Activity implements OnClickListener {
     Button mButton;
 

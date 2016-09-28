@@ -7,7 +7,7 @@
     android:id="@+id/activity_tab_or_mobile"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.adesa.interview.tabviewpagerexample.com.moxdroid.interview.tabviewpagerexample.fragmentexample.TabOrMobileActivity">
+    tools:context="com.moxdroid.interview.tabviewpagerexample.com.moxdroid.interview.tabviewpagerexample.fragmentexample.TabOrMobileActivity">
 
     <FrameLayout
         android:id="@+id/container"

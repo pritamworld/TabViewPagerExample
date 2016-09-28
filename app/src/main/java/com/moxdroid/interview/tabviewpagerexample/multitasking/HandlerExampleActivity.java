@@ -18,7 +18,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.adesa.interview.tabviewpagerexample.R;
+import com.moxdroid.interview.tabviewpagerexample.R;
 import com.moxdroid.interview.tabviewpagerexample.utils.Utils;
 
 import org.apache.commons.io.IOUtils;

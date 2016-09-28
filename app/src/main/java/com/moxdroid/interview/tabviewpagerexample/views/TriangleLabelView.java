@@ -22,7 +22,7 @@ import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.adesa.interview.tabviewpagerexample.R;
+import com.moxdroid.interview.tabviewpagerexample.R;
 
 /**
  * Created by pritesh.patel on 2016-09-12, 9:08 AM.

@@ -17,7 +17,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.adesa.interview.tabviewpagerexample.R;
 import com.moxdroid.interview.tabviewpagerexample.utils.Utils;
 
 import butterknife.ButterKnife;

@@ -13,8 +13,6 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.adesa.interview.tabviewpagerexample.R;
-
 import butterknife.ButterKnife;
 
 public class TirangleBadgeViewActivity extends AppCompatActivity {

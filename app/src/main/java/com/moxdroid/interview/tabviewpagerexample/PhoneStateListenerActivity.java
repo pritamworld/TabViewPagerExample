@@ -9,8 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
 
-import com.adesa.interview.tabviewpagerexample.R;
-
 /**
  * The type Phone state listener activity.
  */

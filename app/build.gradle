@@ -9,23 +9,17 @@ def computeVersionName() {
 }
 android {
     signingConfigs {
-        testrelease {
-            keyAlias 'test'
-            keyPassword 'test@123'
-            storeFile file('/Users/Interview/Downloads/test.jks')
-            storePassword 'test@123'
-        }
     }
     compileSdkVersion 24
     buildToolsVersion '24.0.2'
     useLibrary 'org.apache.http.legacy'
     defaultConfig {
-        applicationId "com.adesa.interview.tabviewpagerexample"
+        applicationId "com.moxdroid.interview.tabviewpagerexample"
         minSdkVersion 15
         targetSdkVersion 24
         versionCode 1
         versionName computeVersionName()
-        signingConfig signingConfigs.testrelease
+//        signingConfig signingConfigs.testrelease
         manifestPlaceholders = [HOCKEYAPP_APP_ID: "5592c679bc9a4fba9db9482688900b01"]
     }
     buildTypes {

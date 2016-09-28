@@ -7,9 +7,9 @@ package com.moxdroid.interview.tabviewpagerexample.volleytest;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.adesa.interview.tabviewpagerexample.R;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
+import com.moxdroid.interview.tabviewpagerexample.R;
 
 /**
  * The type Image loading activity.

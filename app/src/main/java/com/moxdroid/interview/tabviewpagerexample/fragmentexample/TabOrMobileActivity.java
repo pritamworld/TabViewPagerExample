@@ -10,7 +10,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
-import com.adesa.interview.tabviewpagerexample.R;
+import com.moxdroid.interview.tabviewpagerexample.R;
 import com.moxdroid.interview.tabviewpagerexample.dummy.DummyContent;
 
 public class TabOrMobileActivity extends AppCompatActivity
