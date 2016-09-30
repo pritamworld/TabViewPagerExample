@@ -1,21 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><!--
+<?xml version="1.0" encoding="utf-8"?>
+<!--
   ~ Copyright (c) 2016. Pritesh Patel, Toronto, Canada
   -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.moxdroid.interview.tabviewpagerexample">
+          package="com.moxdroid.interview.tabviewpagerexample">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 
     <uses-feature
         android:name="android.hardware.camera"
-        android:required="true" />
+        android:required="true"/>
 
     <application
-        android:name="com.moxdroid.interview.tabviewpagerexample.AppConfig"
+        android:name=".AppConfig"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -23,7 +24,7 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="net.hockeyapp.android.appIdentifier"
-            android:value="${HOCKEYAPP_APP_ID}" />
+            android:value="${HOCKEYAPP_APP_ID}"/>
 
         <provider
             android:name="android.support.v4.content.FileProvider"
@@ -32,86 +33,89 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths"></meta-data>
+                android:resource="@xml/file_paths"/>
         </provider>
 
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.slidepageview.MainActivity" />
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.tabpageview.HomeActivity" />
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.TimerTestActivity" />
+        <activity android:name=".slidepageview.MainActivity"/>
+        <activity android:name=".tabpageview.HomeActivity"/>
+        <activity android:name=".TimerTestActivity"/>
         <activity
-            android:name="com.moxdroid.interview.tabviewpagerexample.runtimepermission.RunTimePermissionsTestActivity"
+            android:name=".runtimepermission.RunTimePermissionsTestActivity"
             android:label="@string/title_activity_run_time_permission"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
-            android:name="com.moxdroid.interview.tabviewpagerexample.activitytofragment.MainFragmentActivity"
+            android:name=".activitytofragment.MainFragmentActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.FloatingLableTestActivity" />
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".FloatingLableTestActivity"/>
         <activity
-            android:name="com.moxdroid.interview.tabviewpagerexample.VideoLiveStreamActivity"
+            android:name=".VideoLiveStreamActivity"
             android:label="@string/title_activity_video_live_stream"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.volleytest.ImageLoadingActivity" />
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.PhoneStateListenerActivity" />
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".volleytest.ImageLoadingActivity"/>
+        <activity android:name=".PhoneStateListenerActivity"/>
         <activity
-            android:name="com.moxdroid.interview.tabviewpagerexample.ScreenOrientationTestActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize" />
+            android:name=".ScreenOrientationTestActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
 
         <service
-            android:name="com.moxdroid.interview.tabviewpagerexample.downloads.DataDownloadIntentService"
-            android:exported="false" />
+            android:name=".downloads.DataDownloadIntentService"
+            android:exported="false"/>
 
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.downloads.DataDownloadActivity" />
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.BaseActivity" />
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.databasegreendao.FetchLoaderActivity" />
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.exampleloopj.NetworkCallActivity" />
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.multitasking.HandlerExampleActivity" />
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.CustomLibraryTestActivity" />
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.multitasking.PeriodicHandlerActivity" />
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.CustomProgressBarActivity" />
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.firebaseexample.FireBaseExampleActivity" />
+        <activity android:name=".downloads.DataDownloadActivity"/>
+        <activity android:name=".BaseActivity"/>
+        <activity android:name=".databasegreendao.FetchLoaderActivity"/>
+        <activity android:name=".exampleloopj.NetworkCallActivity"/>
+        <activity android:name=".multitasking.HandlerExampleActivity"/>
+        <activity android:name=".CustomLibraryTestActivity"/>
+        <activity android:name=".multitasking.PeriodicHandlerActivity"/>
+        <activity android:name=".CustomProgressBarActivity"/>
+        <activity android:name=".firebaseexample.FireBaseExampleActivity"/>
 
         <service
-            android:name="com.moxdroid.interview.tabviewpagerexample.firebaseexample.MyFirebaseMessagingService"
+            android:name=".firebaseexample.MyFirebaseMessagingService"
             android:enabled="true"
             android:exported="false">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
         <service
-            android:name="com.moxdroid.interview.tabviewpagerexample.firebaseexample.MyFirebaseInstanceIDService"
+            android:name=".firebaseexample.MyFirebaseInstanceIDService"
             android:enabled="true"
             android:exported="false">
             <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
             </intent-filter>
         </service>
 
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.InputLayoutActivity" />
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.BottomTabNavigationActivity" />
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.TirangleBadgeViewActivity" />
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.fragmentexample.TabOrMobileActivity" />
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.chat.ChatActivity" />
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.LinearLayoutListActivity" />
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.HelloAndroid" />
+        <activity android:name=".InputLayoutActivity"/>
+        <activity android:name=".BottomTabNavigationActivity"/>
+        <activity android:name=".TirangleBadgeViewActivity"/>
+        <activity android:name=".fragmentexample.TabOrMobileActivity"/>
+        <activity android:name=".chat.ChatActivity"/>
+        <activity android:name=".LinearLayoutListActivity"/>
+        <activity android:name=".HelloAndroid"/>
         <activity
-            android:name="com.moxdroid.interview.tabviewpagerexample.SampleConstraintViewExampleActivity"
+            android:name=".SampleConstraintViewExampleActivity"
             android:label="@string/title_activity_sample_constraint_view_example"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.daggerexample.DaggerActivity">
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".daggerexample.DaggerActivity">
+        </activity>
+        <activity android:name=".webapp.WebAppTestActivity">
+        </activity>
+        <activity android:name=".CameraActivity">
 
         </activity>
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.webapp.WebAppTestActivity">
-
-        </activity>
-        <activity android:name="com.moxdroid.interview.tabviewpagerexample.CameraActivity">
+        <activity
+            android:name=".loaderexample.LoaderExampleActivity"
+            android:label="@string/title_activity_loader_example"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-
         </activity>
     </application>
 
