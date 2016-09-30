@@ -34,7 +34,7 @@ public class FetchLoaderActivity extends AppCompatActivity implements LoaderMana
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fetch_loader);
 
-        employeeListView = (ListView) findViewById(R.id.employees);
+        employeeListView = (ListView) findViewById(R.id.lstArticles);
         userAdapter = new UserAdapter(this, new ArrayList<User>());
         employeeListView.setAdapter(userAdapter);
         getSupportLoaderManager().initLoader(1, null, this).forceLoad();

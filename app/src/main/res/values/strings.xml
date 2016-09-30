@@ -38,4 +38,5 @@
     <string name="title_activity_sample_constraint_view_example">
         SampleConstraintViewExampleActivity
     </string>
+    <string name="title_activity_loader_example">LoaderExampleActivity</string>
 </resources>

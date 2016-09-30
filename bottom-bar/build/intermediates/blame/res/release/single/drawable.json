@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/res/merged/release/drawable/design_snackbar_background.xml",
-        "source": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/exploded-aar/com.android.support/design/24.1.1/res/drawable/design_snackbar_background.xml"
-    },
-    {
         "merged": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/res/merged/release/drawable/abc_btn_radio_material.xml",
         "source": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/res/merged/release/drawable/design_snackbar_background.xml",
+        "source": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/exploded-aar/com.android.support/design/24.1.1/res/drawable/design_snackbar_background.xml"
     },
     {
         "merged": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/res/merged/release/drawable/abc_seekbar_track_material.xml",
