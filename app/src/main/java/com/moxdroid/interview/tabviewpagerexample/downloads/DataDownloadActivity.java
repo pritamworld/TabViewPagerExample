@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016. Pritesh Patel
+ * Copyright (c) 2016. Pritesh Patel, Toronto, Canada
  */
 
 package com.moxdroid.interview.tabviewpagerexample.downloads;
@@ -16,9 +16,9 @@ import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.adesa.interview.tabviewpagerexample.R;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.moxdroid.interview.tabviewpagerexample.BaseActivity;
+import com.moxdroid.interview.tabviewpagerexample.R;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;

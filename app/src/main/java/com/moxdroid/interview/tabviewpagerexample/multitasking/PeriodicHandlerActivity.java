@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016. Pritesh Patel
+ * Copyright (c) 2016. Pritesh Patel, Toronto, Canada
  */
 
 package com.moxdroid.interview.tabviewpagerexample.multitasking;
@@ -12,7 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import com.adesa.interview.tabviewpagerexample.R;
+import com.moxdroid.interview.tabviewpagerexample.R;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;

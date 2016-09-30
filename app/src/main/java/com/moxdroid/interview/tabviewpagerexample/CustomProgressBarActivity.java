@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016. Pritesh Patel
+ * Copyright (c) 2016. Pritesh Patel, Toronto, Canada
  */
 
 package com.moxdroid.interview.tabviewpagerexample;
@@ -10,8 +10,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-
-import com.adesa.interview.tabviewpagerexample.R;
 
 public class CustomProgressBarActivity extends AppCompatActivity {
 

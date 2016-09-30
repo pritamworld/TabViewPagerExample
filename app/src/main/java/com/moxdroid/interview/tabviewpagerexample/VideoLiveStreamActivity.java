@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016. Pritesh Patel
+ * Copyright (c) 2016. Pritesh Patel, Toronto, Canada
  */
 
 package com.moxdroid.interview.tabviewpagerexample;
@@ -10,8 +10,6 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-
-import com.adesa.interview.tabviewpagerexample.R;
 
 import io.vov.vitamio.LibsChecker;
 import io.vov.vitamio.MediaPlayer;

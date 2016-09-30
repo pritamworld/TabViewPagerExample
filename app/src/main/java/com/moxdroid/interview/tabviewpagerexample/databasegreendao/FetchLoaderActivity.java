@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016. Pritesh Patel
+ * Copyright (c) 2016. Pritesh Patel, Toronto, Canada
  */
 
 package com.moxdroid.interview.tabviewpagerexample.databasegreendao;
@@ -10,7 +10,7 @@ import android.support.v4.content.Loader;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
-import com.adesa.interview.tabviewpagerexample.R;
+import com.moxdroid.interview.tabviewpagerexample.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +34,7 @@ public class FetchLoaderActivity extends AppCompatActivity implements LoaderMana
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fetch_loader);
 
-        employeeListView = (ListView) findViewById(R.id.employees);
+        employeeListView = (ListView) findViewById(R.id.lstArticles);
         userAdapter = new UserAdapter(this, new ArrayList<User>());
         employeeListView.setAdapter(userAdapter);
         getSupportLoaderManager().initLoader(1, null, this).forceLoad();

@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2016. Pritesh Patel, Toronto, Canada
+  -->
+
 <android.support.v7.widget.GridLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:grid="http://schemas.android.com/apk/res-auto"
@@ -15,70 +18,70 @@
     grid:useDefaultMargins="false">
 
     <TextView
-        android:textStyle="bold"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:text="Code :"
+        android:textStyle="bold"
         grid:layout_columnWeight="1"
-        grid:layout_gravity="fill_horizontal"
-        android:text="Code :" />
+        grid:layout_gravity="fill_horizontal" />
 
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:text="My Code"
         grid:layout_columnWeight="1.5"
-        grid:layout_gravity="fill_horizontal"
-        android:text="My Code" />
+        grid:layout_gravity="fill_horizontal" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="4dp"
-        grid:layout_columnSpan="2"
-        android:background="@color/grey_row"/>
+        android:background="@color/grey_row"
+        grid:layout_columnSpan="2" />
 
     <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Description :"
         android:textStyle="bold"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
         grid:layout_columnWeight="1"
-        grid:layout_gravity="fill_horizontal"
-        android:text="Description :" />
+        grid:layout_gravity="fill_horizontal" />
 
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:text="My Description"
         grid:layout_columnWeight="1"
-        grid:layout_gravity="fill_horizontal"
-        android:text="My Description" />
+        grid:layout_gravity="fill_horizontal" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="4dp"
-        grid:layout_columnSpan="2"
-        android:background="@color/grey_row"/>
+        android:background="@color/grey_row"
+        grid:layout_columnSpan="2" />
 
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Details: "
-        grid:layout_columnWeight="1"
-        grid:layout_gravity="fill_horizontal"
         android:textSize="@dimen/copyright_txt"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        grid:layout_columnWeight="1"
+        grid:layout_gravity="fill_horizontal" />
 
     <TextView
         android:id="@+id/details"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="My Details"
-        grid:layout_columnWeight="1"
-        grid:layout_gravity="fill_horizontal"
         android:textColor="#808080"
-        android:textSize="@dimen/copyright_txt"/>
+        android:textSize="@dimen/copyright_txt"
+        grid:layout_columnWeight="1"
+        grid:layout_gravity="fill_horizontal" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="4dp"
-        grid:layout_columnSpan="2"
-        android:background="@color/grey_row"/>
+        android:background="@color/grey_row"
+        grid:layout_columnSpan="2" />
 
 </android.support.v7.widget.GridLayout>

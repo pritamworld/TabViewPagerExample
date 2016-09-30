@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016. Pritesh Patel
+ * Copyright (c) 2016. Pritesh Patel, Toronto, Canada
  */
 
 package com.moxdroid.interview.tabviewpagerexample.chat;
@@ -17,7 +17,7 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.adesa.interview.tabviewpagerexample.R;
+import com.moxdroid.interview.tabviewpagerexample.R;
 
 import java.text.DateFormat;
 import java.util.ArrayList;

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2016. Pritesh Patel, Toronto, Canada
+  -->
+
+<paths>
+    <external-path
+        name="my_images"
+        path="Android/data/com.moxdroid.interview.tabviewpagerexample/files/Pictures" />
+</paths>

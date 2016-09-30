@@ -1,5 +1,5 @@
 <!--
-  ~ Copyright (c) 2016. Pritesh Patel
+  ~ Copyright (c) 2016. Pritesh Patel, Toronto, Canada
   -->
 
 <resources>
@@ -34,9 +34,9 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
     <!--Input Layout -->
     <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016. Pritesh Patel
+ * Copyright (c) 2016. Pritesh Patel, Toronto, Canada
  */
 
 package com.moxdroid.interview.tabviewpagerexample.activitytofragment;
@@ -15,7 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.adesa.interview.tabviewpagerexample.R;
+import com.moxdroid.interview.tabviewpagerexample.R;
 
 import java.util.ArrayList;
 

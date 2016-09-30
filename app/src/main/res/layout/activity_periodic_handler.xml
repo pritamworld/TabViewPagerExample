@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright (c) 2016. Pritesh Patel
+  ~ Copyright (c) 2016. Pritesh Patel, Toronto, Canada
   -->
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -11,7 +11,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.adesa.interview.tabviewpagerexample.com.moxdroid.interview.tabviewpagerexample.multitasking.PeriodicHandlerActivity">
+    tools:context="com.moxdroid.interview.tabviewpagerexample.com.moxdroid.interview.tabviewpagerexample.multitasking.PeriodicHandlerActivity">
 
     <Button
         android:id="@+id/btnStart"
