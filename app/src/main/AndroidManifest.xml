@@ -105,12 +105,17 @@
         <activity android:name=".webapp.WebAppTestActivity">
         </activity>
         <activity android:name=".CameraActivity">
-
         </activity>
         <activity
             android:name=".loaderexample.LoaderExampleActivity"
             android:label="@string/title_activity_loader_example"
             android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".encryption.SymmetricAlgorithmAESActivity">
+
+        </activity>
+        <activity android:name=".encryption.AsymmetricAlgorithmRSAActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
