@@ -13,6 +13,7 @@ import com.firebase.client.Firebase;
  * Created by Interview on 2016-08-16.
  */
 
+
 public class AppConfig extends Application {
     /**
      * The constant ENCRYPTED.
