@@ -114,12 +114,14 @@
         <activity android:name=".encryption.SymmetricAlgorithmAESActivity">
         </activity>
         <activity android:name=".encryption.AsymmetricAlgorithmRSAActivity">
-
         </activity>
         <activity
             android:name=".recyclerviewexample.ScrollingActivity"
             android:label="@string/title_activity_scrolling"
             android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".TowerOfHanoiActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
