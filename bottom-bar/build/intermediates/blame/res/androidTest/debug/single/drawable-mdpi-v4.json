@@ -9,10 +9,13 @@
     },
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "merged": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png",
         "source": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
+=======
+>>>>>>> master
 =======
 >>>>>>> master
         "merged": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/abc_scrubber_track_mtrl_alpha.9.png",
@@ -20,11 +23,26 @@
     },
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+=======
+>>>>>>> NewMaster
+>>>>>>> master
         "merged": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png",
         "source": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
+<<<<<<< HEAD
+>>>>>>> master
+=======
+<<<<<<< HEAD
+=======
+        "merged": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/abc_scrubber_track_mtrl_alpha.9.png",
+        "source": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+>>>>>>> NewMaster
 >>>>>>> master
         "merged": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png",
         "source": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
@@ -40,10 +58,13 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "merged": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png",
         "source": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
+=======
+>>>>>>> master
 =======
 >>>>>>> master
 =======
@@ -54,16 +75,30 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
+>>>>>>> master
+=======
+=======
+>>>>>>> NewMaster
 >>>>>>> master
         "merged": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png",
         "source": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> master
 =======
+>>>>>>> master
+=======
+=======
+        "merged": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+>>>>>>> NewMaster
 >>>>>>> master
         "merged": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/abc_list_pressed_holo_light.9.png",
         "source": "/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/bottom-bar/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_list_pressed_holo_light.9.png"

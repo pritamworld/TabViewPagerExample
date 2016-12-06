@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -7,6 +8,8 @@
  */
 
 >>>>>>> master
+>>>>>>> master
+=======
 >>>>>>> master
 /* AUTO-GENERATED FILE.  DO NOT MODIFY.
  *
