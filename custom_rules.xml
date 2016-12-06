@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2016. Pritesh Patel, Toronto, Canada
+  -->
+
+<project>
+    <!-- Change the name of the final apk -->     
+	<property name="out.final.file" location="/Users/pritesh.patel/Documents/AdesaProjects/PriteshWorkspace/TabViewPagerExample/build/apk/test-ant.apk"/>
+    
+    <target name="-pre-build">
+        <!-- Set the version code to the Jenkins build number -->
+    	<echo>Setting app version code to '${app.version.code}'</echo>
+		<replaceregexp file="AndroidManifest.xml" 
+		    		   match='android:versionCode="([^".]+)(\.[^"]*)?"'
+		    		   replace='android:versionCode="${app.version.code}"'/>
+		
+        <!-- Set the version name based on the params passed to the Jenkins build -->
+        <condition property="isInternalBuild">
+            <not>
+            	<equals arg1="${environment}" arg2="release" />
+            </not>
+        </condition>
+        <antcall target="internalRename" />
+        <antcall target="releaseRename" />	  
+    </target>
+    
+    <target name="internalRename" if="isInternalBuild">         
+    	<echo>Setting app version name to '${app.version.major}.${app.version.minor} (${environment})'</echo>
+		<replaceregexp file="AndroidManifest.xml" 
+		    		   match='android:versionName="([^".]+)(\.[^"]*)?"'
+		    		   replace='android:versionName="${app.version.major}.${app.version.minor} (${environment})"'/>	
+    </target>
+    
+    <target name="releaseRename" unless="isInternalBuild">
+    	<echo>Setting app version name to '${app.version.major}.${app.version.minor}'</echo>
+		<replaceregexp file="AndroidManifest.xml" 
+		    		   match='android:versionName="([^".]+)(\.[^"]*)?"'
+		    		   replace='android:versionName="${app.version.major}.${app.version.minor}"'/>	
+    </target>         
+    
+    <!-- Since Ant doesn't have IFELSE Task (External Lib required)
+    	 The targets below emulate the desire if/else execution flow.
+    	 By overriding pre-compile, the property value and the correct environment.properties file is always set.
+     -->
+    <target name="-pre-compile">  
+        <condition property="isPropertyFileAvailable"> <!-- IF Condition -->
+            <available file="${asset.dir}/${environment}.environment.properties" />
+        </condition>
+        <antcall target="config-env" />    <!-- THEN Condition -->
+        <antcall target="set-default-config" />  <!-- ELSEIF Condition -->
+    </target>
+    
+    <target name="config-env" if="isPropertyFileAvailable">         
+		<echo>Setting ${environment} configuration...</echo>
+        <copy file="${asset.dir}/${environment}.environment.properties" tofile="${asset.dir}/environment.properties"
+	        overwrite="true" encoding="utf-8" />
+    </target>
+    
+    <target name="set-default-config" unless="isPropertyFileAvailable">
+        <echo>Setting debug configuration...</echo>
+        <copy file="${asset.dir}/debug.environment.properties" tofile="${asset.dir}/environment.properties"
+	        overwrite="true" encoding="utf-8" />
+    </target>
+
+</project>
