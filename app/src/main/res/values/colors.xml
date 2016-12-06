@@ -14,4 +14,7 @@
     <color name="windowBackground">#FFFFFF</color>
     <color name="navigationBarColor">#000000</color>
     <color name="colorAccent">#5f50e1</color>
+
+    <!-- Transparent white -->
+    <color name="transparent_white">#ffcccccc</color>
 </resources>

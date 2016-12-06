@@ -110,16 +110,29 @@
             android:name=".loaderexample.LoaderExampleActivity"
             android:label="@string/title_activity_loader_example"
             android:theme="@style/AppTheme.NoActionBar">
+<<<<<<< HEAD
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+=======
+>>>>>>> master
         </activity>
         <activity android:name=".encryption.SymmetricAlgorithmAESActivity">
-
         </activity>
         <activity android:name=".encryption.AsymmetricAlgorithmRSAActivity">
+<<<<<<< HEAD
+=======
+
+        </activity>
+        <activity
+            android:name=".recyclerviewexample.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+>>>>>>> master
 
         </activity>
     </application>
