@@ -110,17 +110,17 @@
             android:name=".loaderexample.LoaderExampleActivity"
             android:label="@string/title_activity_loader_example"
             android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-        <activity android:name=".encryption.SymmetricAlgorithmAESActivity">
-
-        </activity>
-        <activity android:name=".encryption.AsymmetricAlgorithmRSAActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".encryption.SymmetricAlgorithmAESActivity">
+
+        </activity>
+        <activity android:name=".encryption.AsymmetricAlgorithmRSAActivity">
+
         </activity>
     </application>
 
