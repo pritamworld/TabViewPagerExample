@@ -117,11 +117,17 @@
             android:name=".recyclerviewexample.ScrollingActivity"
             android:label="@string/title_activity_scrolling"
             android:theme="@style/AppTheme.NoActionBar">
+<<<<<<< HEAD
         </activity>
         <activity android:name=".TowerOfHanoiActivity">
 
         </activity>
         <activity android:name=".python.TestActivity">
+=======
+
+        </activity>
+        <activity android:name=".TowerOfHanoiActivity">
+>>>>>>> master
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
